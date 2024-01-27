@@ -7,9 +7,11 @@ public class Slingshot : MonoBehaviour
     [SerializeField] GameObject line;
     private LineRenderer lr;
 
+    [SerializeField] float maxDistance;
+    [SerializeField] float maxForce;
+
     private Vector3 lineStart;
     private Vector3 mouseStart;
-    [SerializeField] float maxDistance;
     private float distance;
 
     private bool drawingLine;
@@ -30,31 +32,37 @@ public class Slingshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (GameManager.instance.allowLaunch)
         {
-            if (!drawingLine)
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (!drawingLine)
+                {
+                    lineStart = GameManager.instance.activePlayer.slingshotPoint.position;
+                    mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    line.SetActive(true);
+                    drawingLine = true;
+                }
+            }
+
+            if (Input.GetMouseButton(0) && line.activeInHierarchy)
             {
                 lineStart = GameManager.instance.activePlayer.slingshotPoint.position;
-                mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                line.SetActive(true);
-                drawingLine = true;
+
+                Vector3 mousePosition = Input.mousePosition;
+                distance = (mousePosition - lineStart).magnitude;
+
+                lr.SetPosition(0, new Vector3(lineStart.x, lineStart.y, 0f));
+                lr.SetPosition(1, new Vector3(lineEnd().x, lineEnd().y, 0f));
             }
-        }
 
-        if (Input.GetMouseButton(0) && line.activeInHierarchy)
-        {
-            Vector3 mousePosition = Input.mousePosition;
-            distance = (mousePosition - lineStart).magnitude;
-
-            lr.SetPosition(0, new Vector3(lineStart.x, lineStart.y, 0f));
-            lr.SetPosition(1, new Vector3(lineEnd().x, lineEnd().y, 0f));
-        }
-
-        if(Input.GetMouseButtonUp(0) && drawingLine)
-        {
-            lineStart = Vector2.zero;
-            line.SetActive(false);
-            drawingLine = false;
+            if (Input.GetMouseButtonUp(0) && drawingLine)
+            {
+                launchBall();
+                lineStart = Vector2.zero;
+                line.SetActive(false);
+                drawingLine = false;
+            }
         }
     }
 
@@ -69,5 +77,14 @@ public class Slingshot : MonoBehaviour
         Vector3 offset = newPos - lineStart;
 
         return lineStart + Vector3.ClampMagnitude(offset, maxDistance);
+    }
+
+    void launchBall()
+    {
+        Vector3 launchDirection = (lineStart - lineEnd()).normalized;
+        float appliedForce = Mathf.Lerp(0, maxForce, Mathf.InverseLerp(0, maxDistance, distance));
+        GameManager.instance.activePlayer.golfRB.AddForce(launchDirection * appliedForce, ForceMode2D.Impulse);
+        GameManager.instance.allowLaunch = false;
+        GameManager.instance.launchFinished = true;
     }
 }

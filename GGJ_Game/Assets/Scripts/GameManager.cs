@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,13 +11,28 @@ public class GameManager : MonoBehaviour
     public enum gamemode { SinglePlayer, TwoPlayer };
     public gamemode currentMode;
 
-    public enum turn { Solo, Player1, Player2 };
+    public enum turn { Solo, Player1, Player2, Win};
     public turn currentTurn;
 
     public Player activePlayer;
+    private GameObject player1Obj;
+    private GameObject player2Obj;
+
+    public Color p1SkinColor;
+    public Color p1OutfitColor;
+    public Color p2SkinColor;
+    public Color p2OutfitColor;
+
+    public bool allowLaunch;
+    public bool launchFinished;
 
     private Vector3 levelStartPos;
     [SerializeField] GameObject playerInstance;
+
+    private float turnCountP1;
+    private float turnCountP2;
+    private TMP_Text turnTextP1;
+    private TMP_Text turnTextP2;
 
     private void Awake()
     {
@@ -57,80 +73,153 @@ public class GameManager : MonoBehaviour
             if (pick == 0)
             {
                 currentTurn = turn.Player1;
+                turnCountP1 = 1;
+                turnCountP2 = 0;
+                UIManager.instance.uiTurnChange(true);
             }
             else
             {
                 currentTurn = turn.Player2;
+                turnCountP1 = 0;
+                turnCountP2 = 1;
+                UIManager.instance.uiTurnChange(false);
             }
         }
+
+        turnTextP1.text = "Turn: " + turnCountP1;
+        turnTextP2.text = "Turn: " + turnCountP2;
     }
 
     void nextTurn()
     {
+        launchFinished = false;
+
         if (currentTurn == turn.Player1)
         {
+            if (!player2Obj.activeInHierarchy)
+            {
+                player2Obj.SetActive(true);
+            }
+
+            turnCountP2++;
+            turnTextP2.text = "Turn: " + turnCountP2;
             currentTurn = turn.Player2;
+            activePlayer = player2Obj.GetComponent<Player>();
+            UIManager.instance.uiTurnChange(false);
         }
         else
         {
+            if (!player1Obj.activeInHierarchy)
+            {
+                player1Obj.SetActive(true);
+            }
+
+            turnCountP1++;
+            turnTextP1.text = "Turn: " + turnCountP1;
             currentTurn = turn.Player1;
+            activePlayer = player1Obj.GetComponent<Player>();
+            UIManager.instance.uiTurnChange(true);
         }
+
+        allowLaunch = true;
+        StartCoroutine(turnBehavior());
     }
 
     IEnumerator turnBehavior()
     {
-        if (currentTurn == turn.Solo)
-        {
+        yield return new WaitUntil(turnEnded);
 
-        }
-        else if (currentTurn == turn.Player1)
-        {
+        nextTurn();
 
-        }
-        else if (currentTurn == turn.Player2)
-        {
-
-        }
-
-        return null;
+        yield return null;
     }
 
     public void initializeLevel(Vector3 startPos)
     {
+        levelStartPos = startPos;
+        turnTextP1 = UIManager.instance.turnTextP1;
+        turnTextP2 = UIManager.instance.turnTextP2;
+
         firstTurn();
 
-        levelStartPos = startPos;
-
-        if(currentMode == gamemode.SinglePlayer)
+        if (currentMode == gamemode.SinglePlayer)
         {
-            var player = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player.name = "Player 1";
-            activePlayer = player.GetComponent<Player>();
+            player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
+            player1Obj.name = "Player 1";
+            player1Obj.GetComponent<Player>().playerName = "Player 1";
+            player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
+            player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
+            activePlayer = player1Obj.GetComponent<Player>();
         }
         else if (currentMode == gamemode.TwoPlayer)
         {
-            var player = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player.name = "Player 1";
+            player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
+            player1Obj.name = "Player 1";
+            player1Obj.GetComponent<Player>().playerName = "Player 1";
+            player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
+            player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
             if (currentTurn == turn.Player2)
             {
-                player.SetActive(false);
+                player1Obj.SetActive(false);
             }
             else
             {
-                activePlayer = player.GetComponent<Player>();
+                activePlayer = player1Obj.GetComponent<Player>();
             }
 
-            player = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player.name = "Player 2";
+            player2Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
+            player2Obj.name = "Player 2";
+            player2Obj.GetComponent<Player>().playerName = "Player 2";
+            player2Obj.GetComponent<Player>().skinColor = p2SkinColor;
+            player2Obj.GetComponent<Player>().outfitColor = p2OutfitColor;
             if (currentTurn == turn.Player1)
             {
-                player.SetActive(false);
+                player2Obj.SetActive(false);
             }
             else
             {
-                activePlayer = player.GetComponent<Player>();
+                activePlayer = player2Obj.GetComponent<Player>();
             }
+        }
 
+        allowLaunch = true;
+        StartCoroutine(turnBehavior());
+    }
+
+    bool turnEnded()
+    {
+        if (!launchFinished)
+        {
+            return false;
+        }
+
+        float xVelocity = Mathf.Abs(activePlayer.golfRB.velocity.x);
+        float yVelocity = Mathf.Abs(activePlayer.golfRB.velocity.y);
+
+        //Debug.Log("xVelocity: " + xVelocity + "  yVelocity: " + yVelocity);
+
+        if (xVelocity <= 0.1f && yVelocity <= 0.1f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void goalReached(string winningPlayer)
+    {
+        StopAllCoroutines();
+        currentTurn = turn.Win;
+
+        if(winningPlayer == "Player 1")
+        {
+            Debug.Log(winningPlayer + " won in " + turnCountP1 + " turns!");
+        }
+        else if (winningPlayer == "Player 2")
+        {
+            Debug.Log(winningPlayer + " won in " + turnCountP2 + " turns!");
         }
     }
 }

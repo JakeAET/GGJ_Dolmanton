@@ -7,7 +7,7 @@ public class LevelStart : MonoBehaviour
     public Transform startingPosition;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         GameManager.instance.initializeLevel(startingPosition.position);
     }
