@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
     void nextTurn()
     {
         launchFinished = false;
-        CamController.instance.zoomInZoomOut(15);
+        CamController.instance.zoomInZoomOut(20);
 
         if (currentMode != gamemode.SinglePlayer)
         {
@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
         }
 
         allowLaunch = true;
-        CamController.instance.zoomInZoomOut(5);
+        //CamController.instance.zoomInZoomOut(5);
         StartCoroutine(turnBehavior());
     }
 

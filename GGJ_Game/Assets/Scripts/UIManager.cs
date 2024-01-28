@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     public Image p1Panel;
     public Image p2Panel;
 
+    [SerializeField] GameObject[] p2GameObjects;
+
     private Color disabledColor;
 
     private void Awake()
@@ -36,6 +38,14 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GameManager.instance.currentMode == GameManager.gamemode.SinglePlayer)
+        {
+            foreach (GameObject obj in p2GameObjects)
+            {
+                obj.SetActive(false);
+            }
+        }
+
         p1Panel.color = GameManager.instance.p1OutfitColor;
         p2Panel.color = GameManager.instance.p2OutfitColor;
     }
