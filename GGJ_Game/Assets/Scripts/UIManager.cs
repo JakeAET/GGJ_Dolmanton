@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UIManager : MonoBehaviour
@@ -20,6 +21,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject[] p2GameObjects;
 
     private Color disabledColor;
+
+    [SerializeField] GameObject winScreenCanvas;
+    [SerializeField] GameObject p1Victory;
+    [SerializeField] GameObject p2Victory;
+    [SerializeField] Button restartButton;
+    [SerializeField] Button menuButton;
 
     private void Awake()
     {
@@ -48,6 +55,9 @@ public class UIManager : MonoBehaviour
 
         p1Panel.color = GameManager.instance.p1OutfitColor;
         p2Panel.color = GameManager.instance.p2OutfitColor;
+
+        restartButton.onClick.AddListener(restartLevel);
+        menuButton.onClick.AddListener(returnToMenu);
     }
 
     // Update is called once per frame
@@ -73,6 +83,32 @@ public class UIManager : MonoBehaviour
 
             p2Text.color = Color.white;
             turnTextP2.color = Color.white;
+        }
+    }
+
+    public void restartLevel()
+    {
+        SceneManager.LoadScene("Jake's Test");
+    }
+
+    public void returnToMenu()
+    {
+        SceneManager.LoadScene("Title Screen");
+    }
+
+    public void winEvent(string winningPlayer)
+    {
+        winScreenCanvas.SetActive(true);
+
+        if(winningPlayer == "Player 1")
+        {
+            p1Victory.SetActive(true);
+            p2Victory.SetActive(false);
+        }
+        else if(winningPlayer == "Player 2")
+        {
+            p1Victory.SetActive(false);
+            p2Victory.SetActive(true);
         }
     }
 }
