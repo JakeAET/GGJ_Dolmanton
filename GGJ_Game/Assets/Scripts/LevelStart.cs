@@ -7,6 +7,7 @@ public class LevelStart : MonoBehaviour
     public Transform startingPosition;
     public GameObject startVcam1;
     public GameObject startVcam2;
+    public GameObject camController;
 
     [SerializeField] int numLevelSections;
     [SerializeField] float xSpawnOffset;
@@ -19,7 +20,7 @@ public class LevelStart : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2);
+        GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
         generateLevel();
     }
 

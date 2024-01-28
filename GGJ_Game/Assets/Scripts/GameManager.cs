@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
     private CinemachineVirtualCamera vcam1;
     private CinemachineVirtualCamera vcam2;
 
+    private CamController camControllerRef;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -69,7 +71,7 @@ public class GameManager : MonoBehaviour
         if (currentMode == gamemode.SinglePlayer)
         {
             currentTurn = turn.Player1;
-            CamController.instance.switchCam("Player 1");
+            //camControllerRef.switchCam("Player 1");
         }
         else if (currentMode == gamemode.TwoPlayer)
         {
@@ -78,7 +80,7 @@ public class GameManager : MonoBehaviour
             if (pick == 0)
             {
                 currentTurn = turn.Player1;
-                CamController.instance.switchCam("Player 1");
+                //camControllerRef.switchCam("Player 1");
                 turnCountP1 = 1;
                 turnCountP2 = 0;
                 UIManager.instance.uiTurnChange(true);
@@ -86,14 +88,13 @@ public class GameManager : MonoBehaviour
             else
             {
                 currentTurn = turn.Player2;
-                CamController.instance.switchCam("Player 2");
+                //camControllerRef.switchCam("Player 2");
                 turnCountP1 = 0;
                 turnCountP2 = 1;
                 UIManager.instance.uiTurnChange(false);
             }
         }
 
-        CamController.instance.zoomInZoomOut(5);
         turnTextP1.text = "Turn: " + turnCountP1;
         turnTextP2.text = "Turn: " + turnCountP2;
     }
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
     void nextTurn()
     {
         launchFinished = false;
-        CamController.instance.zoomInZoomOut(20);
+        camControllerRef.zoomInZoomOut(20);
 
         if (currentMode != gamemode.SinglePlayer)
         {
@@ -115,7 +116,7 @@ public class GameManager : MonoBehaviour
                 turnCountP2++;
                 turnTextP2.text = "Turn: " + turnCountP2;
                 currentTurn = turn.Player2;
-                CamController.instance.switchCam("Player 2");
+                camControllerRef.switchCam("Player 2");
                 activePlayer = player2Obj.GetComponent<Player>();
                 UIManager.instance.uiTurnChange(false);
             }
@@ -129,7 +130,7 @@ public class GameManager : MonoBehaviour
                 turnCountP1++;
                 turnTextP1.text = "Turn: " + turnCountP1;
                 currentTurn = turn.Player1;
-                CamController.instance.switchCam("Player 1");
+                camControllerRef.switchCam("Player 1");
                 activePlayer = player1Obj.GetComponent<Player>();
                 UIManager.instance.uiTurnChange(true);
             }
@@ -150,7 +151,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(turnEnded);
 
         activePlayer.switchFace(true);
-        CamController.instance.zoomInZoomOut(5);
+        camControllerRef.zoomInZoomOut(5);
 
         yield return new WaitForSeconds(2f);
 
@@ -159,12 +160,13 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    public void initializeLevel(Vector3 startPos, GameObject startVcam1, GameObject startVcam2)
+    public void initializeLevel(Vector3 startPos, GameObject startVcam1, GameObject startVcam2, GameObject camController)
     {
         levelStartPos = startPos;
         turnTextP1 = UIManager.instance.turnTextP1;
         turnTextP2 = UIManager.instance.turnTextP2;
 
+        camControllerRef = camController.GetComponent<CamController>();
         firstTurn();
 
         if (currentMode == gamemode.SinglePlayer)
@@ -253,7 +255,7 @@ public class GameManager : MonoBehaviour
     public void goalReached(string winningPlayer)
     {
         StopAllCoroutines();
-        CamController.instance.zoomInZoomOut(5);
+        camControllerRef.zoomInZoomOut(5);
         currentTurn = turn.Win;
 
         if(winningPlayer == "Player 1")

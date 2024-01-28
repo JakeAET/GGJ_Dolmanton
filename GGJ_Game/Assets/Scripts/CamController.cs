@@ -7,10 +7,11 @@ public class CamController : MonoBehaviour
 {
     public static CamController instance { get; private set; }
 
-    private Animator animator;
+    [SerializeField] Animator animator;
 
     [SerializeField] CinemachineVirtualCamera virtualCam1;
     [SerializeField] CinemachineVirtualCamera virtualCam2;
+    public CinemachineVirtualCamera virtualCam3;
 
     // Start is called before the first frame update
     void Awake()
@@ -24,7 +25,9 @@ public class CamController : MonoBehaviour
             instance = this;
         }
 
-        animator = GetComponent<Animator>();
+        animator.Play("goal");
+
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,14 +41,16 @@ public class CamController : MonoBehaviour
         if(player == "Player 1")
         {
             animator.Play("player 1");
-            //virtualCam1.Priority = 1;
-            //virtualCam2.Priority = 0;
+            virtualCam1.Priority = 1;
+            virtualCam2.Priority = 0;
+            virtualCam3.Priority = 0;
         }
         else if(player == "Player 2")
         {
             animator.Play("player 2");
-            //virtualCam1.Priority = 0;
-            //virtualCam2.Priority = 1;
+            virtualCam1.Priority = 0;
+            virtualCam2.Priority = 1;
+            virtualCam3.Priority = 0;
         }
     }
 

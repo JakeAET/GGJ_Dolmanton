@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Two Player Cam Blend
   m_EditorClassIdentifier: 
   m_CustomBlends:
-  - m_From: Player Vcam 1
-    m_To: Player Vcam 2
+  - m_From: CM vcam2
+    m_To: CM vcam3
     m_Blend:
       m_Style: 1
       m_Time: 1
@@ -24,11 +24,44 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: Player Vcam 2
-    m_To: Player Vcam 1
+  - m_From: CM vcam3
+    m_To: CM vcam2
     m_Blend:
       m_Style: 1
       m_Time: 1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: CM vcam1
+    m_To: '**ANY CAMERA**'
+    m_Blend:
+      m_Style: 1
+      m_Time: 3
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: CM vcam2
+    m_To: CM vcam1
+    m_Blend:
+      m_Style: 0
+      m_Time: 0.1
+      m_CustomCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 0
+  - m_From: CM vcam3
+    m_To: CM vcam1
+    m_Blend:
+      m_Style: 0
+      m_Time: 2
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
