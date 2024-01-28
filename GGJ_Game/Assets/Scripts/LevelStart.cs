@@ -5,10 +5,12 @@ using UnityEngine;
 public class LevelStart : MonoBehaviour
 {
     public Transform startingPosition;
+    public GameObject startVcam1;
+    public GameObject startVcam2;
 
     // Start is called before the first frame update
     void Awake()
     {
-        GameManager.instance.initializeLevel(startingPosition.position);
+        GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2);
     }
 }

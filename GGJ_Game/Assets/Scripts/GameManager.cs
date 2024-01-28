@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -34,6 +35,9 @@ public class GameManager : MonoBehaviour
     private TMP_Text turnTextP1;
     private TMP_Text turnTextP2;
 
+    private CinemachineVirtualCamera vcam1;
+    private CinemachineVirtualCamera vcam2;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -65,6 +69,7 @@ public class GameManager : MonoBehaviour
         if (currentMode == gamemode.SinglePlayer)
         {
             currentTurn = turn.Player1;
+            CamController.instance.switchCam("Player 1");
         }
         else if (currentMode == gamemode.TwoPlayer)
         {
@@ -73,6 +78,7 @@ public class GameManager : MonoBehaviour
             if (pick == 0)
             {
                 currentTurn = turn.Player1;
+                CamController.instance.switchCam("Player 1");
                 turnCountP1 = 1;
                 turnCountP2 = 0;
                 UIManager.instance.uiTurnChange(true);
@@ -80,6 +86,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 currentTurn = turn.Player2;
+                CamController.instance.switchCam("Player 2");
                 turnCountP1 = 0;
                 turnCountP2 = 1;
                 UIManager.instance.uiTurnChange(false);
@@ -134,7 +141,7 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    public void initializeLevel(Vector3 startPos)
+    public void initializeLevel(Vector3 startPos, GameObject startVcam1, GameObject startVcam2)
     {
         levelStartPos = startPos;
         turnTextP1 = UIManager.instance.turnTextP1;
@@ -150,6 +157,10 @@ public class GameManager : MonoBehaviour
             player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
             player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
             activePlayer = player1Obj.GetComponent<Player>();
+            startVcam1.SetActive(true);
+            vcam1 = startVcam1.GetComponent<CinemachineVirtualCamera>();
+            vcam1.Follow = player1Obj.GetComponent<Player>().slingshotPoint.transform;
+            vcam1.LookAt = player1Obj.GetComponent<Player>().slingshotPoint.transform;
         }
         else if (currentMode == gamemode.TwoPlayer)
         {
@@ -158,6 +169,11 @@ public class GameManager : MonoBehaviour
             player1Obj.GetComponent<Player>().playerName = "Player 1";
             player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
             player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
+            startVcam1.SetActive(true);
+            vcam1 = startVcam1.GetComponent<CinemachineVirtualCamera>();
+            vcam1.Follow = player1Obj.GetComponent<Player>().slingshotPoint.transform;
+            vcam1.LookAt = player1Obj.GetComponent<Player>().slingshotPoint.transform;
+
             if (currentTurn == turn.Player2)
             {
                 player1Obj.SetActive(false);
@@ -172,6 +188,11 @@ public class GameManager : MonoBehaviour
             player2Obj.GetComponent<Player>().playerName = "Player 2";
             player2Obj.GetComponent<Player>().skinColor = p2SkinColor;
             player2Obj.GetComponent<Player>().outfitColor = p2OutfitColor;
+            startVcam2.SetActive(true);
+            vcam2 = startVcam2.GetComponent<CinemachineVirtualCamera>();
+            vcam2.Follow = player2Obj.GetComponent<Player>().slingshotPoint.transform;
+            vcam2.LookAt = player2Obj.GetComponent<Player>().slingshotPoint.transform;
+
             if (currentTurn == turn.Player1)
             {
                 player2Obj.SetActive(false);
