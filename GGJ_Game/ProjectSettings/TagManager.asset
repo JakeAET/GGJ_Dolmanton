@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1649176039
+    locked: 0
+  - name: Environment
+    uniqueID: 3297257925
+    locked: 0
   - name: Slingshot
     uniqueID: 3262080615
     locked: 0

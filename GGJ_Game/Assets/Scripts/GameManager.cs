@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        CamController.instance.zoomInZoomOut(5);
         turnTextP1.text = "Turn: " + turnCountP1;
         turnTextP2.text = "Turn: " + turnCountP2;
     }
@@ -100,41 +101,58 @@ public class GameManager : MonoBehaviour
     void nextTurn()
     {
         launchFinished = false;
+        CamController.instance.zoomInZoomOut(15);
 
-        if (currentTurn == turn.Player1)
+        if (currentMode != gamemode.SinglePlayer)
         {
-            if (!player2Obj.activeInHierarchy)
+            if (currentTurn == turn.Player1)
             {
-                player2Obj.SetActive(true);
-            }
+                if (!player2Obj.activeInHierarchy)
+                {
+                    player2Obj.SetActive(true);
+                }
 
-            turnCountP2++;
-            turnTextP2.text = "Turn: " + turnCountP2;
-            currentTurn = turn.Player2;
-            activePlayer = player2Obj.GetComponent<Player>();
-            UIManager.instance.uiTurnChange(false);
+                turnCountP2++;
+                turnTextP2.text = "Turn: " + turnCountP2;
+                currentTurn = turn.Player2;
+                CamController.instance.switchCam("Player 2");
+                activePlayer = player2Obj.GetComponent<Player>();
+                UIManager.instance.uiTurnChange(false);
+            }
+            else
+            {
+                if (!player1Obj.activeInHierarchy)
+                {
+                    player1Obj.SetActive(true);
+                }
+
+                turnCountP1++;
+                turnTextP1.text = "Turn: " + turnCountP1;
+                currentTurn = turn.Player1;
+                CamController.instance.switchCam("Player 1");
+                activePlayer = player1Obj.GetComponent<Player>();
+                UIManager.instance.uiTurnChange(true);
+            }
         }
         else
         {
-            if (!player1Obj.activeInHierarchy)
-            {
-                player1Obj.SetActive(true);
-            }
-
             turnCountP1++;
             turnTextP1.text = "Turn: " + turnCountP1;
-            currentTurn = turn.Player1;
-            activePlayer = player1Obj.GetComponent<Player>();
-            UIManager.instance.uiTurnChange(true);
         }
 
         allowLaunch = true;
+        CamController.instance.zoomInZoomOut(5);
         StartCoroutine(turnBehavior());
     }
 
     IEnumerator turnBehavior()
     {
         yield return new WaitUntil(turnEnded);
+
+        activePlayer.switchFace(true);
+        CamController.instance.zoomInZoomOut(5);
+
+        yield return new WaitForSeconds(2f);
 
         nextTurn();
 
@@ -153,6 +171,7 @@ public class GameManager : MonoBehaviour
         {
             player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
             player1Obj.name = "Player 1";
+            assignLayerMask(player1Obj, "Player1");
             player1Obj.GetComponent<Player>().playerName = "Player 1";
             player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
             player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
@@ -166,6 +185,7 @@ public class GameManager : MonoBehaviour
         {
             player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
             player1Obj.name = "Player 1";
+            assignLayerMask(player1Obj, "Player1");
             player1Obj.GetComponent<Player>().playerName = "Player 1";
             player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
             player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
@@ -185,6 +205,7 @@ public class GameManager : MonoBehaviour
 
             player2Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
             player2Obj.name = "Player 2";
+            assignLayerMask(player2Obj, "Player2");
             player2Obj.GetComponent<Player>().playerName = "Player 2";
             player2Obj.GetComponent<Player>().skinColor = p2SkinColor;
             player2Obj.GetComponent<Player>().outfitColor = p2OutfitColor;
@@ -232,6 +253,7 @@ public class GameManager : MonoBehaviour
     public void goalReached(string winningPlayer)
     {
         StopAllCoroutines();
+        CamController.instance.zoomInZoomOut(5);
         currentTurn = turn.Win;
 
         if(winningPlayer == "Player 1")
@@ -241,6 +263,14 @@ public class GameManager : MonoBehaviour
         else if (winningPlayer == "Player 2")
         {
             Debug.Log(winningPlayer + " won in " + turnCountP2 + " turns!");
+        }
+    }
+
+    private void assignLayerMask(GameObject player, string layerName)
+    {
+        foreach (Transform child in player.transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer(layerName);
         }
     }
 }

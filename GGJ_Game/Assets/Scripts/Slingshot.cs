@@ -49,9 +49,10 @@ public class Slingshot : MonoBehaviour
             if (Input.GetMouseButton(0) && line.activeInHierarchy)
             {
                 lineStart = GameManager.instance.activePlayer.slingshotPoint.position;
+                GameManager.instance.activePlayer.switchFace(false);
 
                 Vector3 mousePosition = Input.mousePosition;
-                distance = (mousePosition - lineStart).magnitude;
+                distance = (lineEnd() - lineStart).magnitude;
 
                 lr.SetPosition(0, new Vector3(lineStart.x, lineStart.y, 0f));
                 lr.SetPosition(1, new Vector3(lineEnd().x, lineEnd().y, 0f));
@@ -84,6 +85,7 @@ public class Slingshot : MonoBehaviour
     {
         Vector3 launchDirection = (lineStart - lineEnd()).normalized;
         float appliedForce = Mathf.Lerp(0, maxForce, Mathf.InverseLerp(0, maxDistance, distance));
+        //Debug.Log("Force: " + appliedForce + "  current distance: " + distance);
         GameManager.instance.activePlayer.golfRB.AddForce(launchDirection * appliedForce, ForceMode2D.Impulse);
         GameManager.instance.allowLaunch = false;
         GameManager.instance.launchFinished = true;

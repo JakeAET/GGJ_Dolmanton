@@ -48,4 +48,19 @@ public class CamController : MonoBehaviour
             //virtualCam2.Priority = 1;
         }
     }
+
+    public void zoomInZoomOut(float zoomSize)
+    {
+        if (CinemachineCore.Instance.IsLive(virtualCam1))
+        {
+            virtualCam1.m_Lens.OrthographicSize = zoomSize;
+            virtualCam2.m_Lens.OrthographicSize = 10f;
+        }
+        else if (CinemachineCore.Instance.IsLive(virtualCam2))
+        {
+            virtualCam2.m_Lens.OrthographicSize = zoomSize;
+            virtualCam1.m_Lens.OrthographicSize = 10f;
+
+        }
+    }
 }

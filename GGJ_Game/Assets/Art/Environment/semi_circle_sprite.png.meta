@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6678bcc4f9381471881498ebe30b6b3c
+guid: 50a91b652c5ef4397902261beb601e71
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,91 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: TheRears__0
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 859
-        width: 81
-        height: 183
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd00f934ec2cd49828e96ff8569436b9
-      internalID: -2044000550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheRears__1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 578
-        width: 110
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1d6bc494b6964be2a2082a8002b1f1f
-      internalID: -472385787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheRears__2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 321
-        width: 105
-        height: 223
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7086d513805394421b9e1cb6291716cd
-      internalID: 689131356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheRears__3
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 25
-        width: 139
-        height: 281
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89e196b4f262f4ea392c2ca259e7de96
-      internalID: -926566707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -210,14 +126,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      TheRears__0: -2044000550
-      TheRears__1: -472385787
-      TheRears__2: 689131356
-      TheRears__3: -926566707
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
