@@ -13,6 +13,8 @@ public class CamController : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera virtualCam2;
     public CinemachineVirtualCamera virtualCam3;
 
+    [SerializeField] GameObject bg1;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -33,7 +35,24 @@ public class CamController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if (CinemachineCore.Instance.IsLive(virtualCam1))
+        //{
+        //    Vector3 currentCamPos = virtualCam1.transform.position;
+        //    currentCamPos.z = 0;
+        //    bg1.transform.position = currentCamPos;
+        //}
+        //else if (CinemachineCore.Instance.IsLive(virtualCam2))
+        //{
+        //    Vector3 currentCamPos = virtualCam2.transform.position;
+        //    currentCamPos.z = 0;
+        //    bg1.transform.position = currentCamPos;
+        //}
+        //else if (CinemachineCore.Instance.IsLive(virtualCam3))
+        //{
+        //    Vector3 currentCamPos = virtualCam3.transform.position;
+        //    currentCamPos.z = 0;
+        //    bg1.transform.position = currentCamPos;
+        //}
     }
 
     public void switchCam(string player)

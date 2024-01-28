@@ -28,6 +28,9 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] Image[] p2Images;
 
+    [SerializeField] AudioClip p1AudioClip;
+    [SerializeField] AudioClip p2AudioClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +65,7 @@ public class TitleManager : MonoBehaviour
     {
         if(GameManager.instance.currentMode != GameManager.gamemode.SinglePlayer)
         {
+            GetComponent<AudioSource>().PlayOneShot(p1AudioClip);
             p1Outline.enabled = true;
             p2Outline.enabled = false;
             GameManager.instance.currentMode = GameManager.gamemode.SinglePlayer;
@@ -75,6 +79,8 @@ public class TitleManager : MonoBehaviour
     {
         if (GameManager.instance.currentMode != GameManager.gamemode.TwoPlayer)
         {
+            GetComponent<AudioSource>().PlayOneShot(p2AudioClip);
+
             p1Outline.enabled = false;
             p2Outline.enabled = true;
             GameManager.instance.currentMode = GameManager.gamemode.TwoPlayer;

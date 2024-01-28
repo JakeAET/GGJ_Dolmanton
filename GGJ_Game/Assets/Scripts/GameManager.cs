@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
 
     private CamController camControllerRef;
 
+    [SerializeField] AudioClip[] p1CatchPhrases;
+    [SerializeField] AudioClip[] p2CatchPhrases;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -153,6 +156,15 @@ public class GameManager : MonoBehaviour
 
         activePlayer.switchFace(true);
         camControllerRef.zoomInZoomOut(5);
+
+        if(activePlayer.playerName == "Player 1")
+        {
+            GetComponent<AudioSource>().PlayOneShot(p1CatchPhrases[UnityEngine.Random.Range(0, p1CatchPhrases.Length)]);
+        }
+        else if(activePlayer.playerName == "Player 2")
+        {
+            GetComponent<AudioSource>().PlayOneShot(p2CatchPhrases[UnityEngine.Random.Range(0, p2CatchPhrases.Length)]);
+        }
 
         yield return new WaitForSeconds(2f);
 
