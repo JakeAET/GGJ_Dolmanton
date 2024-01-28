@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
     void nextTurn()
     {
         launchFinished = false;
-        camControllerRef.zoomInZoomOut(20);
+        camControllerRef.zoomInZoomOut(15);
 
         if (currentMode != gamemode.SinglePlayer)
         {
@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour
             vcam1.Follow = player1Obj.GetComponent<Player>().slingshotPoint.transform;
             vcam1.LookAt = player1Obj.GetComponent<Player>().slingshotPoint.transform;
 
-            if (currentTurn == turn.Player2)
+            if (currentTurn != turn.Player1)
             {
                 player1Obj.SetActive(false);
             }
@@ -229,7 +229,7 @@ public class GameManager : MonoBehaviour
             vcam2.Follow = player2Obj.GetComponent<Player>().slingshotPoint.transform;
             vcam2.LookAt = player2Obj.GetComponent<Player>().slingshotPoint.transform;
 
-            if (currentTurn == turn.Player1)
+            if (currentTurn != turn.Player2)
             {
                 player2Obj.SetActive(false);
             }
@@ -270,8 +270,10 @@ public class GameManager : MonoBehaviour
         StopAllCoroutines();
         camControllerRef.zoomInZoomOut(5);
         currentTurn = turn.Win;
+        launchFinished = false;
+        activePlayer = null;
 
-        if(winningPlayer == "Player 1")
+        if (winningPlayer == "Player 1")
         {
             Debug.Log(winningPlayer + " won in " + turnCountP1 + " turns!");
         }

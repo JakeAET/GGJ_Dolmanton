@@ -2605,6 +2605,8 @@ MonoBehaviour:
   levelChunkPrefabs:
   - {fileID: 742587721565550420, guid: d66928eeb2a9343ffa91b963ecb264ae, type: 3}
   - {fileID: 3687554502409371979, guid: ea31e02b3a84d4c4f88643eae08f8bc8, type: 3}
+  - {fileID: 7247089070500572391, guid: 0892a2976d0fd4055992a372471b3112, type: 3}
+  - {fileID: 2940579691002284390, guid: 20541c775be6648c58e85533cab01721, type: 3}
 --- !u!4 &1214744744
 Transform:
   m_ObjectHideFlags: 0
@@ -4331,11 +4333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.72
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4428,6 +4430,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9178687776603690380, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
+      propertyPath: currentMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9178687776603690383, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}

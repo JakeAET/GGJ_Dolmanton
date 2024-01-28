@@ -78,12 +78,12 @@ public class CamController : MonoBehaviour
         if (CinemachineCore.Instance.IsLive(virtualCam1))
         {
             virtualCam1.m_Lens.OrthographicSize = zoomSize;
-            virtualCam2.m_Lens.OrthographicSize = 10f;
+            virtualCam2.m_Lens.OrthographicSize = 15f;
         }
         else if (CinemachineCore.Instance.IsLive(virtualCam2))
         {
             virtualCam2.m_Lens.OrthographicSize = zoomSize;
-            virtualCam1.m_Lens.OrthographicSize = 10f;
+            virtualCam1.m_Lens.OrthographicSize = 15f;
 
         }
     }
