@@ -49,10 +49,18 @@ public class TitleManager : MonoBehaviour
         p1Button.onClick.AddListener(onePlayer);
         p2Button.onClick.AddListener(twoPlayer);
 
-        p1SkinUpdate();
-        p1OutfitUpdate();
-        p2SkinUpdate();
-        p2OutfitUpdate();
+        if (!GameManager.instance.colorsInitialized)
+        {
+            p1SkinUpdate();
+            p1OutfitUpdate();
+            p2SkinUpdate();
+            p2OutfitUpdate();
+            GameManager.instance.colorsInitialized = true;
+        }
+        else
+        {
+            assignActiveColors();
+        }
     }
 
     // Update is called once per frame
@@ -92,7 +100,7 @@ public class TitleManager : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("Jake's Test");
+        SceneManager.LoadScene("Game Screen");
     }
 
     public void p1SkinUpdate()
@@ -177,6 +185,69 @@ public class TitleManager : MonoBehaviour
                 Color color = img.color;
                 color.a = 1f;
                 img.color = color;
+            }
+        }
+    }
+
+    public void assignActiveColors()
+    {
+        foreach (Transform child in p1OutfitPanel)
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1OutfitColor)
+                {
+                    child.GetComponent<Toggle>().isOn = false;
+                }
+                else
+                {
+                    child.GetComponent<Toggle>().isOn = true;
+                }
+            }
+        }
+
+        foreach (Transform child in p1SkinPanel)
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1SkinColor)
+                {
+                    child.GetComponent<Toggle>().isOn = false;
+                }
+                else
+                {
+                    child.GetComponent<Toggle>().isOn = true;
+                }
+            }
+        }
+
+        foreach (Transform child in p2OutfitPanel)
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1OutfitColor)
+                {
+                    child.GetComponent<Toggle>().isOn = false;
+                }
+                else
+                {
+                    child.GetComponent<Toggle>().isOn = true;
+                }
+            }
+        }
+
+        foreach (Transform child in p2SkinPanel)
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1SkinColor)
+                {
+                    child.GetComponent<Toggle>().isOn = false;
+                }
+                else
+                {
+                    child.GetComponent<Toggle>().isOn = true;
+                }
             }
         }
     }

@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip[] p1CatchPhrases;
     [SerializeField] AudioClip[] p2CatchPhrases;
 
+    public bool colorsInitialized;
+
     private void Awake()
     {
         if (instance != null && instance != this)

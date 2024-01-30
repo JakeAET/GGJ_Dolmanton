@@ -14,7 +14,7 @@ public class Slingshot : MonoBehaviour
 
     private Vector3 lineStart;
     private Vector3 mouseStart;
-    private float distance;
+    public float distance;
 
     private bool drawingLine;
 
@@ -67,9 +67,16 @@ public class Slingshot : MonoBehaviour
                 lr.SetPosition(1, new Vector3(lineEnd().x, lineEnd().y, 0f));
             }
 
-            if (Input.GetMouseButtonUp(0) && drawingLine)
+            if (Input.GetMouseButtonUp(0) && drawingLine && distance >= 0.5f)
             {
                 launchBall();
+                lineStart = Vector2.zero;
+                line.SetActive(false);
+                arrow.SetActive(false);
+                drawingLine = false;
+            }
+            else if(Input.GetMouseButtonUp(0) && drawingLine)
+            {
                 lineStart = Vector2.zero;
                 line.SetActive(false);
                 arrow.SetActive(false);
