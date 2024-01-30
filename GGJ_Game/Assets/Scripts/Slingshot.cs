@@ -18,8 +18,6 @@ public class Slingshot : MonoBehaviour
 
     private bool drawingLine;
 
-    [SerializeField] AudioClip bink;
-
     // Start is called before the first frame update
 
     void Awake()
@@ -100,8 +98,7 @@ public class Slingshot : MonoBehaviour
 
     void launchBall()
     {
-        GetComponent<AudioSource>().pitch = Random.Range(0.6f, 1.4f);
-        GetComponent<AudioSource>().PlayOneShot(bink);
+        AudioManager.instance.PlayCustomPitch("bink", Random.Range(0.6f, 1.4f));
         Vector3 launchDirection = (lineStart - lineEnd()).normalized;
         float appliedForce = Mathf.Lerp(0, maxForce, Mathf.InverseLerp(0, maxDistance, distance));
         //Debug.Log("Force: " + appliedForce + "  current distance: " + distance);

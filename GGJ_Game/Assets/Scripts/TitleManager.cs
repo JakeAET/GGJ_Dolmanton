@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TitleManager : MonoBehaviour
@@ -27,9 +26,6 @@ public class TitleManager : MonoBehaviour
     [SerializeField] Outline p2Outline;
 
     [SerializeField] Image[] p2Images;
-
-    [SerializeField] AudioClip p1AudioClip;
-    [SerializeField] AudioClip p2AudioClip;
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +69,7 @@ public class TitleManager : MonoBehaviour
     {
         if(GameManager.instance.currentMode != GameManager.gamemode.SinglePlayer)
         {
-            GetComponent<AudioSource>().PlayOneShot(p1AudioClip);
+            AudioManager.instance.Play("solo_phrase");
             p1Outline.enabled = true;
             p2Outline.enabled = false;
             GameManager.instance.currentMode = GameManager.gamemode.SinglePlayer;
@@ -87,7 +83,7 @@ public class TitleManager : MonoBehaviour
     {
         if (GameManager.instance.currentMode != GameManager.gamemode.TwoPlayer)
         {
-            GetComponent<AudioSource>().PlayOneShot(p2AudioClip);
+            AudioManager.instance.Play("duo_phrase");
 
             p1Outline.enabled = false;
             p2Outline.enabled = true;
@@ -100,7 +96,7 @@ public class TitleManager : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("Game Screen");
+        GameManager.instance.changeScene("Game Screen");
     }
 
     public void p1SkinUpdate()
@@ -225,7 +221,7 @@ public class TitleManager : MonoBehaviour
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1OutfitColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p2OutfitColor)
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }
@@ -240,7 +236,7 @@ public class TitleManager : MonoBehaviour
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1SkinColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p2SkinColor)
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }

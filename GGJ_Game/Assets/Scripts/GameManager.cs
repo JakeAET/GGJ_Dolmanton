@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -40,16 +41,13 @@ public class GameManager : MonoBehaviour
 
     private CamController camControllerRef;
 
-    [SerializeField] AudioClip[] p1CatchPhrases;
-    [SerializeField] AudioClip[] p2CatchPhrases;
-
     public bool colorsInitialized;
 
     private void Awake()
     {
         if (instance != null && instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
@@ -161,11 +159,11 @@ public class GameManager : MonoBehaviour
 
         if(activePlayer.playerName == "Player 1")
         {
-            GetComponent<AudioSource>().PlayOneShot(p1CatchPhrases[UnityEngine.Random.Range(0, p1CatchPhrases.Length)]);
+            AudioManager.instance.playCatchphrase("Player 1");
         }
         else if(activePlayer.playerName == "Player 2")
         {
-            GetComponent<AudioSource>().PlayOneShot(p2CatchPhrases[UnityEngine.Random.Range(0, p2CatchPhrases.Length)]);
+            AudioManager.instance.playCatchphrase("Player 2");
         }
 
         yield return new WaitForSeconds(2f);
@@ -291,5 +289,11 @@ public class GameManager : MonoBehaviour
         {
             child.gameObject.layer = LayerMask.NameToLayer(layerName);
         }
+    }
+
+    public void changeScene(string sceneName, bool continueMusic = false)
+    {
+        AudioManager.instance.sceneChanged(sceneName, continueMusic);
+        SceneManager.LoadScene(sceneName);
     }
 }

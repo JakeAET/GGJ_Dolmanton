@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UIManager : MonoBehaviour
@@ -88,12 +87,12 @@ public class UIManager : MonoBehaviour
 
     public void restartLevel()
     {
-        SceneManager.LoadScene("Jake's Test");
+        GameManager.instance.changeScene("Game Screen", true);
     }
 
     public void returnToMenu()
     {
-        SceneManager.LoadScene("Title Screen");
+        GameManager.instance.changeScene("Title Screen");
     }
 
     public void winEvent(string winningPlayer)

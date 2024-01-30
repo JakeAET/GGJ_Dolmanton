@@ -20,7 +20,14 @@ public class LevelStart : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
+        if(GameManager.instance != null)
+        {
+            GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
+        }
+        else
+        {
+            FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
+        }
         generateLevel();
     }
 
