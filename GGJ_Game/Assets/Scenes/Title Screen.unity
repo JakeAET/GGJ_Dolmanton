@@ -7044,82 +7044,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: currentMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: vcamInstance
-      value: 
-      objectReference: {fileID: 7534517186140628121, guid: 882ca1a6b7e684496a42f617162480d3, type: 3}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1SkinColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1SkinColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1SkinColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1SkinColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2SkinColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2SkinColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2SkinColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2SkinColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: playerInstance
-      value: 
-      objectReference: {fileID: 7597827652887818042, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1OutfitColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1OutfitColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1OutfitColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p1OutfitColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2OutfitColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2OutfitColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2OutfitColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
-      propertyPath: p2OutfitColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9178687776603690383, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -8109,6 +8033,7 @@ MonoBehaviour:
   - {fileID: 2033960699}
   - {fileID: 1544764853}
   - {fileID: 1949721649}
+  toggleGroups: []
 --- !u!1 &1159766448
 GameObject:
   m_ObjectHideFlags: 0

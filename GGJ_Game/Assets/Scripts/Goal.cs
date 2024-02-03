@@ -23,9 +23,9 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && GameManager.instance.currentTurn != GameManager.turn.Win)
+        if (collision.CompareTag("Player") && GameManager.instance.turnBasedActive)
         {
-            GameManager.instance.goalReached(collision.GetComponentInParent<Player>().playerName);
+            GameManager.instance.goalReached(collision.GetComponentInParent<Player>());
             UIManager.instance.winEvent(collision.GetComponentInParent<Player>().playerName);
         }
     }
@@ -35,14 +35,14 @@ public class Goal : MonoBehaviour
         CamController cam = FindObjectOfType<CamController>();
 
         Vector3 pos = transform.position;
-        cam.virtualCam3.transform.position = pos;
+        cam.levelCam.transform.position = pos;
 
-        cam.virtualCam3.LookAt = transform;
-        cam.virtualCam3.Follow = transform;
+        cam.levelCam.LookAt = transform;
+        cam.levelCam.Follow = transform;
 
         yield return new WaitForSeconds(2f);
 
-        cam.switchCam(GameManager.instance.activePlayer.playerName);
+        cam.switchCam(GameManager.instance.turnOrder[GameManager.instance.activeTurnIndex]);
         cam.zoomInZoomOut(5);
 
         yield return null;

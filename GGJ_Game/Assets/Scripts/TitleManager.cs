@@ -27,15 +27,19 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] Image[] p2Images;
 
+    [SerializeField] ToggleGroup[] toggleGroups;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(GameManager.instance.currentMode == GameManager.gamemode.SinglePlayer)
+        if(GameManager.instance.activePlayerCount == 1)
         {
             p1Outline.enabled = true;
             p2Outline.enabled = false;
+            p2Settings.SetActive(false);
+            hideP2(true);
         }
-        else if (GameManager.instance.currentMode == GameManager.gamemode.TwoPlayer)
+        else if (GameManager.instance.activePlayerCount == 2)
         {
             p1Outline.enabled = false;
             p2Outline.enabled = true;
@@ -67,12 +71,12 @@ public class TitleManager : MonoBehaviour
 
     public void onePlayer()
     {
-        if(GameManager.instance.currentMode != GameManager.gamemode.SinglePlayer)
+        if(GameManager.instance.activePlayerCount != 1)
         {
             AudioManager.instance.Play("solo_phrase");
             p1Outline.enabled = true;
             p2Outline.enabled = false;
-            GameManager.instance.currentMode = GameManager.gamemode.SinglePlayer;
+            GameManager.instance.activePlayerCount = 1;
 
             p2Settings.SetActive(false);
             hideP2(true);
@@ -81,13 +85,13 @@ public class TitleManager : MonoBehaviour
 
     public void twoPlayer()
     {
-        if (GameManager.instance.currentMode != GameManager.gamemode.TwoPlayer)
+        if (GameManager.instance.activePlayerCount != 2)
         {
             AudioManager.instance.Play("duo_phrase");
 
             p1Outline.enabled = false;
             p2Outline.enabled = true;
-            GameManager.instance.currentMode = GameManager.gamemode.TwoPlayer;
+            GameManager.instance.activePlayerCount = 2;
 
             p2Settings.SetActive(true);
             hideP2(false);
@@ -107,7 +111,7 @@ public class TitleManager : MonoBehaviour
             {
                 if (child.GetComponent<Toggle>().isOn)
                 {
-                    GameManager.instance.p1SkinColor = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    GameManager.instance.playerSkinColors[0] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     p1SkinImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     break;
                 }
@@ -123,7 +127,7 @@ public class TitleManager : MonoBehaviour
             {
                 if (child.GetComponent<Toggle>().isOn)
                 {
-                    GameManager.instance.p1OutfitColor = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    GameManager.instance.playerOutfitColors[0] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     p1OutfitImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     break;
                 }
@@ -139,7 +143,7 @@ public class TitleManager : MonoBehaviour
             {
                 if (child.GetComponent<Toggle>().isOn)
                 {
-                    GameManager.instance.p2SkinColor = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    GameManager.instance.playerSkinColors[1] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     p2SkinImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     break;
                 }
@@ -155,7 +159,7 @@ public class TitleManager : MonoBehaviour
             {
                 if (child.GetComponent<Toggle>().isOn)
                 {
-                    GameManager.instance.p2OutfitColor = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    GameManager.instance.playerOutfitColors[1] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     p2OutfitImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
                     break;
                 }
@@ -187,11 +191,16 @@ public class TitleManager : MonoBehaviour
 
     public void assignActiveColors()
     {
+        foreach (ToggleGroup t in toggleGroups)
+        {
+            t.allowSwitchOff = true;
+        }
+
         foreach (Transform child in p1OutfitPanel)
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1OutfitColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerOutfitColors[0])
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }
@@ -206,7 +215,7 @@ public class TitleManager : MonoBehaviour
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p1SkinColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerSkinColors[0])
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }
@@ -221,7 +230,7 @@ public class TitleManager : MonoBehaviour
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p2OutfitColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerOutfitColors[1])
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }
@@ -236,7 +245,7 @@ public class TitleManager : MonoBehaviour
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.p2SkinColor)
+                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerSkinColors[1])
                 {
                     child.GetComponent<Toggle>().isOn = false;
                 }
@@ -246,5 +255,16 @@ public class TitleManager : MonoBehaviour
                 }
             }
         }
+
+        foreach (ToggleGroup t in toggleGroups)
+        {
+            t.allowSwitchOff = false;
+        }
+
+        p1OutfitImg.color = GameManager.instance.playerOutfitColors[0];
+        p1SkinImg.color = GameManager.instance.playerSkinColors[0];
+
+        p2OutfitImg.color = GameManager.instance.playerOutfitColors[1];
+        p2SkinImg.color = GameManager.instance.playerSkinColors[1];
     }
 }

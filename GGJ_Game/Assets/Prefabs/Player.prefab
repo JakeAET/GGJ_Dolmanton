@@ -1757,10 +1757,15 @@ MonoBehaviour:
   slingshotPoint: {fileID: 7597827652961366865}
   skinColor: {r: 0, g: 0, b: 0, a: 0}
   outfitColor: {r: 0, g: 0, b: 0, a: 0}
+  turnCount: 0
   p1FrontFace: {fileID: -495316005, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
   p1SideFace: {fileID: -423184548, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
   p2FrontFace: {fileID: 1901900196, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
   p2SideFace: {fileID: 483899195, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
+  p3FrontFace: {fileID: 0}
+  p3SideFace: {fileID: 0}
+  p4FrontFace: {fileID: 0}
+  p4SideFace: {fileID: 0}
   frontFace: {fileID: 2878246567971745422}
   sideFace: {fileID: 2134411759250082912}
   skinSprites:

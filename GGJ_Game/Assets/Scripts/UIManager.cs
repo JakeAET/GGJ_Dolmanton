@@ -3,29 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
+using Cinemachine;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance { get; private set; }
 
-    public TMP_Text turnTextP1;
-    public TMP_Text turnTextP2;
+    public TMP_Text turnText;
 
-    public TMP_Text p1Text;
-    public TMP_Text p2Text;
+    public Sprite[] playerTitleSprites;
+    public Image playerTitleImg;
 
-    public Image p1Panel;
-    public Image p2Panel;
+    public Image[] playerPanels;
+    public List<Image> activePlayerPanels = new List<Image>();
 
-    [SerializeField] GameObject[] p2GameObjects;
+    [SerializeField] float mainPanelHeight;
+    [SerializeField] float subPanelHeight;
 
-    private Color disabledColor;
+    //[SerializeField] GameObject[] p2GameObjects;
 
     [SerializeField] GameObject winScreenCanvas;
     [SerializeField] GameObject p1Victory;
     [SerializeField] GameObject p2Victory;
     [SerializeField] Button restartButton;
     [SerializeField] Button menuButton;
+
+    public List<Vector3> imgPanelPositions = new List<Vector3>();
 
     private void Awake()
     {
@@ -38,22 +42,29 @@ public class UIManager : MonoBehaviour
             instance = this;
         }
 
-        disabledColor = new Color(1f, 1f, 1f, 0.5f);
+        DOTween.Init();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (GameManager.instance.currentMode == GameManager.gamemode.SinglePlayer)
+        for (int i = 0; i < playerPanels.Length; i++)
         {
-            foreach (GameObject obj in p2GameObjects)
+            if(i < GameManager.instance.activePlayerCount)
             {
-                obj.SetActive(false);
+                activePlayerPanels.Add(playerPanels[i]);
+                playerPanels[i].color = GameManager.instance.playerObjs[GameManager.instance.turnOrder[i]].GetComponent<Player>().outfitColor;
+                imgPanelPositions.Add(playerPanels[i].GetComponent<RectTransform>().localPosition);
+            }
+            else
+            {
+                playerPanels[i].enabled = false;
+                playerPanels[i].GetComponent<Panel>().shadow.enabled = false;
             }
         }
 
-        p1Panel.color = GameManager.instance.p1OutfitColor;
-        p2Panel.color = GameManager.instance.p2OutfitColor;
+        playerTitleImg.sprite = playerTitleSprites[GameManager.instance.currentTurnOrder[0]];
+        turnText.text = "|  Turn: " + GameManager.instance.activePlayer.turnCount;
 
         restartButton.onClick.AddListener(restartLevel);
         menuButton.onClick.AddListener(returnToMenu);
@@ -65,24 +76,95 @@ public class UIManager : MonoBehaviour
         
     }
 
-    public void uiTurnChange(bool player1Turn)
+    public void uiTurnChange(Player player)
     {
-        if (player1Turn)
+        if(GameManager.instance.activePlayerCount > 1)
         {
-            p1Text.color = Color.white;
-            turnTextP1.color = Color.white;
-
-            p2Text.color = disabledColor;
-            turnTextP2.color = disabledColor;
+            StartCoroutine(turnChangeAnim(player));
         }
         else
         {
-            p1Text.color = disabledColor;
-            turnTextP1.color = disabledColor;
-
-            p2Text.color = Color.white;
-            turnTextP2.color = Color.white;
+            turnText.text = "|  Turn: " + player.turnCount;
         }
+    }
+
+
+    // TODO: Make it account for 1-4 players
+    // TODO: Add tweening animation for panels moving up
+    IEnumerator turnChangeAnim(Player player)
+    {
+        Debug.Log("Coroutine step: Coroutine started");
+
+        turnText.DOFade(0, 0.2f);
+        playerTitleImg.DOFade(0, 0.2f);
+
+        yield return new WaitForSeconds(0.2f);
+
+        //Debug.Log("Coroutine step: Update panel size and position");
+
+        for (int i = 0; i < activePlayerPanels.Count; i++)
+        {
+            if(i - 1 >= 0)
+            {
+                activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(imgPanelPositions[i - 1].y, 0.5f);
+
+                if (i - 1 != 0)
+                {
+
+                    Vector2 newSize = new Vector2(activePlayerPanels[i - 1].GetComponent<RectTransform>().sizeDelta.x, subPanelHeight);
+                    activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0.3f);
+                }
+                else
+                {
+                    Vector2 newSize = new Vector2(activePlayerPanels[i - 1].GetComponent<RectTransform>().sizeDelta.x, mainPanelHeight);
+                    activePlayerPanels[i].GetComponent<Panel>().shadow.DOFade(0, 0.3f);
+                    activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0.3f);
+                }
+                
+;            }
+            else
+            {
+                Vector2 newSize = new Vector2(activePlayerPanels[imgPanelPositions.Count - 1].GetComponent<RectTransform>().sizeDelta.x, subPanelHeight);
+
+                Sequence topPanelSequence = DOTween.Sequence();
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(activePlayerPanels[i].GetComponent<RectTransform>().localPosition.y + activePlayerPanels[i].GetComponent<RectTransform>().sizeDelta.y, 0.5f));
+                topPanelSequence.Append(activePlayerPanels[i].DOFade(0, 0));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<Panel>().shadow.DOFade(0.2f, 0));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0f));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(imgPanelPositions[imgPanelPositions.Count - 1].y, 0));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveX(imgPanelPositions[imgPanelPositions.Count - 1].x - 100, 0));
+                topPanelSequence.Append(activePlayerPanels[i].DOFade(1, 0));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveX(imgPanelPositions[imgPanelPositions.Count - 1].x, 0.5f));
+
+                topPanelSequence.Play();
+
+                //activePlayerPanels[i].DOFade(0,0);
+                //activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(imgPanelPositions[imgPanelPositions.Count - 1].y, 0.5f);
+
+                //activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0.3f);
+            }
+        }
+
+        yield return new WaitForSeconds(0.3f);
+
+        //Debug.Log("Coroutine step: Update current player turn info");
+
+        playerTitleImg.sprite = playerTitleSprites[GameManager.instance.currentTurnOrder[0]];
+        turnText.text = "|  Turn: " + player.turnCount;
+
+        activePlayerPanels[0].DOFade(1, 0.2f);
+        turnText.DOFade(1, 0.2f);
+        playerTitleImg.DOFade(1, 0.2f);
+
+        for (int i = 0; i < activePlayerPanels.Count; i++)
+        {
+            Color color = GameManager.instance.playerObjs[GameManager.instance.currentTurnOrder[i]].GetComponent<Player>().outfitColor;
+            //activePlayerPanels[i].DOColor(color, 0.2f);
+        }
+
+        newPanelOrder();
+
+        yield return null;
     }
 
     public void restartLevel()
@@ -95,6 +177,7 @@ public class UIManager : MonoBehaviour
         GameManager.instance.changeScene("Title Screen");
     }
 
+    // TODO: Add winning screens for all 4 players
     public void winEvent(string winningPlayer)
     {
         winScreenCanvas.SetActive(true);
@@ -109,5 +192,24 @@ public class UIManager : MonoBehaviour
             p1Victory.SetActive(false);
             p2Victory.SetActive(true);
         }
+    }
+
+    public void newPanelOrder()
+    {
+        List<Image> newPanelOrder = new List<Image>();
+
+        for (int i = 0; i < activePlayerPanels.Count; i++)
+        {
+            if (i + 1 < activePlayerPanels.Count)
+            {
+                newPanelOrder.Add(activePlayerPanels[i + 1]);
+            }
+            else
+            {
+                newPanelOrder.Add(activePlayerPanels[0]);
+            }
+        }
+
+        activePlayerPanels = newPanelOrder;
     }
 }

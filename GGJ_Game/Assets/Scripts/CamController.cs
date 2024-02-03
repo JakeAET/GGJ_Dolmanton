@@ -7,13 +7,12 @@ public class CamController : MonoBehaviour
 {
     public static CamController instance { get; private set; }
 
+    [SerializeField] float defaultZoom;
+
     [SerializeField] Animator animator;
 
-    [SerializeField] CinemachineVirtualCamera virtualCam1;
-    [SerializeField] CinemachineVirtualCamera virtualCam2;
-    public CinemachineVirtualCamera virtualCam3;
-
-    [SerializeField] GameObject bg1;
+    public CinemachineVirtualCamera[] virtualCams;
+    public CinemachineVirtualCamera levelCam;
 
     // Start is called before the first frame update
     void Awake()
@@ -28,63 +27,42 @@ public class CamController : MonoBehaviour
         }
 
         animator.Play("goal");
-
-        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (CinemachineCore.Instance.IsLive(virtualCam1))
-        //{
-        //    Vector3 currentCamPos = virtualCam1.transform.position;
-        //    currentCamPos.z = 0;
-        //    bg1.transform.position = currentCamPos;
-        //}
-        //else if (CinemachineCore.Instance.IsLive(virtualCam2))
-        //{
-        //    Vector3 currentCamPos = virtualCam2.transform.position;
-        //    currentCamPos.z = 0;
-        //    bg1.transform.position = currentCamPos;
-        //}
-        //else if (CinemachineCore.Instance.IsLive(virtualCam3))
-        //{
-        //    Vector3 currentCamPos = virtualCam3.transform.position;
-        //    currentCamPos.z = 0;
-        //    bg1.transform.position = currentCamPos;
-        //}
+
     }
 
-    public void switchCam(string player)
+    public void switchCam(int playerIndex)
     {
-        if(player == "Player 1")
+        for (int i = 0; i < virtualCams.Length; i++)
         {
-            animator.Play("player 1");
-            virtualCam1.Priority = 1;
-            virtualCam2.Priority = 0;
-            virtualCam3.Priority = 0;
-        }
-        else if(player == "Player 2")
-        {
-            animator.Play("player 2");
-            virtualCam1.Priority = 0;
-            virtualCam2.Priority = 1;
-            virtualCam3.Priority = 0;
+            if(i == playerIndex)
+            {
+                animator.Play("player " + (i + 1));
+                virtualCams[i].Priority = 1;
+            }
+            else
+            {
+                virtualCams[i].Priority = 0;
+            }
         }
     }
 
     public void zoomInZoomOut(float zoomSize)
     {
-        if (CinemachineCore.Instance.IsLive(virtualCam1))
+        foreach (CinemachineVirtualCamera cam in virtualCams)
         {
-            virtualCam1.m_Lens.OrthographicSize = zoomSize;
-            virtualCam2.m_Lens.OrthographicSize = 15f;
-        }
-        else if (CinemachineCore.Instance.IsLive(virtualCam2))
-        {
-            virtualCam2.m_Lens.OrthographicSize = zoomSize;
-            virtualCam1.m_Lens.OrthographicSize = 15f;
-
+            if (CinemachineCore.Instance.IsLive(cam))
+            {
+                cam.m_Lens.OrthographicSize = zoomSize;
+            }
+            else
+            {
+                cam.m_Lens.OrthographicSize = defaultZoom;
+            }
         }
     }
 }

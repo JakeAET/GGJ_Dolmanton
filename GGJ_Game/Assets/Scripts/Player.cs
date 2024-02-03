@@ -12,11 +12,19 @@ public class Player : MonoBehaviour
     public Color skinColor;
     public Color outfitColor;
 
+    public int turnCount = 1;
+
     [SerializeField] Sprite p1FrontFace;
     [SerializeField] Sprite p1SideFace;
 
     [SerializeField] Sprite p2FrontFace;
     [SerializeField] Sprite p2SideFace;
+
+    [SerializeField] Sprite p3FrontFace;
+    [SerializeField] Sprite p3SideFace;
+
+    [SerializeField] Sprite p4FrontFace;
+    [SerializeField] Sprite p4SideFace;
 
     [SerializeField] GameObject frontFace;
     [SerializeField] GameObject sideFace;
@@ -48,6 +56,16 @@ public class Player : MonoBehaviour
             sideFace.GetComponent<SpriteRenderer>().sprite = p1SideFace;
         }
         else if(playerName == "Player 2")
+        {
+            frontFace.GetComponent<SpriteRenderer>().sprite = p2FrontFace;
+            sideFace.GetComponent<SpriteRenderer>().sprite = p2SideFace;
+        }
+        else if (playerName == "Player 3")
+        {
+            frontFace.GetComponent<SpriteRenderer>().sprite = p1FrontFace;
+            sideFace.GetComponent<SpriteRenderer>().sprite = p1SideFace;
+        }
+        else if (playerName == "Player 4")
         {
             frontFace.GetComponent<SpriteRenderer>().sprite = p2FrontFace;
             sideFace.GetComponent<SpriteRenderer>().sprite = p2SideFace;

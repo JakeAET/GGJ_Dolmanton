@@ -10,20 +10,18 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
 
-    public enum gamemode { SinglePlayer, TwoPlayer };
-    public gamemode currentMode;
-
-    public enum turn { Solo, Player1, Player2, Win};
-    public turn currentTurn;
+    public bool turnBasedActive;
 
     public Player activePlayer;
-    private GameObject player1Obj;
-    private GameObject player2Obj;
+    public List<GameObject> playerObjs = new List<GameObject>();
 
-    public Color p1SkinColor;
-    public Color p1OutfitColor;
-    public Color p2SkinColor;
-    public Color p2OutfitColor;
+    public int activePlayerCount = 1;
+    public int activeTurnIndex;
+    public List<int> turnOrder = new List<int>();
+    public List<int> currentTurnOrder = new List<int>();
+
+    public List<Color> playerSkinColors = new List<Color>();
+    public List<Color> playerOutfitColors = new List<Color>();
 
     public bool allowLaunch;
     public bool launchFinished;
@@ -31,13 +29,9 @@ public class GameManager : MonoBehaviour
     private Vector3 levelStartPos;
     [SerializeField] GameObject playerInstance;
 
-    private float turnCountP1;
-    private float turnCountP2;
-    private TMP_Text turnTextP1;
-    private TMP_Text turnTextP2;
+    private TMP_Text turnText;
 
-    private CinemachineVirtualCamera vcam1;
-    private CinemachineVirtualCamera vcam2;
+    private List<CinemachineVirtualCamera> vcams = new List<CinemachineVirtualCamera>();
 
     private CamController camControllerRef;
 
@@ -69,84 +63,48 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void firstTurn()
-    {
-        if (currentMode == gamemode.SinglePlayer)
-        {
-            currentTurn = turn.Player1;
-            turnCountP1 = 1;
-            //camControllerRef.switchCam("Player 1");
-        }
-        else if (currentMode == gamemode.TwoPlayer)
-        {
-            int pick = UnityEngine.Random.Range(0, 2);
-
-            if (pick == 0)
-            {
-                currentTurn = turn.Player1;
-                //camControllerRef.switchCam("Player 1");
-                turnCountP1 = 1;
-                turnCountP2 = 0;
-                UIManager.instance.uiTurnChange(true);
-            }
-            else
-            {
-                currentTurn = turn.Player2;
-                //camControllerRef.switchCam("Player 2");
-                turnCountP1 = 0;
-                turnCountP2 = 1;
-                UIManager.instance.uiTurnChange(false);
-            }
-        }
-
-        turnTextP1.text = "Turn: " + turnCountP1;
-        turnTextP2.text = "Turn: " + turnCountP2;
-    }
-
     void nextTurn()
     {
         launchFinished = false;
         camControllerRef.zoomInZoomOut(15);
 
-        if (currentMode != gamemode.SinglePlayer)
+        // If not solo game
+        if (activePlayerCount > 1)
         {
-            if (currentTurn == turn.Player1)
+            // Determine next turn
+            if(activeTurnIndex + 1 >= turnOrder.Count)
             {
-                if (!player2Obj.activeInHierarchy)
-                {
-                    player2Obj.SetActive(true);
-                }
-
-                turnCountP2++;
-                turnTextP2.text = "Turn: " + turnCountP2;
-                currentTurn = turn.Player2;
-                camControllerRef.switchCam("Player 2");
-                activePlayer = player2Obj.GetComponent<Player>();
-                UIManager.instance.uiTurnChange(false);
+                // Reset to first players turn
+                activeTurnIndex = 0;
             }
             else
             {
-                if (!player1Obj.activeInHierarchy)
-                {
-                    player1Obj.SetActive(true);
-                }
-
-                turnCountP1++;
-                turnTextP1.text = "Turn: " + turnCountP1;
-                currentTurn = turn.Player1;
-                camControllerRef.switchCam("Player 1");
-                activePlayer = player1Obj.GetComponent<Player>();
-                UIManager.instance.uiTurnChange(true);
+                // Shift to next players turn
+                activeTurnIndex++;
             }
+
+            // Set new active player
+            activePlayer = playerObjs[turnOrder[activeTurnIndex]].GetComponent<Player>();
+
+            // Check player gameobject is active
+            if (!playerObjs[turnOrder[activeTurnIndex]].activeInHierarchy)
+            {
+                playerObjs[turnOrder[activeTurnIndex]].SetActive(true);
+            }
+
+            // Switch camera and UI to active player
+            camControllerRef.switchCam(turnOrder[activeTurnIndex]);
+            activePlayer.turnCount++;
+            newTurnOrder();
+            UIManager.instance.uiTurnChange(activePlayer);
         }
         else
         {
-            turnCountP1++;
-            turnTextP1.text = "Turn: " + turnCountP1;
+            activePlayer.turnCount++;
+            UIManager.instance.uiTurnChange(activePlayer);
         }
 
         allowLaunch = true;
-        //CamController.instance.zoomInZoomOut(5);
         StartCoroutine(turnBehavior());
     }
 
@@ -165,6 +123,14 @@ public class GameManager : MonoBehaviour
         {
             AudioManager.instance.playCatchphrase("Player 2");
         }
+        else if (activePlayer.playerName == "Player 3")
+        {
+            AudioManager.instance.playCatchphrase("Player 1"); // TODO: Add player 3 catchphrases
+        }
+        else if (activePlayer.playerName == "Player 4")
+        {
+            AudioManager.instance.playCatchphrase("Player 2"); // TODO: Add player 4 catchphrases
+        }
 
         yield return new WaitForSeconds(2f);
 
@@ -173,73 +139,54 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    public void initializeLevel(Vector3 startPos, GameObject startVcam1, GameObject startVcam2, GameObject camController)
+    public void initializeLevel(Vector3 startPos, GameObject[] playerVcams, GameObject camController)
     {
+        // Reset game data
+        playerObjs = new List<GameObject>();
+        vcams = new List<CinemachineVirtualCamera>();
+        activeTurnIndex = 0;
+
         levelStartPos = startPos;
-        turnTextP1 = UIManager.instance.turnTextP1;
-        turnTextP2 = UIManager.instance.turnTextP2;
 
         camControllerRef = camController.GetComponent<CamController>();
-        firstTurn();
 
-        if (currentMode == gamemode.SinglePlayer)
-        {
-            player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player1Obj.name = "Player 1";
-            assignLayerMask(player1Obj, "Player1");
-            player1Obj.GetComponent<Player>().playerName = "Player 1";
-            player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
-            player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
-            activePlayer = player1Obj.GetComponent<Player>();
-            //startVcam1.SetActive(true);
-            vcam1 = startVcam1.GetComponent<CinemachineVirtualCamera>();
-            vcam1.Follow = player1Obj.GetComponent<Player>().slingshotPoint.transform;
-            vcam1.LookAt = player1Obj.GetComponent<Player>().slingshotPoint.transform;
-        }
-        else if (currentMode == gamemode.TwoPlayer)
-        {
-            player1Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player1Obj.name = "Player 1";
-            assignLayerMask(player1Obj, "Player1");
-            player1Obj.GetComponent<Player>().playerName = "Player 1";
-            player1Obj.GetComponent<Player>().skinColor = p1SkinColor;
-            player1Obj.GetComponent<Player>().outfitColor = p1OutfitColor;
-            //startVcam1.SetActive(true);
-            vcam1 = startVcam1.GetComponent<CinemachineVirtualCamera>();
-            vcam1.Follow = player1Obj.GetComponent<Player>().slingshotPoint.transform;
-            vcam1.LookAt = player1Obj.GetComponent<Player>().slingshotPoint.transform;
+        // Pick starting order
+        turnOrder = determineStartingOrder(activePlayerCount);
+        currentTurnOrder = turnOrder;
 
-            if (currentTurn != turn.Player1)
+        // Create players based on player count
+        for (int i = 0; i < activePlayerCount; i++)
+        {
+            // Set up player
+            var newPlayer = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
+            newPlayer.name = "Player " + (i + 1);
+            assignLayerMask(newPlayer, "Player" + (i + 1));
+            Player thisPlayer = newPlayer.GetComponent<Player>();
+            thisPlayer.playerName = "Player " + (i + 1);
+            thisPlayer.skinColor = playerSkinColors[i];
+            thisPlayer.outfitColor = playerOutfitColors[i];
+            playerObjs.Add(newPlayer);
+
+            // Set up player camera
+            vcams.Add(playerVcams[i].GetComponent<CinemachineVirtualCamera>());
+            vcams[i].Follow = thisPlayer.slingshotPoint.transform;
+            vcams[i].LookAt = thisPlayer.slingshotPoint.transform;
+
+            // Is this player starting?
+            if(i == turnOrder[0])
             {
-                player1Obj.SetActive(false);
+                activePlayer = thisPlayer;
+                activePlayer.turnCount++;
+                newPlayer.SetActive(true);
             }
             else
             {
-                activePlayer = player1Obj.GetComponent<Player>();
-            }
-
-            player2Obj = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
-            player2Obj.name = "Player 2";
-            assignLayerMask(player2Obj, "Player2");
-            player2Obj.GetComponent<Player>().playerName = "Player 2";
-            player2Obj.GetComponent<Player>().skinColor = p2SkinColor;
-            player2Obj.GetComponent<Player>().outfitColor = p2OutfitColor;
-            //startVcam2.SetActive(true);
-            vcam2 = startVcam2.GetComponent<CinemachineVirtualCamera>();
-            vcam2.Follow = player2Obj.GetComponent<Player>().slingshotPoint.transform;
-            vcam2.LookAt = player2Obj.GetComponent<Player>().slingshotPoint.transform;
-
-            if (currentTurn != turn.Player2)
-            {
-                player2Obj.SetActive(false);
-            }
-            else
-            {
-                activePlayer = player2Obj.GetComponent<Player>();
+                newPlayer.SetActive(false);
             }
         }
 
         allowLaunch = true;
+        turnBasedActive = true;
         StartCoroutine(turnBehavior());
     }
 
@@ -265,22 +212,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void goalReached(string winningPlayer)
+    public void goalReached(Player winningPlayer)
     {
         StopAllCoroutines();
-        camControllerRef.zoomInZoomOut(5);
-        currentTurn = turn.Win;
+        turnBasedActive = false;
         launchFinished = false;
         activePlayer = null;
 
-        if (winningPlayer == "Player 1")
+        camControllerRef.switchCam(turnOrder[activeTurnIndex]);
+        camControllerRef.zoomInZoomOut(5);
+
+        Debug.Log(winningPlayer.playerName + " won in " + winningPlayer.turnCount + " turns!");
+    }
+
+    List<int> determineStartingOrder(int numPlayers)
+    {
+        List<int> initList = new List<int>();
+        List<int> playerOrder = new List<int>();
+
+        for (int i = 0; i < numPlayers; i++)
         {
-            Debug.Log(winningPlayer + " won in " + turnCountP1 + " turns!");
+            initList.Add(i);
         }
-        else if (winningPlayer == "Player 2")
+
+        for (int i = 0; i < numPlayers; i++)
         {
-            Debug.Log(winningPlayer + " won in " + turnCountP2 + " turns!");
+            int index = UnityEngine.Random.Range(0, initList.Count);
+            int num = initList[index];
+            initList.Remove(num);
+            playerOrder.Add(num);
         }
+
+        return playerOrder;
     }
 
     private void assignLayerMask(GameObject player, string layerName)
@@ -295,5 +258,24 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.instance.sceneChanged(sceneName, continueMusic);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void newTurnOrder()
+    {
+        List<int> newTurnOrder = new List<int>();
+
+        for (int i = 0; i < activePlayerCount; i++)
+        {
+            if(i + 1 < activePlayerCount)
+            {
+                newTurnOrder.Add(currentTurnOrder[i + 1]);
+            }
+            else
+            {
+                newTurnOrder.Add(currentTurnOrder[0]);
+            }
+        }
+
+        currentTurnOrder = newTurnOrder;
     }
 }

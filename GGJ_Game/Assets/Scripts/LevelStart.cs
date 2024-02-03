@@ -5,8 +5,14 @@ using UnityEngine;
 public class LevelStart : MonoBehaviour
 {
     public Transform startingPosition;
-    public GameObject startVcam1;
-    public GameObject startVcam2;
+
+    public GameObject[] startVcams;
+    public GameObject levelVcam;
+
+    //public GameObject startVcam1;
+    //public GameObject startVcam2;
+    //public GameObject startVcam3;
+    //public GameObject startVcam4;
     public GameObject camController;
 
     [SerializeField] int numLevelSections;
@@ -22,11 +28,11 @@ public class LevelStart : MonoBehaviour
     {
         if(GameManager.instance != null)
         {
-            GameManager.instance.initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
+            GameManager.instance.initializeLevel(startingPosition.position, startVcams, camController);
         }
         else
         {
-            FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcam1, startVcam2, camController);
+            FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcams, camController);
         }
         generateLevel();
     }
