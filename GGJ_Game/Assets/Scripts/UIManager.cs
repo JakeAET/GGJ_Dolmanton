@@ -88,19 +88,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
-    // TODO: Make it account for 1-4 players
-    // TODO: Add tweening animation for panels moving up
     IEnumerator turnChangeAnim(Player player)
     {
-        Debug.Log("Coroutine step: Coroutine started");
-
         turnText.DOFade(0, 0.2f);
         playerTitleImg.DOFade(0, 0.2f);
 
         yield return new WaitForSeconds(0.2f);
-
-        //Debug.Log("Coroutine step: Update panel size and position");
 
         for (int i = 0; i < activePlayerPanels.Count; i++)
         {
@@ -127,27 +120,20 @@ public class UIManager : MonoBehaviour
                 Vector2 newSize = new Vector2(activePlayerPanels[imgPanelPositions.Count - 1].GetComponent<RectTransform>().sizeDelta.x, subPanelHeight);
 
                 Sequence topPanelSequence = DOTween.Sequence();
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<Panel>().shadow.DOFade(0.2f, 0));
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(activePlayerPanels[i].GetComponent<RectTransform>().localPosition.y + activePlayerPanels[i].GetComponent<RectTransform>().sizeDelta.y, 0.5f));
                 topPanelSequence.Append(activePlayerPanels[i].DOFade(0, 0));
-                topPanelSequence.Append(activePlayerPanels[i].GetComponent<Panel>().shadow.DOFade(0.2f, 0));
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0f));
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(imgPanelPositions[imgPanelPositions.Count - 1].y, 0));
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveX(imgPanelPositions[imgPanelPositions.Count - 1].x - 100, 0));
                 topPanelSequence.Append(activePlayerPanels[i].DOFade(1, 0));
-                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveX(imgPanelPositions[imgPanelPositions.Count - 1].x, 0.5f));
+                topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveX(imgPanelPositions[imgPanelPositions.Count - 1].x, 0.2f));
 
                 topPanelSequence.Play();
-
-                //activePlayerPanels[i].DOFade(0,0);
-                //activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(imgPanelPositions[imgPanelPositions.Count - 1].y, 0.5f);
-
-                //activePlayerPanels[i].GetComponent<RectTransform>().DOSizeDelta(newSize, 0.3f);
             }
         }
 
         yield return new WaitForSeconds(0.3f);
-
-        //Debug.Log("Coroutine step: Update current player turn info");
 
         playerTitleImg.sprite = playerTitleSprites[GameManager.instance.currentTurnOrder[0]];
         turnText.text = "|  Turn: " + player.turnCount;
@@ -155,12 +141,6 @@ public class UIManager : MonoBehaviour
         activePlayerPanels[0].DOFade(1, 0.2f);
         turnText.DOFade(1, 0.2f);
         playerTitleImg.DOFade(1, 0.2f);
-
-        for (int i = 0; i < activePlayerPanels.Count; i++)
-        {
-            Color color = GameManager.instance.playerObjs[GameManager.instance.currentTurnOrder[i]].GetComponent<Player>().outfitColor;
-            //activePlayerPanels[i].DOColor(color, 0.2f);
-        }
 
         newPanelOrder();
 

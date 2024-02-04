@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Goal : MonoBehaviour
@@ -32,6 +33,9 @@ public class Goal : MonoBehaviour
 
     IEnumerator startCamFunction()
     {
+
+        yield return new WaitForSeconds(2f);
+
         CamController cam = FindObjectOfType<CamController>();
 
         Vector3 pos = transform.position;
@@ -39,6 +43,13 @@ public class Goal : MonoBehaviour
 
         cam.levelCam.LookAt = transform;
         cam.levelCam.Follow = transform;
+
+        DOTween.To(() => cam.levelCam.m_Lens.OrthographicSize, x => cam.levelCam.m_Lens.OrthographicSize = x, 10, 1.5f);
+        //cam.zoomInZoomOut(10);
+
+        yield return new WaitForSeconds(1f);
+
+        AudioManager.instance.Play("level_start");
 
         yield return new WaitForSeconds(2f);
 

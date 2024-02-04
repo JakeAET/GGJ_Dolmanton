@@ -158,13 +158,14 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < activePlayerCount; i++)
         {
             // Set up player
-            var newPlayer = Instantiate(playerInstance, levelStartPos, Quaternion.identity);
+            var newPlayer = Instantiate(playerInstance, levelStartPos, Quaternion.Euler(new Vector3(0, 0, 60)));
             newPlayer.name = "Player " + (i + 1);
             assignLayerMask(newPlayer, "Player" + (i + 1));
             Player thisPlayer = newPlayer.GetComponent<Player>();
             thisPlayer.playerName = "Player " + (i + 1);
             thisPlayer.skinColor = playerSkinColors[i];
             thisPlayer.outfitColor = playerOutfitColors[i];
+            thisPlayer.golfRB.constraints = RigidbodyConstraints2D.FreezeAll;
             playerObjs.Add(newPlayer);
 
             // Set up player camera

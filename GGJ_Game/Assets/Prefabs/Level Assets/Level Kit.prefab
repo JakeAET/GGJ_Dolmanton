@@ -4619,10 +4619,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5167167816895523754}
     m_Modifications:
-    - target: {fileID: 62740872928512824, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -68.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7548945970566829120, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4670,10 +4666,6 @@ PrefabInstance:
     - target: {fileID: 7548945970566829121, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
       propertyPath: m_Name
       value: Level Start Chunk
-      objectReference: {fileID: 0}
-    - target: {fileID: 7548945970566829121, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}

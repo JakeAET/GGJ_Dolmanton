@@ -107,6 +107,11 @@ public class Slingshot : MonoBehaviour
         // Play sound effect
         AudioManager.instance.PlayCustomPitch("bink", Random.Range(0.6f, 1.4f));
 
+        if(GameManager.instance.activePlayer.golfRB.constraints == RigidbodyConstraints2D.FreezeAll)
+        {
+            GameManager.instance.activePlayer.golfRB.constraints = RigidbodyConstraints2D.None;
+        }
+
         // Calculate direction of launch
         Vector3 launchDirection = (lineStart - lineEnd()).normalized;
 

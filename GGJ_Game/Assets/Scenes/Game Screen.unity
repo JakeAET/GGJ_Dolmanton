@@ -272,6 +272,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5167167816486755324, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: orthographic size
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816486755327, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 177.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816486755327, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816695293568, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 177.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816695293568, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816695293569, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 5167167816895523754, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -371,11 +395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 7597827652887818040, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
       propertyPath: m_LocalPosition.z

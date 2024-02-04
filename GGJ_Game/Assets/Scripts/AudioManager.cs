@@ -63,7 +63,6 @@ public class AudioManager : MonoBehaviour
         }
         else if(SceneManager.GetActiveScene().name == "Game Screen")
         {
-            Play("level_start");
             Play("game_music");
         }
     }
@@ -140,7 +139,6 @@ public class AudioManager : MonoBehaviour
         if(sceneName == "Game Screen")
         {
             stopAllSFX();
-            Play("level_start");
 
             if (!continueMusic)
             {
