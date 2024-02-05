@@ -2122,16 +2122,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: numLevelSections
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: levelChunkPrefabs.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: levelChunkPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 492449695881681095, guid: c667d1d383ff44f8c90c221c2d2ac00e, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: 8412a8e97996256478ad280fb6421ddf, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: 87eceb182482ff740a0bcc77977020fa, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: b8b26f6effdd0df4b9fccb42b6541089, type: 3}
     - target: {fileID: 5167167818286244552, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.485297
