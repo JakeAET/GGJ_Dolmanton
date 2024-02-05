@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
     public bool allowLaunch;
     public bool launchFinished;
 
-    private Vector3 levelStartPos;
+    public Vector3 levelStartPos;
+    public Vector3 levelEdgePos;
+    public Vector3 levelGoalPos;
+
     [SerializeField] GameObject playerInstance;
 
     private TMP_Text turnText;
@@ -90,6 +93,7 @@ public class GameManager : MonoBehaviour
             if (!playerObjs[turnOrder[activeTurnIndex]].activeInHierarchy)
             {
                 playerObjs[turnOrder[activeTurnIndex]].SetActive(true);
+                UIManager.instance.playerSliderObjs[turnOrder[activeTurnIndex]].SetActive(true);
             }
 
             // Switch camera and UI to active player
@@ -179,6 +183,7 @@ public class GameManager : MonoBehaviour
                 activePlayer = thisPlayer;
                 activePlayer.turnCount++;
                 newPlayer.SetActive(true);
+                UIManager.instance.playerSliderObjs[turnOrder[0]].SetActive(true);
             }
             else
             {

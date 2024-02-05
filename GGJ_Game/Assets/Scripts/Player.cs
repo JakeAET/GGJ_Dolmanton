@@ -62,13 +62,13 @@ public class Player : MonoBehaviour
         }
         else if (playerName == "Player 3")
         {
-            frontFace.GetComponent<SpriteRenderer>().sprite = p1FrontFace;
-            sideFace.GetComponent<SpriteRenderer>().sprite = p1SideFace;
+            frontFace.GetComponent<SpriteRenderer>().sprite = p3FrontFace;
+            sideFace.GetComponent<SpriteRenderer>().sprite = p3SideFace;
         }
         else if (playerName == "Player 4")
         {
-            frontFace.GetComponent<SpriteRenderer>().sprite = p2FrontFace;
-            sideFace.GetComponent<SpriteRenderer>().sprite = p2SideFace;
+            frontFace.GetComponent<SpriteRenderer>().sprite = p4FrontFace;
+            sideFace.GetComponent<SpriteRenderer>().sprite = p4SideFace;
         }
     }
 

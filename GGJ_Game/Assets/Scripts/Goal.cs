@@ -8,6 +8,7 @@ public class Goal : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        FindObjectOfType<GameManager>().levelGoalPos = transform.position;
         StartCoroutine(startCamFunction());
     }
 

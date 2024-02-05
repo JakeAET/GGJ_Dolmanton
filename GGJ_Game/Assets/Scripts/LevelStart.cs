@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelStart : MonoBehaviour
 {
     public Transform startingPosition;
+    public Transform levelEdgePos;
 
     public GameObject[] startVcams;
     public GameObject levelVcam;
@@ -26,14 +27,8 @@ public class LevelStart : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if(GameManager.instance != null)
-        {
-            GameManager.instance.initializeLevel(startingPosition.position, startVcams, camController);
-        }
-        else
-        {
-            FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcams, camController);
-        }
+        FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcams, camController);
+        FindObjectOfType<GameManager>().levelEdgePos = levelEdgePos.transform.position;
         generateLevel();
     }
 

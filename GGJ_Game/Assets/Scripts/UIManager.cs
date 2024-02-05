@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 using Cinemachine;
+using Unity.VisualScripting;
 
 public class UIManager : MonoBehaviour
 {
@@ -29,6 +30,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button restartButton;
     [SerializeField] Button menuButton;
 
+    public GameObject[] playerSliderObjs;
+    public List<Slider> playerSliders = new List<Slider>();
+    private float minXPos;
+    private float maxXPos;
+
     public List<Vector3> imgPanelPositions = new List<Vector3>();
 
     private void Awake()
@@ -48,6 +54,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initializeSliders();
+
         for (int i = 0; i < playerPanels.Length; i++)
         {
             if(i < GameManager.instance.activePlayerCount)
@@ -73,7 +81,11 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < playerSliders.Count; i++)
+        {
+            float targetXPos = GameManager.instance.playerObjs[i].GetComponent<Player>().slingshotPoint.position.x;
+            playerSliders[i].value = Mathf.Lerp(0, 100, Mathf.InverseLerp(minXPos, maxXPos, targetXPos));
+        }
     }
 
     public void uiTurnChange(Player player)
@@ -119,7 +131,7 @@ public class UIManager : MonoBehaviour
             {
                 Vector2 newSize = new Vector2(activePlayerPanels[imgPanelPositions.Count - 1].GetComponent<RectTransform>().sizeDelta.x, subPanelHeight);
 
-                Sequence topPanelSequence = DOTween.Sequence();
+                DG.Tweening.Sequence topPanelSequence = DOTween.Sequence();
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<Panel>().shadow.DOFade(0.2f, 0));
                 topPanelSequence.Append(activePlayerPanels[i].GetComponent<RectTransform>().DOLocalMoveY(activePlayerPanels[i].GetComponent<RectTransform>().localPosition.y + activePlayerPanels[i].GetComponent<RectTransform>().sizeDelta.y, 0.5f));
                 topPanelSequence.Append(activePlayerPanels[i].DOFade(0, 0));
@@ -191,5 +203,23 @@ public class UIManager : MonoBehaviour
         }
 
         activePlayerPanels = newPanelOrder;
+    }
+
+    public void initializeSliders()
+    {
+        minXPos = GameManager.instance.levelEdgePos.x;
+        maxXPos = GameManager.instance.levelGoalPos.x;
+
+        for (int i = 0; i < playerSliderObjs.Length; i++)
+        {
+            if (i < GameManager.instance.activePlayerCount)
+            {
+                playerSliders.Add(playerSliderObjs[i].GetComponent<Slider>());
+                PlayerSlider sliderRef = playerSliderObjs[i].GetComponent<PlayerSlider>();
+                sliderRef.outfit.color = GameManager.instance.playerOutfitColors[i];
+                sliderRef.pointer.color = GameManager.instance.playerOutfitColors[i];
+                sliderRef.skin.color = GameManager.instance.playerSkinColors[i];
+            }
+        }
     }
 }
