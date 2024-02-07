@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     public Vector3 levelEdgePos;
     public Vector3 levelGoalPos;
 
+    public bool firstPlayerSpawned = false;
+
     [SerializeField] GameObject playerInstance;
 
     private TMP_Text turnText;
@@ -114,6 +116,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator turnBehavior()
     {
+        yield return new WaitUntil(doneWaitingForFirstPlayer);
+
         yield return new WaitUntil(turnEnded);
 
         activePlayer.switchFace(true);
@@ -182,17 +186,11 @@ public class GameManager : MonoBehaviour
             {
                 activePlayer = thisPlayer;
                 activePlayer.turnCount++;
-                newPlayer.SetActive(true);
-                UIManager.instance.playerSliderObjs[turnOrder[0]].SetActive(true);
             }
-            else
-            {
-                newPlayer.SetActive(false);
-            }
+
+            newPlayer.SetActive(false);
         }
 
-        allowLaunch = true;
-        turnBasedActive = true;
         StartCoroutine(turnBehavior());
     }
 
@@ -218,9 +216,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void activateFirstPlayer()
+    {
+        playerObjs[currentTurnOrder[0]].SetActive(true);
+        UIManager.instance.playerSliderObjs[turnOrder[0]].SetActive(true);
+
+        allowLaunch = true;
+        turnBasedActive = true;
+        firstPlayerSpawned = true;
+    }
+
+    private bool doneWaitingForFirstPlayer()
+    {
+        return firstPlayerSpawned;
+    }
+
     public void goalReached(Player winningPlayer)
     {
         StopAllCoroutines();
+        firstPlayerSpawned = false;
         turnBasedActive = false;
         launchFinished = false;
         activePlayer = null;

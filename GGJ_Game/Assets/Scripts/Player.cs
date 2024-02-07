@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class Player : MonoBehaviour
     public Color outfitColor;
 
     public int turnCount = 1;
+
+    [SerializeField] float maxVelocity;
+    //public Vector2 currentVelocity;
 
     [SerializeField] Sprite p1FrontFace;
     [SerializeField] Sprite p1SideFace;
@@ -70,6 +74,11 @@ public class Player : MonoBehaviour
             frontFace.GetComponent<SpriteRenderer>().sprite = p4FrontFace;
             sideFace.GetComponent<SpriteRenderer>().sprite = p4SideFace;
         }
+    }
+
+    void FixedUpdate()
+    {
+        golfRB.velocity = Vector2.ClampMagnitude(golfRB.velocity, maxVelocity);
     }
 
     public void switchFace(bool faceForward)

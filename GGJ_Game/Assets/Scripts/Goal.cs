@@ -35,27 +35,31 @@ public class Goal : MonoBehaviour
     IEnumerator startCamFunction()
     {
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         CamController cam = FindObjectOfType<CamController>();
 
-        Vector3 pos = transform.position;
-        cam.levelCam.transform.position = pos;
+        cam.levelCam.GetComponent<Transform>().DOMoveX(transform.position.x - 10f, 4f);
 
-        cam.levelCam.LookAt = transform;
-        cam.levelCam.Follow = transform;
+        //Vector3 pos = transform.position;
+        //cam.levelCam.transform.position = pos;
 
-        DOTween.To(() => cam.levelCam.m_Lens.OrthographicSize, x => cam.levelCam.m_Lens.OrthographicSize = x, 10, 1.5f);
-        //cam.zoomInZoomOut(10);
+        //cam.levelCam.LookAt = transform;
+        //cam.levelCam.Follow = transform;
 
-        yield return new WaitForSeconds(1f);
+        //DOTween.To(() => cam.levelCam.m_Lens.OrthographicSize, x => cam.levelCam.m_Lens.OrthographicSize = x, 10, 1.5f);
+        //cam.levelCam.m_Lens.OrthographicSize = 10;
+
+        yield return new WaitForSeconds(4f);
 
         AudioManager.instance.Play("level_start");
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         cam.switchCam(GameManager.instance.turnOrder[GameManager.instance.activeTurnIndex]);
         cam.zoomInZoomOut(5);
+
+        GameManager.instance.activateFirstPlayer();
 
         yield return null;
     }

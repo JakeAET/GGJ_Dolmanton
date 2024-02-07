@@ -6,6 +6,8 @@ using TMPro;
 using DG.Tweening;
 using Cinemachine;
 using Unity.VisualScripting;
+using System.Linq;
+using UnityEditor.Rendering.LookDev;
 
 public class UIManager : MonoBehaviour
 {
@@ -34,6 +36,8 @@ public class UIManager : MonoBehaviour
     public List<Slider> playerSliders = new List<Slider>();
     private float minXPos;
     private float maxXPos;
+
+    private Vector3 startGolfHeadPos;
 
     public List<Vector3> imgPanelPositions = new List<Vector3>();
 
@@ -97,6 +101,32 @@ public class UIManager : MonoBehaviour
         else
         {
             turnText.text = "|  Turn: " + player.turnCount;
+        }
+
+        //int oldIndex = 0;
+        //int newIndex = 0;
+
+        for (int i = 0; i < playerSliderObjs.Length; i++)
+        {
+            if (i == GameManager.instance.currentTurnOrder[0])
+            {
+                //oldIndex = playerSliderObjs[i].transform.GetSiblingIndex();
+                playerSliderObjs[i].transform.SetAsLastSibling();
+                //newIndex = playerSliderObjs[i].transform.GetSiblingIndex();
+
+                Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
+                headTransform.DOMoveY(headTransform.position.y + 10f, 0.2f);
+                headTransform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 0.2f);
+
+                //Debug.Log("Player obj " + i + " index changed from " + oldIndex + " to " + newIndex);
+
+            }
+            else
+            {
+                Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
+                headTransform.DOMoveY(startGolfHeadPos.y, 0.2f);
+                headTransform.transform.DOScale(Vector3.one, 0.2f);
+            }
         }
     }
 
@@ -219,6 +249,31 @@ public class UIManager : MonoBehaviour
                 sliderRef.outfit.color = GameManager.instance.playerOutfitColors[i];
                 sliderRef.pointer.color = GameManager.instance.playerOutfitColors[i];
                 sliderRef.skin.color = GameManager.instance.playerSkinColors[i];
+            }
+        }
+
+        //int oldIndex = 0;
+        //int newIndex = 0;
+
+        for (int i = 0; i < playerSliderObjs.Length; i++)
+        {
+            if (i == GameManager.instance.currentTurnOrder[0])
+            {
+                //oldIndex = playerSliderObjs[i].transform.GetSiblingIndex();
+                playerSliderObjs[i].transform.SetAsLastSibling();
+                //newIndex = playerSliderObjs[i].transform.GetSiblingIndex();
+
+                Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
+                startGolfHeadPos = headTransform.position;
+                headTransform.DOMoveY(headTransform.position.y + 10f, 0.2f);
+                headTransform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 0.2f);
+
+                //Debug.Log("Player obj " + i + " index changed from " + oldIndex + " to " + newIndex);
+            }
+            else
+            {
+                Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
+                headTransform.transform.DOScale(Vector3.one, 0.2f);
             }
         }
     }
