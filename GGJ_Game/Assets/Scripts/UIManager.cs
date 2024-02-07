@@ -26,16 +26,25 @@ public class UIManager : MonoBehaviour
 
     //[SerializeField] GameObject[] p2GameObjects;
 
+    [SerializeField] GameObject pauseScreenCanvas;
+
     [SerializeField] GameObject winScreenCanvas;
     [SerializeField] GameObject p1Victory;
     [SerializeField] GameObject p2Victory;
     [SerializeField] Button restartButton;
     [SerializeField] Button menuButton;
 
+    [SerializeField] Button pauseButton;
+    [SerializeField] Button pauseResumeButton;
+    [SerializeField] Button pauseRestartButton;
+    [SerializeField] Button pauseQuitButton;
+
     public GameObject[] playerSliderObjs;
     public List<Slider> playerSliders = new List<Slider>();
     private float minXPos;
     private float maxXPos;
+
+    private bool paused = false;
 
     private Vector3 startGolfHeadPos;
 
@@ -80,6 +89,11 @@ public class UIManager : MonoBehaviour
 
         restartButton.onClick.AddListener(restartLevel);
         menuButton.onClick.AddListener(returnToMenu);
+
+        pauseButton.onClick.AddListener(pauseGame);
+        pauseResumeButton.onClick.AddListener(unpauseGame);
+        pauseRestartButton.onClick.AddListener(restartLevel);
+        pauseQuitButton.onClick.AddListener(returnToMenu);
     }
 
     // Update is called once per frame
@@ -111,12 +125,15 @@ public class UIManager : MonoBehaviour
             if (i == GameManager.instance.currentTurnOrder[0])
             {
                 //oldIndex = playerSliderObjs[i].transform.GetSiblingIndex();
-                playerSliderObjs[i].transform.SetAsLastSibling();
                 //newIndex = playerSliderObjs[i].transform.GetSiblingIndex();
 
-                Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
-                headTransform.DOMoveY(headTransform.position.y + 10f, 0.2f);
-                headTransform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 0.2f);
+                if(GameManager.instance.activePlayerCount > 1)
+                {
+                    playerSliderObjs[i].transform.SetAsLastSibling();
+                    Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
+                    headTransform.DOMoveY(headTransform.position.y + 5f, 0.2f);
+                    headTransform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 0.2f);
+                }
 
                 //Debug.Log("Player obj " + i + " index changed from " + oldIndex + " to " + newIndex);
 
@@ -203,8 +220,9 @@ public class UIManager : MonoBehaviour
     public void winEvent(string winningPlayer)
     {
         winScreenCanvas.SetActive(true);
+        AudioManager.instance.Play("win_song");
 
-        if(winningPlayer == "Player 1")
+        if (winningPlayer == "Player 1")
         {
             p1Victory.SetActive(true);
             p2Victory.SetActive(false);
@@ -265,7 +283,7 @@ public class UIManager : MonoBehaviour
 
                 Transform headTransform = playerSliderObjs[i].GetComponent<PlayerSlider>().playerHead.transform;
                 startGolfHeadPos = headTransform.position;
-                headTransform.DOMoveY(headTransform.position.y + 10f, 0.2f);
+                headTransform.DOMoveY(headTransform.position.y + 5f, 0.2f);
                 headTransform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), 0.2f);
 
                 //Debug.Log("Player obj " + i + " index changed from " + oldIndex + " to " + newIndex);
@@ -276,5 +294,27 @@ public class UIManager : MonoBehaviour
                 headTransform.transform.DOScale(Vector3.one, 0.2f);
             }
         }
+    }
+
+    void pauseGame()
+    {
+        if (!paused)
+        {
+            Time.timeScale = 0;
+            pauseScreenCanvas.SetActive(true);
+
+            paused = true;
+        }
+        else
+        {
+            unpauseGame();
+        }
+    }
+
+    void unpauseGame()
+    {
+        Time.timeScale = 1;
+        pauseScreenCanvas.SetActive(false);
+        paused = false;
     }
 }

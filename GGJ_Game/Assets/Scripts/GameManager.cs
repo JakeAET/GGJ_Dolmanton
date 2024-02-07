@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
     public void initializeLevel(Vector3 startPos, GameObject[] playerVcams, GameObject camController)
     {
         // Reset game data
+        Time.timeScale = 1;
         playerObjs = new List<GameObject>();
         vcams = new List<CinemachineVirtualCamera>();
         activeTurnIndex = 0;
@@ -218,6 +219,7 @@ public class GameManager : MonoBehaviour
 
     public void activateFirstPlayer()
     {
+        activePlayer.switchFace(true);
         playerObjs[currentTurnOrder[0]].SetActive(true);
         UIManager.instance.playerSliderObjs[turnOrder[0]].SetActive(true);
 

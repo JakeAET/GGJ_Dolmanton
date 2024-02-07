@@ -27,8 +27,10 @@ public class Goal : MonoBehaviour
     {
         if (collision.CompareTag("Player") && GameManager.instance.turnBasedActive)
         {
-            GameManager.instance.goalReached(collision.GetComponentInParent<Player>());
-            UIManager.instance.winEvent(collision.GetComponentInParent<Player>().playerName);
+            Player player = collision.GetComponentInParent<Player>();
+            player.switchFace(true);
+            GameManager.instance.goalReached(player);
+            UIManager.instance.winEvent(player.playerName);
         }
     }
 

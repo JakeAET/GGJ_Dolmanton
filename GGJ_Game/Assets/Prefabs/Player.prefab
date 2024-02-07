@@ -1727,8 +1727,7 @@ MonoBehaviour:
   skinColor: {r: 0, g: 0, b: 0, a: 0}
   outfitColor: {r: 0, g: 0, b: 0, a: 0}
   turnCount: 0
-  maxVelocity: 200
-  currentVelocity: {x: 0, y: 0}
+  maxVelocity: 150
   p1FrontFace: {fileID: -495316005, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
   p1SideFace: {fileID: -423184548, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}
   p2FrontFace: {fileID: 1901900196, guid: 725c5cd4d18b44a5a869deca52b12732, type: 3}

@@ -6,6 +6,7 @@ using DG.Tweening.Core.Easing;
 using Unity.VisualScripting;
 using System.Threading;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class AudioManager : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
-    public bool sfxMute;
-    public bool musicMute;
+    public bool sfxMuted;
+    public bool musicMuted;
+
+    public UnityEngine.UI.Toggle sfxToggle;
+    public UnityEngine.UI.Toggle musicToggle;
 
     private List<string> p1CatchphraseNames = new List<string>();
     private List<string> p2CatchphraseNames = new List<string>();
@@ -53,6 +57,8 @@ public class AudioManager : MonoBehaviour
                 p2CatchphraseNames.Add(s.name);
             }
         }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void Start()
@@ -69,7 +75,34 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
+        if(musicToggle == null)
+        {
+            if (GameObject.FindGameObjectWithTag("music toggle") != null)
+            {
+                musicToggle = GameObject.FindGameObjectWithTag("music toggle").GetComponent<UnityEngine.UI.Toggle>();
+                musicToggle.isOn = !musicMuted;
+                musicToggle.onValueChanged.AddListener(delegate
+                {
+                    muteMusic(!musicToggle.isOn);
+                });
+                GameObject.FindGameObjectWithTag("music toggle").GetComponent<AudioToggle>().toggleSetting(!musicMuted);
 
+            }
+        }
+
+        if(sfxToggle == null)
+        {
+            if (GameObject.FindGameObjectWithTag("sfx toggle") != null)
+            {
+                sfxToggle = GameObject.FindGameObjectWithTag("sfx toggle").GetComponent<UnityEngine.UI.Toggle>();
+                sfxToggle.isOn = !sfxMuted;
+                sfxToggle.onValueChanged.AddListener(delegate
+                {
+                    muteSFX(!sfxToggle.isOn);
+                });
+                GameObject.FindGameObjectWithTag("sfx toggle").GetComponent<AudioToggle>().toggleSetting(!sfxMuted);
+            }
+        }
     }
 
     // method to call for playing a certain sound
@@ -111,7 +144,9 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        musicMute = mute;
+        musicMuted = mute;
+
+        GameObject.FindGameObjectWithTag("music toggle").GetComponent<AudioToggle>().toggleSetting(!musicMuted);
     }
 
     public void muteSFX(bool mute)
@@ -124,7 +159,9 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        sfxMute = mute;
+        sfxMuted = mute;
+
+        GameObject.FindGameObjectWithTag("sfx toggle").GetComponent<AudioToggle>().toggleSetting(!sfxMuted);
     }
 
     public void sceneChanged(string sceneName, bool continueMusic)
