@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9178687776603690381, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
       propertyPath: activePlayerCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9178687776603690383, guid: ef0c5af1197f34cb49a7ee654e069d5a, type: 3}
       propertyPath: m_Name
@@ -351,6 +351,14 @@ PrefabInstance:
     - target: {fileID: 3763116158740149626, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.67395
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40.300003
       objectReference: {fileID: 0}
     - target: {fileID: 4072613752022589423, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_Transition
@@ -504,6 +512,22 @@ PrefabInstance:
       propertyPath: m_Parameters.colorGradient.key1.a
       value: 0.30980393
       objectReference: {fileID: 0}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: numLevelSections
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: 0ba2ab6d4162349b0b14346bff9c035a, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: 311c55bfcaf404f1593aa7ee12ee79ab, type: 3}
     - target: {fileID: 5568898225929431185, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
