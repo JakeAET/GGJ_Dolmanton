@@ -412,6 +412,42 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -21.87788
       objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: lowPowerColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: lowPowerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: lowPowerColor.r
+      value: 0.3314607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: midPowerColor.b
+      value: 0.30196083
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: midPowerColor.g
+      value: 0.9696294
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: midPowerColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: highPowerColor.b
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: highPowerColor.g
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816485197474, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: highPowerColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5167167816895523754, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -463,6 +499,10 @@ PrefabInstance:
     - target: {fileID: 5167167817466423243, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167817924440244, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0.30980393
       objectReference: {fileID: 0}
     - target: {fileID: 5568898225929431185, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y

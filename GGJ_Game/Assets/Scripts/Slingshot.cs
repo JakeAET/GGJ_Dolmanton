@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Slingshot : MonoBehaviour
 {
+    [SerializeField] Color highPowerColor;
+    [SerializeField] Color midPowerColor;
+    [SerializeField] Color lowPowerColor;
+
     [SerializeField] GameObject line; // Standalone gameobject that contains the LineRenderer component
     [SerializeField] GameObject arrow; // Arrow sprite gameobject
 
@@ -49,6 +53,8 @@ public class Slingshot : MonoBehaviour
 
             if (Input.GetMouseButton(0) && line.activeInHierarchy)
             {
+
+
                 lineStart = GameManager.instance.activePlayer.slingshotPoint.position;
                 GameManager.instance.activePlayer.switchFace(false); // Player face forward when launch starts
 
@@ -62,6 +68,12 @@ public class Slingshot : MonoBehaviour
                 // Update line renderer start and end positions
                 lr.SetPosition(0, new Vector3(lineStart.x, lineStart.y, 0f));
                 lr.SetPosition(1, new Vector3(lineEnd().x, lineEnd().y, 0f));
+                Color startColor = lineColor();
+                Color endColor = lineColor();
+                startColor.a = 0.7f;
+                endColor.a = 0.3f;
+                lr.startColor = startColor;
+                lr.endColor = endColor;
             }
 
             // Check if mouse button is released, line is being drawn, and the distance is large enough
@@ -123,5 +135,27 @@ public class Slingshot : MonoBehaviour
         GameManager.instance.activePlayer.golfRB.AddForce(launchDirection * appliedForce, ForceMode2D.Impulse);
         GameManager.instance.allowLaunch = false;
         GameManager.instance.launchFinished = true;
+    }
+
+    private Color lineColor()
+    {
+        if(distance > maxDistance * 0.6f) // mid to high power shot
+        {
+            float newR = Mathf.Lerp(midPowerColor.r, highPowerColor.r, Mathf.InverseLerp(maxDistance * 0.6f, maxDistance, distance));
+            float newG = Mathf.Lerp(midPowerColor.g, highPowerColor.g, Mathf.InverseLerp(maxDistance * 0.6f, maxDistance, distance));
+            float newB = Mathf.Lerp(midPowerColor.b, highPowerColor.b, Mathf.InverseLerp(maxDistance * 0.6f, maxDistance, distance));
+            return new Color(newR, newG, newB);
+        }
+        else if (distance > maxDistance * 0.3f)// low to mid power shot
+        {
+            float newR = Mathf.Lerp(lowPowerColor.r, midPowerColor.r, Mathf.InverseLerp(maxDistance * 0.3f, maxDistance * 0.6f, distance));
+            float newG = Mathf.Lerp(lowPowerColor.g, midPowerColor.g, Mathf.InverseLerp(maxDistance * 0.3f, maxDistance * 0.6f, distance));
+            float newB = Mathf.Lerp(lowPowerColor.b, midPowerColor.b, Mathf.InverseLerp(maxDistance * 0.3f, maxDistance * 0.6f, distance));
+            return new Color(newR, newG, newB);
+        }
+        else
+        {
+            return lowPowerColor;
+        }
     }
 }
