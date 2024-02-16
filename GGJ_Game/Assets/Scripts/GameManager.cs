@@ -5,10 +5,13 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.SocialPlatforms;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
+
+    [SerializeField] float nearPlayerRange = 6;
 
     public bool turnBasedActive;
 
@@ -123,21 +126,16 @@ public class GameManager : MonoBehaviour
         activePlayer.switchFace(true);
         camControllerRef.zoomInZoomOut(5);
 
-        if(activePlayer.playerName == "Player 1")
+        if (turnBasedActive)
         {
-            AudioManager.instance.playCatchphrase("Player 1");
-        }
-        else if(activePlayer.playerName == "Player 2")
-        {
-            AudioManager.instance.playCatchphrase("Player 2");
-        }
-        else if (activePlayer.playerName == "Player 3")
-        {
-            AudioManager.instance.playCatchphrase("Player 1"); // TODO: Add player 3 catchphrases
-        }
-        else if (activePlayer.playerName == "Player 4")
-        {
-            AudioManager.instance.playCatchphrase("Player 2"); // TODO: Add player 4 catchphrases
+            if (nearPlayer(activePlayer, nearPlayerRange))
+            {
+                AudioManager.instance.playProximity(activePlayer.playerName);
+            }
+            else
+            {
+                AudioManager.instance.playCatchphrase(activePlayer.playerName);
+            }
         }
 
         yield return new WaitForSeconds(2f);
@@ -299,5 +297,47 @@ public class GameManager : MonoBehaviour
         }
 
         currentTurnOrder = newTurnOrder;
+    }
+
+    private bool nearPlayer(Player targetPlayer, float range)
+    {
+        GameObject[] gos;
+        List<GameObject> players = new List<GameObject>();
+        GameObject targetPlayerObj = null;
+
+        gos = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject g in gos)
+        {
+            if (g.activeInHierarchy)
+            {
+                if (g.GetComponentInParent<Player>().playerName != targetPlayer.playerName)
+                {
+                    players.Add(g);
+                }
+                else
+                {
+                    targetPlayerObj = g;
+                }
+            }
+        }
+
+        if (players.Count <= 0)
+        {
+            //Debug.Log("Did not land near another player");
+            return false;
+        }
+
+        float closestDistance = Vector3.Distance(players[0].transform.position, targetPlayerObj.transform.position);
+        foreach (GameObject g in players)
+        {
+            float distance = Vector3.Distance(g.transform.position, targetPlayerObj.transform.position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+            }
+        }
+
+        Debug.Log("Nearest player " + closestDistance + " units away. Range is " + range + " units. Return " + (closestDistance <= range));
+        return closestDistance <= range;
     }
 }

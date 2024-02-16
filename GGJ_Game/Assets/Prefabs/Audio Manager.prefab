@@ -46,53 +46,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: bink
-    clip: {fileID: 8300000, guid: 5b7050b39231345ad8da4b019992a992, type: 3}
-    priority: 120
+  - name: menu_music
+    clip: {fileID: 8300000, guid: a513312d6a67b4ec9b06da3681fef563, type: 3}
+    priority: 200
     volume: 0.7
     pitch: 1
-    loop: 0
-    soundType: 1
-    source: {fileID: 0}
-  - name: p1_phrase1
-    clip: {fileID: 8300000, guid: 50097d55c7d4f436ca135388b612c1d7, type: 3}
-    priority: 128
-    volume: 1
-    pitch: 1
-    loop: 0
-    soundType: 2
-    source: {fileID: 0}
-  - name: p1_phrase2
-    clip: {fileID: 8300000, guid: 6f278d651f498489a805cd34eaa9c37a, type: 3}
-    priority: 128
-    volume: 1
-    pitch: 1
-    loop: 0
-    soundType: 2
-    source: {fileID: 0}
-  - name: p2_phrase1
-    clip: {fileID: 8300000, guid: dd02abd05c227403a9e2f6744cf437c0, type: 3}
-    priority: 128
-    volume: 1
-    pitch: 1
-    loop: 0
-    soundType: 3
-    source: {fileID: 0}
-  - name: p2_phrase2
-    clip: {fileID: 8300000, guid: f78d9bcda839b40bfae5519db3bfb36b, type: 3}
-    priority: 128
-    volume: 1
-    pitch: 1
-    loop: 0
-    soundType: 3
-    source: {fileID: 0}
-  - name: duo_phrase
-    clip: {fileID: 8300000, guid: ffa531367782d48d8955234df99d2ef7, type: 3}
-    priority: 128
-    volume: 0.8
-    pitch: 1
-    loop: 0
-    soundType: 1
+    loop: 1
+    soundType: 0
+    soundPlayerNum: 0
     source: {fileID: 0}
   - name: solo_phrase
     clip: {fileID: 8300000, guid: b0355c9a2debd4f53b418ed549e6d07d, type: 3}
@@ -101,6 +62,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     soundType: 1
+    soundPlayerNum: 0
+    source: {fileID: 0}
+  - name: duo_phrase
+    clip: {fileID: 8300000, guid: ffa531367782d48d8955234df99d2ef7, type: 3}
+    priority: 128
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    soundType: 1
+    soundPlayerNum: 0
     source: {fileID: 0}
   - name: win_song
     clip: {fileID: 8300000, guid: c7df91840dd5143f3bc04ba4f5998b2e, type: 3}
@@ -109,14 +80,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     soundType: 1
-    source: {fileID: 0}
-  - name: menu_music
-    clip: {fileID: 8300000, guid: a513312d6a67b4ec9b06da3681fef563, type: 3}
-    priority: 200
-    volume: 0.7
-    pitch: 1
-    loop: 1
-    soundType: 0
+    soundPlayerNum: 0
     source: {fileID: 0}
   - name: game_music
     clip: {fileID: 8300000, guid: d9dffb631599241dd94021b95b9e0404, type: 3}
@@ -125,6 +89,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     soundType: 0
+    soundPlayerNum: 0
     source: {fileID: 0}
   - name: level_start
     clip: {fileID: 8300000, guid: 891d64943dbee43d4b578e65922823c3, type: 3}
@@ -133,9 +98,295 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     soundType: 1
+    soundPlayerNum: 0
     source: {fileID: 0}
-  sfxMute: 0
-  musicMute: 0
+  - name: bink
+    clip: {fileID: 8300000, guid: 5b7050b39231345ad8da4b019992a992, type: 3}
+    priority: 120
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    soundType: 1
+    soundPlayerNum: 0
+    source: {fileID: 0}
+  - name: p1_phrase1
+    clip: {fileID: 8300000, guid: 50097d55c7d4f436ca135388b612c1d7, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_phrase2
+    clip: {fileID: 8300000, guid: 6f278d651f498489a805cd34eaa9c37a, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_phrase3
+    clip: {fileID: 8300000, guid: 0e89e8755d3224a8a9bf2816ce86d3a8, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_proxim1
+    clip: {fileID: 8300000, guid: 9b8c9bc7d8142462abdef4a018b24f27, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_proxim2
+    clip: {fileID: 8300000, guid: 9054e3bc21256491aa0921bb6abe45fd, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_proxim3
+    clip: {fileID: 8300000, guid: 48a77e581ec6d4c4dadc2be3913ab500, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p1_victory
+    clip: {fileID: 8300000, guid: 3640e327abe494b3db94985986e8dd06, type: 3}
+    priority: 0
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 4
+    soundPlayerNum: 1
+    source: {fileID: 0}
+  - name: p2_phrase1
+    clip: {fileID: 8300000, guid: dd02abd05c227403a9e2f6744cf437c0, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_phrase2
+    clip: {fileID: 8300000, guid: f78d9bcda839b40bfae5519db3bfb36b, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_phrase3
+    clip: {fileID: 8300000, guid: aaa09b6f6a50d46919ca86e22fcbaea7, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_proxim1
+    clip: {fileID: 8300000, guid: d763c93a76cee4dd59b7697711200aaf, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_proxim2
+    clip: {fileID: 8300000, guid: 6a1a806589f924c4eb03e06016622e27, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_proxim3
+    clip: {fileID: 8300000, guid: 5d22f92d1543340cb86cda4cfdb3dc1c, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p2_victory
+    clip: {fileID: 8300000, guid: 5d22f92d1543340cb86cda4cfdb3dc1c, type: 3}
+    priority: 0
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 4
+    soundPlayerNum: 2
+    source: {fileID: 0}
+  - name: p3_phrase1
+    clip: {fileID: 8300000, guid: 66e14777024bb42b5a8f5b458cbb26da, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_phrase2
+    clip: {fileID: 8300000, guid: 8e46f9fed564e4b88b32af49fa370162, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_phrase3
+    clip: {fileID: 8300000, guid: 63978122154e34509979732c4c86f964, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_phrase4
+    clip: {fileID: 8300000, guid: 8caa201d3460b4faa8264596196999a4, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_proxim1
+    clip: {fileID: 8300000, guid: ffc1ac7c7079142a4a1c362ae965502d, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_proxim2
+    clip: {fileID: 8300000, guid: 6c4ab619d15df4989868d4b3bf1eb842, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_proxim3
+    clip: {fileID: 8300000, guid: bd84780115a984d3ba5741b9dc99e40e, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_proxim4
+    clip: {fileID: 8300000, guid: ac3a185c2a70f45cf828fcb4fc9dcfee, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p3_victory
+    clip: {fileID: 8300000, guid: af2b2792345254f0fb020d5dfd61a3de, type: 3}
+    priority: 0
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 4
+    soundPlayerNum: 3
+    source: {fileID: 0}
+  - name: p4_phrase1
+    clip: {fileID: 8300000, guid: 705294ca09974467fa16b3618a0ff5fc, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_phrase2
+    clip: {fileID: 8300000, guid: 6003d73058eff47c69c56e7cda218cf5, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_phrase3
+    clip: {fileID: 8300000, guid: 21d7f0c32bb104a2f9135dbb7c96dcc6, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 2
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_proxim1
+    clip: {fileID: 8300000, guid: 4ea05e5a4521b45c894d6ee045aa7705, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_proxim2
+    clip: {fileID: 8300000, guid: ce4bd756feb0d4aeaac7acb9a511ff96, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_proxim3
+    clip: {fileID: 8300000, guid: 165ce6aa9a65f42cc8cba9e0c2f356fd, type: 3}
+    priority: 128
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 3
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  - name: p4_victory
+    clip: {fileID: 8300000, guid: 8f4d2bcbdec934ef4b4862269e53e131, type: 3}
+    priority: 0
+    volume: 1
+    pitch: 1
+    loop: 0
+    soundType: 4
+    soundPlayerNum: 4
+    source: {fileID: 0}
+  sfxMuted: 0
+  musicMuted: 0
+  sfxToggle: {fileID: 0}
+  musicToggle: {fileID: 0}
+  p1VictoryName: 
+  p2VictoryName: 
+  p3VictoryName: 
+  p4VictoryName: 
 --- !u!82 &3839118064533254130
 AudioSource:
   m_ObjectHideFlags: 0

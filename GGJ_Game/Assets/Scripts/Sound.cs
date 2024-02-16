@@ -19,8 +19,10 @@ public class Sound
     public bool loop;
 
     // type of sound
-    public enum type { music, sfx, p1Catchphrase, p2Catchphrase};
+    public enum type { music, sfx, catchphrase, proximity, victory};
+    public enum playerNum { NA, one, two, three, four };
     public type soundType;
+    public playerNum soundPlayerNum;
 
     [HideInInspector]
     public AudioSource source;

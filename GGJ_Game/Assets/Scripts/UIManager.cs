@@ -31,6 +31,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject winScreenCanvas;
     [SerializeField] GameObject p1Victory;
     [SerializeField] GameObject p2Victory;
+    [SerializeField] GameObject p3Victory;
+    [SerializeField] GameObject p4Victory;
     [SerializeField] Button restartButton;
     [SerializeField] Button menuButton;
 
@@ -220,17 +222,22 @@ public class UIManager : MonoBehaviour
     public void winEvent(string winningPlayer)
     {
         winScreenCanvas.SetActive(true);
-        AudioManager.instance.Play("win_song");
 
         if (winningPlayer == "Player 1")
         {
             p1Victory.SetActive(true);
-            p2Victory.SetActive(false);
         }
         else if(winningPlayer == "Player 2")
         {
-            p1Victory.SetActive(false);
             p2Victory.SetActive(true);
+        }
+        else if (winningPlayer == "Player 3")
+        {
+            p3Victory.SetActive(true);
+        }
+        else if (winningPlayer == "Player 4")
+        {
+            p4Victory.SetActive(true);
         }
     }
 

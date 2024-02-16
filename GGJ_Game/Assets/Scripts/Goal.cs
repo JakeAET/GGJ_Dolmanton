@@ -27,11 +27,27 @@ public class Goal : MonoBehaviour
     {
         if (collision.CompareTag("Player") && GameManager.instance.turnBasedActive)
         {
-            Player player = collision.GetComponentInParent<Player>();
-            player.switchFace(true);
-            GameManager.instance.goalReached(player);
-            UIManager.instance.winEvent(player.playerName);
+            StartCoroutine(winEvent(collision.GetComponentInParent<Player>()));
+            //Player player = collision.GetComponentInParent<Player>();
+            //player.switchFace(true);
+            //AudioManager.instance.playVictory(player.playerName);
+            //GameManager.instance.goalReached(player);
+            //UIManager.instance.winEvent(player.playerName);
         }
+    }
+
+    IEnumerator winEvent(Player player)
+    {
+        player.switchFace(true);
+        float waitTime = AudioManager.instance.playVictory(player.playerName);
+        GameManager.instance.goalReached(player);
+        UIManager.instance.winEvent(player.playerName);
+
+        yield return new WaitForSeconds(waitTime);
+
+        AudioManager.instance.Play("win_song");
+
+        yield return null;
     }
 
     IEnumerator startCamFunction()
