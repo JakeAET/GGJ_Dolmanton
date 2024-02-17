@@ -25,10 +25,10 @@ public class LevelStart : MonoBehaviour
     [SerializeField] GameObject[] levelChunkPrefabs;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        FindObjectOfType<GameManager>().initializeLevel(startingPosition.position, startVcams, camController);
-        FindObjectOfType<GameManager>().levelEdgePos = levelEdgePos.transform.position;
+        GameManager.instance.initializeLevel(startingPosition.position, startVcams, camController);
+        GameManager.instance.levelEdgePos = levelEdgePos.transform.position;
         generateLevel();
     }
 

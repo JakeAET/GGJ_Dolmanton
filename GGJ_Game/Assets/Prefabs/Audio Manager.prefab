@@ -379,6 +379,42 @@ MonoBehaviour:
     soundType: 4
     soundPlayerNum: 4
     source: {fileID: 0}
+  - name: p1_start
+    clip: {fileID: 8300000, guid: 8d8a6e9a410544dbbabb2606f4df9279, type: 3}
+    priority: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    soundType: 5
+    soundPlayerNum: 0
+    source: {fileID: 0}
+  - name: p2_start
+    clip: {fileID: 8300000, guid: a31f700f773fb4f5596e8ebfdf7400b7, type: 3}
+    priority: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    soundType: 5
+    soundPlayerNum: 0
+    source: {fileID: 0}
+  - name: p3_start
+    clip: {fileID: 8300000, guid: 840061a7c6d4b40e992a1a462f66ec08, type: 3}
+    priority: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    soundType: 5
+    soundPlayerNum: 0
+    source: {fileID: 0}
+  - name: p4_start
+    clip: {fileID: 8300000, guid: 29553459d9bd74049a0845c063713120, type: 3}
+    priority: 0
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    soundType: 5
+    soundPlayerNum: 0
+    source: {fileID: 0}
   sfxMuted: 0
   musicMuted: 0
   sfxToggle: {fileID: 0}

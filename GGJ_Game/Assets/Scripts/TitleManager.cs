@@ -2,64 +2,127 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using System;
 
 public class TitleManager : MonoBehaviour
 {
-    [SerializeField] Transform p1SkinPanel;
-    [SerializeField] Transform p1OutfitPanel;
+    [Header("Sprite References")]
 
-    [SerializeField] Transform p2SkinPanel;
-    [SerializeField] Transform p2OutfitPanel;
+    [SerializeField] Sprite[] numSprites;
 
-    [SerializeField] Image p1SkinImg;
-    [SerializeField] Image p1OutfitImg;
-    [SerializeField] Image p2SkinImg;
-    [SerializeField] Image p2OutfitImg;
+    [Header("Panel References")]
 
-    [SerializeField] GameObject p2Settings;
+    [SerializeField] Transform[] skinPanels;
+    [SerializeField] Transform[] outfitPanels;
 
-    [SerializeField] Button p1Button;
-    [SerializeField] Button p2Button;
-    [SerializeField] Button startButton;
+    [SerializeField] GameObject startPanel;
+    private bool startPanelActive = true;
+    [SerializeField] GameObject[] customPanels;
+    private List <bool> customPanelActive = new List<bool>();
 
-    [SerializeField] Outline p1Outline;
-    [SerializeField] Outline p2Outline;
+    [Header("Image References")]
 
+    [SerializeField] Image numSprite;
+    [SerializeField] Image[] skinImgs;
+    [SerializeField] Image[] outfitImgs;
+
+    private List<Image[]> playerImgArrays = new List<Image[]>();
+
+    [SerializeField] Image[] p1Images;
     [SerializeField] Image[] p2Images;
+    [SerializeField] Image[] p3Images;
+    [SerializeField] Image[] p4Images;
 
-    [SerializeField] ToggleGroup[] toggleGroups;
+    [Header("Button References")]
+
+    [SerializeField] Button startButton;
+    [SerializeField] GameObject plusButtonObj;
+    private Button plusButton;
+    [SerializeField] GameObject minusButtonObj;
+    private Button minusButton;
+    [SerializeField] Button[] confirmButtons;
+
+    [SerializeField] GameObject[] customizeButtonObjs;
+    private List<Button> playerCustomizeButtons = new List<Button>();
+
+    [SerializeField] ToggleGroup[] skinToggleGroups;
+    [SerializeField] ToggleGroup[] outfitToggleGroups;
+
+    private void Awake()
+    {
+        DOTween.Init();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(GameManager.instance.activePlayerCount == 1)
+        Time.timeScale = 1;
+
+        playerImgArrays.Add(p1Images);
+        playerImgArrays.Add(p2Images);
+        playerImgArrays.Add(p3Images);
+        playerImgArrays.Add(p4Images);
+
+        plusButton = plusButtonObj.GetComponent<Button>();
+        minusButton = minusButtonObj.GetComponent<Button>();
+
+        foreach (GameObject obj in customizeButtonObjs)
         {
-            p1Outline.enabled = true;
-            p2Outline.enabled = false;
-            p2Settings.SetActive(false);
-            hideP2(true);
+            playerCustomizeButtons.Add(obj.GetComponent<Button>());
         }
-        else if (GameManager.instance.activePlayerCount == 2)
+
+        for (int i = 0; i < 4; i++)
         {
-            p1Outline.enabled = false;
-            p2Outline.enabled = true;
+            bool panelBool = false;
+            customPanelActive.Add(panelBool);
         }
+
+        if (GameManager.instance.activePlayerCount == 4)
+        {
+            plusButton.interactable = false;
+            foreach (Image img in plusButtonObj.GetComponentsInChildren<Image>())
+            {
+                Color color = img.color;
+                color.a = 0.5f;
+                img.color = color;
+            }
+        }
+        else if (GameManager.instance.activePlayerCount == 1)
+        {
+            minusButton.interactable = false;
+            foreach (Image img in minusButtonObj.GetComponentsInChildren<Image>())
+            {
+                Color color = img.color;
+                color.a = 0.5f;
+                img.color = color;
+            }
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            skinInitialize(i);
+            skinUpdate(i);
+
+            outfitInitialize(i);
+            outfitUpdate(i);
+        }
+
+        numSprite.sprite = numSprites[GameManager.instance.activePlayerCount - 1];
+        updateHiddenPlayers();
 
         startButton.onClick.AddListener(startGame);
-        p1Button.onClick.AddListener(onePlayer);
-        p2Button.onClick.AddListener(twoPlayer);
+        plusButton.onClick.AddListener(plusPlayer);
+        minusButton.onClick.AddListener(minusPlayer);
 
-        if (!GameManager.instance.colorsInitialized)
+        playerCustomizeButtons[0].onClick.AddListener(delegate { customizeActivate(0); });
+        playerCustomizeButtons[1].onClick.AddListener(delegate { customizeActivate(1); });
+        playerCustomizeButtons[2].onClick.AddListener(delegate { customizeActivate(2); });
+        playerCustomizeButtons[3].onClick.AddListener(delegate { customizeActivate(3); });
+
+        foreach (Button b in confirmButtons)
         {
-            p1SkinUpdate();
-            p1OutfitUpdate();
-            p2SkinUpdate();
-            p2OutfitUpdate();
-            GameManager.instance.colorsInitialized = true;
-        }
-        else
-        {
-            assignActiveColors();
+            b.onClick.AddListener(confirmCustom);
         }
     }
 
@@ -69,202 +132,250 @@ public class TitleManager : MonoBehaviour
         
     }
 
-    public void onePlayer()
-    {
-        if(GameManager.instance.activePlayerCount != 1)
-        {
-            AudioManager.instance.Play("solo_phrase");
-            p1Outline.enabled = true;
-            p2Outline.enabled = false;
-            GameManager.instance.activePlayerCount = 1;
-
-            p2Settings.SetActive(false);
-            hideP2(true);
-        }
-    }
-
-    public void twoPlayer()
-    {
-        if (GameManager.instance.activePlayerCount != 2)
-        {
-            AudioManager.instance.Play("duo_phrase");
-
-            p1Outline.enabled = false;
-            p2Outline.enabled = true;
-            GameManager.instance.activePlayerCount = 2;
-
-            p2Settings.SetActive(true);
-            hideP2(false);
-        }
-    }
-
     public void startGame()
     {
+        if(GameManager.instance.activePlayerCount >= 1)
+        {
+            AudioManager.instance.Play("p1_start");
+        }
+
+        if (GameManager.instance.activePlayerCount >= 2)
+        {
+            AudioManager.instance.Play("p2_start");
+        }
+
+        if (GameManager.instance.activePlayerCount >= 3)
+        {
+            AudioManager.instance.Play("p3_start");
+        }
+
+        if (GameManager.instance.activePlayerCount >= 4)
+        {
+            AudioManager.instance.Play("p4_start");
+        }
+
         GameManager.instance.changeScene("Game Screen");
     }
 
-    public void p1SkinUpdate()
+    public void confirmCustom()
     {
-        foreach (Transform child in p1SkinPanel)
+        for (int i = 0; i < customPanelActive.Count; i++)
         {
-            if (child.GetComponent<Toggle>() != null)
+            // Close custom panel
+            if (customPanelActive[i])
             {
-                if (child.GetComponent<Toggle>().isOn)
+                customPanels[i].GetComponent<RectTransform>().DOMoveY(-200, 0.3f);
+                customPanelActive[i] = false;
+                foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
                 {
-                    GameManager.instance.playerSkinColors[0] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    p1SkinImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    break;
+                    Color color = img.color;
+                    color.a = 0.8f;
+                    img.color = color;
                 }
             }
+
+            //Open start panel
+            startPanel.GetComponent<RectTransform>().DOMoveY(0, 0.5f);
+            startPanelActive = true;
         }
     }
 
-    public void p1OutfitUpdate()
+    public void customizeActivate(int pNum)
     {
-        foreach (Transform child in p1OutfitPanel)
+        if (!customPanelActive[pNum])
         {
-            if (child.GetComponent<Toggle>() != null)
-            {
-                if (child.GetComponent<Toggle>().isOn)
-                {
-                    GameManager.instance.playerOutfitColors[0] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    p1OutfitImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    break;
-                }
-            }
-        }
-    }
-
-    public void p2SkinUpdate()
-    {
-        foreach (Transform child in p2SkinPanel)
-        {
-            if (child.GetComponent<Toggle>() != null)
-            {
-                if (child.GetComponent<Toggle>().isOn)
-                {
-                    GameManager.instance.playerSkinColors[1] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    p2SkinImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    break;
-                }
-            }
-        }
-    }
-
-    public void p2OutfitUpdate()
-    {
-        foreach (Transform child in p2OutfitPanel)
-        {
-            if (child.GetComponent<Toggle>() != null)
-            {
-                if (child.GetComponent<Toggle>().isOn)
-                {
-                    GameManager.instance.playerOutfitColors[1] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    p2OutfitImg.color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
-                    break;
-                }
-            }
-        }
-    }
-
-    public void hideP2(bool hide)
-    {
-        if (hide)
-        {
-            foreach (Image img in p2Images)
+            customPanels[pNum].GetComponent<RectTransform>().DOMoveY(6,0.5f);
+            foreach (Image img in customizeButtonObjs[pNum].GetComponentsInChildren<Image>())
             {
                 Color color = img.color;
                 color.a = 0.3f;
                 img.color = color;
             }
-        }
-        else
-        {
-            foreach (Image img in p2Images)
+
+            // Close start panel
+            if (startPanelActive)
             {
-                Color color = img.color;
-                color.a = 1f;
-                img.color = color;
+                startPanel.GetComponent<RectTransform>().DOMoveY(-204, 0.3f);
+                startPanelActive = false;
+            }
+
+            for (int i = 0; i < customPanelActive.Count; i++)
+            {
+                // Close custom panel
+                if (customPanelActive[i] && i != pNum)
+                {
+                    customPanels[i].GetComponent<RectTransform>().DOMoveY(-200, 0.3f);
+                    foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
+                    {
+                        Color color = img.color;
+                        color.a = 0.8f;
+                        img.color = color;
+                    }
+
+                    customPanelActive[i] = false;
+                }
+            }
+
+            customPanelActive[pNum] = true;
+        }
+    }
+
+    public void plusPlayer()
+    {
+        if(GameManager.instance.activePlayerCount < 4)
+        {
+            GameManager.instance.activePlayerCount++;
+
+            if (GameManager.instance.activePlayerCount == 4)
+            {
+                plusButton.interactable = false;
+                foreach (Image img in plusButtonObj.GetComponentsInChildren<Image>())
+                {
+                    Color color = img.color;
+                    color.a = 0.5f;
+                    img.color = color;
+                }
+            }
+
+            if(minusButton.interactable == false)
+            {
+                minusButton.interactable = true;
+                foreach (Image img in minusButtonObj.GetComponentsInChildren<Image>())
+                {
+                    Color color = img.color;
+                    color.a = 1f;
+                    img.color = color;
+                }
+            }
+
+            numSprite.sprite = numSprites[GameManager.instance.activePlayerCount - 1];
+            updateHiddenPlayers();
+        }
+    }
+
+    public void minusPlayer()
+    {
+        if (GameManager.instance.activePlayerCount > 1)
+        {
+            GameManager.instance.activePlayerCount--;
+
+            if (GameManager.instance.activePlayerCount == 1)
+            {
+                minusButton.interactable = false;
+                foreach (Image img in minusButtonObj.GetComponentsInChildren<Image>())
+                {
+                    Color color = img.color;
+                    color.a = 0.5f;
+                    img.color = color;
+                }
+            }
+
+            if (plusButton.interactable == false)
+            {
+                plusButton.interactable = true;
+                foreach (Image img in plusButtonObj.GetComponentsInChildren<Image>())
+                {
+                    Color color = img.color;
+                    color.a = 1f;
+                    img.color = color;
+                }
+            }
+
+            numSprite.sprite = numSprites[GameManager.instance.activePlayerCount - 1];
+            updateHiddenPlayers();
+        }
+    }
+
+    public void skinInitialize(int pNum)
+    {
+        skinToggleGroups[pNum].allowSwitchOff = true;
+
+        foreach (Transform child in skinPanels[pNum])
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                child.GetComponent<Toggle>().isOn = (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color == GameManager.instance.playerSkinColors[pNum]);
+            }
+        }
+
+        skinToggleGroups[pNum].allowSwitchOff = false;
+    }
+
+    public void outfitInitialize(int pNum)
+    {
+        outfitToggleGroups[pNum].allowSwitchOff = true;
+
+        foreach (Transform child in outfitPanels[pNum])
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                child.GetComponent<Toggle>().isOn = (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color == GameManager.instance.playerOutfitColors[pNum]);
+            }
+        }
+
+        outfitToggleGroups[pNum].allowSwitchOff = false;
+    }
+
+    public void skinUpdate(int pNum)
+    {
+        foreach (Transform child in skinPanels[pNum])
+        {
+            if (child.GetComponent<Toggle>() != null)
+            {
+                if (child.GetComponent<Toggle>().isOn)
+                {
+                    GameManager.instance.playerSkinColors[pNum] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    skinImgs[pNum].color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    break;
+                }
             }
         }
     }
 
-    public void assignActiveColors()
+    public void outfitUpdate(int pNum)
     {
-        foreach (ToggleGroup t in toggleGroups)
-        {
-            t.allowSwitchOff = true;
-        }
-
-        foreach (Transform child in p1OutfitPanel)
+        foreach (Transform child in outfitPanels[pNum])
         {
             if (child.GetComponent<Toggle>() != null)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerOutfitColors[0])
+                if (child.GetComponent<Toggle>().isOn)
                 {
-                    child.GetComponent<Toggle>().isOn = false;
-                }
-                else
-                {
-                    child.GetComponent<Toggle>().isOn = true;
+                    GameManager.instance.playerOutfitColors[pNum] = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    outfitImgs[pNum].color = child.GetComponent<Toggle>().GetComponentInChildren<Image>().color;
+                    break;
                 }
             }
         }
+    }
 
-        foreach (Transform child in p1SkinPanel)
+    public void updateHiddenPlayers()
+    {
+        for (int i = 0; i < 4; i++)
         {
-            if (child.GetComponent<Toggle>() != null)
+            if(i + 1 <= GameManager.instance.activePlayerCount)
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerSkinColors[0])
+                foreach (Image img in playerImgArrays[i])
                 {
-                    child.GetComponent<Toggle>().isOn = false;
+                    Color color = img.color;
+                    color.a = 1f;
+                    img.color = color;
                 }
-                else
-                {
-                    child.GetComponent<Toggle>().isOn = true;
-                }
-            }
-        }
 
-        foreach (Transform child in p2OutfitPanel)
-        {
-            if (child.GetComponent<Toggle>() != null)
+                playerCustomizeButtons[i].interactable = true;
+                customizeButtonObjs[i].SetActive(true);
+            }
+            else
             {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerOutfitColors[1])
+                foreach (Image img in playerImgArrays[i])
                 {
-                    child.GetComponent<Toggle>().isOn = false;
+                    Color color = img.color;
+                    color.a = 0.3f;
+                    img.color = color;
                 }
-                else
-                {
-                    child.GetComponent<Toggle>().isOn = true;
-                }
+
+                playerCustomizeButtons[i].interactable = false;
+                customizeButtonObjs[i].SetActive(false);
             }
         }
-
-        foreach (Transform child in p2SkinPanel)
-        {
-            if (child.GetComponent<Toggle>() != null)
-            {
-                if (child.GetComponent<Toggle>().GetComponentInChildren<Image>().color != GameManager.instance.playerSkinColors[1])
-                {
-                    child.GetComponent<Toggle>().isOn = false;
-                }
-                else
-                {
-                    child.GetComponent<Toggle>().isOn = true;
-                }
-            }
-        }
-
-        foreach (ToggleGroup t in toggleGroups)
-        {
-            t.allowSwitchOff = false;
-        }
-
-        p1OutfitImg.color = GameManager.instance.playerOutfitColors[0];
-        p1SkinImg.color = GameManager.instance.playerSkinColors[0];
-
-        p2OutfitImg.color = GameManager.instance.playerOutfitColors[1];
-        p2SkinImg.color = GameManager.instance.playerSkinColors[1];
     }
 }

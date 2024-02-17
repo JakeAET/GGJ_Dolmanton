@@ -8,13 +8,19 @@ public class Goal : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        FindObjectOfType<GameManager>().levelGoalPos = transform.position;
-        StartCoroutine(startCamFunction());
+        //GameManager gameManagerRef = null;
+        //while (gameManagerRef == null)
+        //{
+        //    gameManagerRef = GameManager.instance;
+        //}
+        //FindObjectOfType<GameManager>().levelGoalPos = transform.position;
+        //StartCoroutine(startCamFunction());
     }
 
     void Start()
     {
-
+        GameManager.instance.levelGoalPos = transform.position;
+        StartCoroutine(startCamFunction());
     }
 
     // Update is called once per frame

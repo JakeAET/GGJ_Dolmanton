@@ -235,7 +235,7 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
-            if (s.soundType == Sound.type.sfx)
+            if (s.soundType == Sound.type.sfx || s.soundType == Sound.type.catchphrase || s.soundType == Sound.type.proximity || s.soundType == Sound.type.victory)
             {
                 s.source.mute = mute;
             }
@@ -271,7 +271,7 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
-            if (s.soundType == Sound.type.sfx)
+            if (s.soundType == Sound.type.sfx || s.soundType == Sound.type.catchphrase || s.soundType == Sound.type.proximity || s.soundType == Sound.type.victory)
             {
                 Stop(s.name);
             }
@@ -290,11 +290,11 @@ public class AudioManager : MonoBehaviour
         }
         else if (playerName == "Player 3")
         {
-            Play(p3CatchphraseNames[Random.Range(0, p2CatchphraseNames.Count)]);
+            Play(p3CatchphraseNames[Random.Range(0, p3CatchphraseNames.Count)]);
         }
         else if (playerName == "Player 4")
         {
-            Play(p4CatchphraseNames[Random.Range(0, p2CatchphraseNames.Count)]);
+            Play(p4CatchphraseNames[Random.Range(0, p4CatchphraseNames.Count)]);
         }
     }
 
