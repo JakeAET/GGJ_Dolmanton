@@ -21,6 +21,8 @@ public class TitleManager : MonoBehaviour
     [SerializeField] GameObject[] customPanels;
     private List <bool> customPanelActive = new List<bool>();
 
+    private Vector3 panelEndPos; 
+
     [Header("Image References")]
 
     [SerializeField] Image numSprite;
@@ -99,6 +101,8 @@ public class TitleManager : MonoBehaviour
             }
         }
 
+        panelEndPos = customPanels[0].GetComponent<RectTransform>().position;
+
         for (int i = 0; i < 4; i++)
         {
             skinInitialize(i);
@@ -164,7 +168,7 @@ public class TitleManager : MonoBehaviour
             // Close custom panel
             if (customPanelActive[i])
             {
-                customPanels[i].GetComponent<RectTransform>().DOMoveY(-200, 0.3f);
+                customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
                 customPanelActive[i] = false;
                 foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
                 {
@@ -195,7 +199,7 @@ public class TitleManager : MonoBehaviour
             // Close start panel
             if (startPanelActive)
             {
-                startPanel.GetComponent<RectTransform>().DOMoveY(-204, 0.3f);
+                startPanel.GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
                 startPanelActive = false;
             }
 
@@ -204,7 +208,7 @@ public class TitleManager : MonoBehaviour
                 // Close custom panel
                 if (customPanelActive[i] && i != pNum)
                 {
-                    customPanels[i].GetComponent<RectTransform>().DOMoveY(-200, 0.3f);
+                    customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
                     foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
                     {
                         Color color = img.color;
