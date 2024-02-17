@@ -43,20 +43,18 @@ public class GameManager : MonoBehaviour
 
     private CamController camControllerRef;
 
-    public bool colorsInitialized;
-
     private void Awake()
     {
         if (instance != null && instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {
             instance = this;
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -147,6 +145,8 @@ public class GameManager : MonoBehaviour
 
     public void initializeLevel(Vector3 startPos, GameObject[] playerVcams, GameObject camController)
     {
+        //Debug.Log("Initializing Level");
+
         // Reset game data
         Time.timeScale = 1;
         playerObjs = new List<GameObject>();
@@ -263,6 +263,7 @@ public class GameManager : MonoBehaviour
             playerOrder.Add(num);
         }
 
+        //Debug.Log(playerOrder[0]);
         return playerOrder;
     }
 
@@ -339,5 +340,13 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Nearest player " + closestDistance + " units away. Range is " + range + " units. Return " + (closestDistance <= range));
         return closestDistance <= range;
+    }
+
+    public void restartLevelFromPause()
+    {
+        firstPlayerSpawned = false;
+        turnBasedActive = false;
+        launchFinished = false;
+        activePlayer = null;
     }
 }

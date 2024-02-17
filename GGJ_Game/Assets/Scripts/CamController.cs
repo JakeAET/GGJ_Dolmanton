@@ -25,14 +25,11 @@ public class CamController : MonoBehaviour
         {
             instance = this;
         }
-
-        animator.Play("goal");
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-
+        animator.Play("goal");
     }
 
     public void switchCam(int playerIndex)

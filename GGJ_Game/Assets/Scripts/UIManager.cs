@@ -69,11 +69,18 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(startRoutine());
+    }
+
+    IEnumerator startRoutine()
+    {
+        yield return new WaitUntil(gameManagerLoaded);
+
         initializeSliders();
 
         for (int i = 0; i < playerPanels.Length; i++)
         {
-            if(i < GameManager.instance.activePlayerCount)
+            if (i < GameManager.instance.activePlayerCount)
             {
                 activePlayerPanels.Add(playerPanels[i]);
                 playerPanels[i].color = GameManager.instance.playerObjs[GameManager.instance.turnOrder[i]].GetComponent<Player>().outfitColor;
@@ -96,6 +103,8 @@ public class UIManager : MonoBehaviour
         pauseResumeButton.onClick.AddListener(unpauseGame);
         pauseRestartButton.onClick.AddListener(restartLevel);
         pauseQuitButton.onClick.AddListener(returnToMenu);
+
+        yield return null;
     }
 
     // Update is called once per frame
@@ -210,6 +219,7 @@ public class UIManager : MonoBehaviour
 
     public void restartLevel()
     {
+        GameManager.instance.restartLevelFromPause();
         GameManager.instance.changeScene("Game Screen", true);
     }
 
@@ -218,7 +228,6 @@ public class UIManager : MonoBehaviour
         GameManager.instance.changeScene("Title Screen");
     }
 
-    // TODO: Add winning screens for all 4 players
     public void winEvent(string winningPlayer)
     {
         winScreenCanvas.SetActive(true);
@@ -323,5 +332,10 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1;
         pauseScreenCanvas.SetActive(false);
         paused = false;
+    }
+
+    bool gameManagerLoaded()
+    {
+        return GameManager.instance != null;
     }
 }
