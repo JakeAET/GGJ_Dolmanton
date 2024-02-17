@@ -225,6 +225,7 @@ public class UIManager : MonoBehaviour
 
     public void returnToMenu()
     {
+        GameManager.instance.restartLevelFromPause();
         GameManager.instance.changeScene("Title Screen");
     }
 

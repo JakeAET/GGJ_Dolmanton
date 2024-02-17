@@ -344,6 +344,7 @@ public class GameManager : MonoBehaviour
 
     public void restartLevelFromPause()
     {
+        StopAllCoroutines();
         firstPlayerSpawned = false;
         turnBasedActive = false;
         launchFinished = false;
