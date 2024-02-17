@@ -44,23 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27fa1000cd8da46cf8d51cfd6186eda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nearPlayerRange: 6
   turnBasedActive: 0
   activePlayer: {fileID: 0}
   playerObjs: []
   activePlayerCount: 1
   activeTurnIndex: 0
   turnOrder: 
+  currentTurnOrder: 
   playerSkinColors:
-  - {r: 0.9607844, g: 0.86274517, b: 0.81568635, a: 1}
-  - {r: 0.8470589, g: 0.64705884, b: 0.5647059, a: 1}
-  - {r: 0.73333335, g: 0.5568628, b: 0.4901961, a: 1}
-  - {r: 0.61960787, g: 0.47450984, b: 0.4156863, a: 1}
+  - {r: 1, g: 0.8967813, b: 0.8537736, a: 1}
+  - {r: 0.64705884, g: 0.49411765, b: 0.43137255, a: 1}
+  - {r: 0.88235295, g: 0.6745098, b: 0.5882353, a: 1}
+  - {r: 0.4117647, g: 0.3137255, b: 0.27450982, a: 1}
   playerOutfitColors:
-  - {r: 0.9568628, g: 0.2901961, b: 0.6901961, a: 1}
-  - {r: 0.9607844, g: 0.38431376, b: 0.37254903, a: 1}
-  - {r: 0.5921569, g: 0.8431373, b: 0.59607846, a: 1}
-  - {r: 0.21568629, g: 0.67058825, b: 0.8588236, a: 1}
+  - {r: 1, g: 0.4, b: 0.3882353, a: 1}
+  - {r: 0.22745097, g: 0.56078434, b: 0.89411765, a: 1}
+  - {r: 0.99607843, g: 0.66619444, b: 0.19921568, a: 1}
+  - {r: 0.35999995, g: 0.9, b: 0.35999995, a: 1}
   allowLaunch: 0
   launchFinished: 0
+  levelStartPos: {x: 0, y: 0, z: 0}
+  levelEdgePos: {x: 0, y: 0, z: 0}
+  levelGoalPos: {x: 0, y: 0, z: 0}
+  firstPlayerSpawned: 0
   playerInstance: {fileID: 7597827652887818042, guid: 571b72bb3a9f2420e86379bc89d4e187, type: 3}
-  colorsInitialized: 0
