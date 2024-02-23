@@ -102,6 +102,15 @@ public class TitleManager : MonoBehaviour
         }
 
         panelEndPos = customPanels[0].GetComponent<RectTransform>().position;
+        Vector3 newPos = panelEndPos;
+        newPos.y -= 500f;
+
+        for (int i = 0; i < 4; i++)
+        {
+            customPanels[i].GetComponent<RectTransform>().position = newPos;    
+        }
+
+
 
         for (int i = 0; i < 4; i++)
         {
@@ -168,7 +177,7 @@ public class TitleManager : MonoBehaviour
             // Close custom panel
             if (customPanelActive[i])
             {
-                customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
+                customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y - 500, 0.5f);
                 customPanelActive[i] = false;
                 foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
                 {
@@ -199,7 +208,7 @@ public class TitleManager : MonoBehaviour
             // Close start panel
             if (startPanelActive)
             {
-                startPanel.GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
+                startPanel.GetComponent<RectTransform>().DOMoveY(panelEndPos.y - 500, 0.5f);
                 startPanelActive = false;
             }
 
@@ -208,7 +217,7 @@ public class TitleManager : MonoBehaviour
                 // Close custom panel
                 if (customPanelActive[i] && i != pNum)
                 {
-                    customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y, 0.3f);
+                    customPanels[i].GetComponent<RectTransform>().DOMoveY(panelEndPos.y - 500, 0.5f);
                     foreach (Image img in customizeButtonObjs[i].GetComponentsInChildren<Image>())
                     {
                         Color color = img.color;
