@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: levelChunkPrefabs.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: levelChunkPrefabs.Array.data[0]
@@ -376,6 +376,14 @@ PrefabInstance:
       propertyPath: levelChunkPrefabs.Array.data[7]
       value: 
       objectReference: {fileID: 492449695881681095, guid: 0298426441a6f40e3aae0967d63e6fab, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: e4e71d3e200cc6b46916d19cc3dd190c, type: 3}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: 492449695881681095, guid: 449fe302a9f032e44a5c9ddd6283dfb0, type: 3}
     - target: {fileID: 5568898225929431185, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
