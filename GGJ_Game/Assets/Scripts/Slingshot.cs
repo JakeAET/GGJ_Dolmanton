@@ -48,13 +48,15 @@ public class Slingshot : MonoBehaviour
                     line.SetActive(true);
                     arrow.SetActive(true);
                     drawingLine = true;
+                    if (GameManager.instance.tutorialObj.activeInHierarchy)
+                    {
+                        GameManager.instance.tutorialObj.SetActive(false);
+                    }
                 }
             }
 
             if (Input.GetMouseButton(0) && line.activeInHierarchy)
             {
-
-
                 lineStart = GameManager.instance.activePlayer.slingshotPoint.position;
                 GameManager.instance.activePlayer.switchFace(false); // Player face forward when launch starts
 

@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public Vector3 levelEdgePos;
     public Vector3 levelGoalPos;
 
+    public GameObject tutorialObj;
+
     public bool firstPlayerSpawned = false;
 
     [SerializeField] GameObject playerInstance;
@@ -111,6 +113,11 @@ public class GameManager : MonoBehaviour
             UIManager.instance.uiTurnChange(activePlayer);
         }
 
+        if(activePlayer.turnCount == 1)
+        {
+            tutorialObj.SetActive(true);
+        }
+
         allowLaunch = true;
         StartCoroutine(turnBehavior());
     }
@@ -143,7 +150,7 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    public void initializeLevel(Vector3 startPos, GameObject[] playerVcams, GameObject camController)
+    public void initializeLevel(Vector3 startPos, GameObject[] playerVcams, GameObject camController, GameObject tutorial)
     {
         //Debug.Log("Initializing Level");
 
@@ -152,6 +159,7 @@ public class GameManager : MonoBehaviour
         playerObjs = new List<GameObject>();
         vcams = new List<CinemachineVirtualCamera>();
         activeTurnIndex = 0;
+        tutorialObj = tutorial;
 
         levelStartPos = startPos;
 
@@ -224,6 +232,7 @@ public class GameManager : MonoBehaviour
         allowLaunch = true;
         turnBasedActive = true;
         firstPlayerSpawned = true;
+        tutorialObj.SetActive(true);
     }
 
     private bool doneWaitingForFirstPlayer()

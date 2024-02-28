@@ -63,7 +63,7 @@ public class Goal : MonoBehaviour
 
         CamController cam = FindObjectOfType<CamController>();
 
-        cam.levelCam.GetComponent<Transform>().DOMoveX(transform.position.x - 10f, 4f);
+        cam.levelCam.GetComponent<Transform>().DOMoveX(transform.position.x - 10f, 6f);
 
         //Vector3 pos = transform.position;
         //cam.levelCam.transform.position = pos;
@@ -74,7 +74,7 @@ public class Goal : MonoBehaviour
         //DOTween.To(() => cam.levelCam.m_Lens.OrthographicSize, x => cam.levelCam.m_Lens.OrthographicSize = x, 10, 1.5f);
         //cam.levelCam.m_Lens.OrthographicSize = 10;
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
 
         AudioManager.instance.Play("level_start");
 

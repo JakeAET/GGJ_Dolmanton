@@ -9,6 +9,7 @@ public class LevelStart : MonoBehaviour
 
     public GameObject[] startVcams;
     public GameObject levelVcam;
+    public GameObject tutorial;
 
     //public GameObject startVcam1;
     //public GameObject startVcam2;
@@ -27,7 +28,7 @@ public class LevelStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.initializeLevel(startingPosition.position, startVcams, camController);
+        GameManager.instance.initializeLevel(startingPosition.position, startVcams, camController, tutorial);
         GameManager.instance.levelEdgePos = levelEdgePos.transform.position;
         generateLevel();
     }
