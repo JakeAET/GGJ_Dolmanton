@@ -145,7 +145,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if(SceneManager.GetActiveScene().name == "Title Screen")
+        if(SceneManager.GetActiveScene().name == "Title Screen" || SceneManager.GetActiveScene().name == "Start Screen")
         {
             Play("menu_music");
         }
