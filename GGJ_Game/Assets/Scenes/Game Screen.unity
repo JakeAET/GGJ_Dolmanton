@@ -344,6 +344,10 @@ PrefabInstance:
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: levelChunkPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5568898225929431185, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
