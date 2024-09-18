@@ -81,7 +81,7 @@ public class Goal : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         cam.switchCam(GameManager.instance.turnOrder[GameManager.instance.activeTurnIndex]);
-        cam.zoomInZoomOut(5);
+        cam.zoomInZoomOut(5, 0.5f);
 
         GameManager.instance.activateFirstPlayer();
 

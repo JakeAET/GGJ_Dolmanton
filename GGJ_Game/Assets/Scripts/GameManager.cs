@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
     void nextTurn()
     {
         launchFinished = false;
-        camControllerRef.zoomInZoomOut(15);
+        camControllerRef.zoomInZoomOut(10, 1f);
 
         // If not solo game
         if (activePlayerCount > 1)
@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(turnEnded);
 
         activePlayer.switchFace(true);
-        camControllerRef.zoomInZoomOut(5);
+        camControllerRef.zoomInZoomOut(5, 0.1f);
 
         if (turnBasedActive)
         {
@@ -233,6 +233,7 @@ public class GameManager : MonoBehaviour
         turnBasedActive = true;
         firstPlayerSpawned = true;
         tutorialObj.SetActive(true);
+
     }
 
     private bool doneWaitingForFirstPlayer()
@@ -249,7 +250,7 @@ public class GameManager : MonoBehaviour
         activePlayer = null;
 
         camControllerRef.switchCam(turnOrder[activeTurnIndex]);
-        camControllerRef.zoomInZoomOut(5);
+        camControllerRef.zoomInZoomOut(5, 0);
 
         Debug.Log(winningPlayer.playerName + " won in " + winningPlayer.turnCount + " turns!");
     }

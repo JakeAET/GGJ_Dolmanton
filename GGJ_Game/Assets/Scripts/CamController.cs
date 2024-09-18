@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using DG.Tweening;
 
 public class CamController : MonoBehaviour
 {
@@ -48,17 +49,20 @@ public class CamController : MonoBehaviour
         }
     }
 
-    public void zoomInZoomOut(float zoomSize)
+    public void zoomInZoomOut(float zoomSize, float duration)
     {
         foreach (CinemachineVirtualCamera cam in virtualCams)
         {
             if (CinemachineCore.Instance.IsLive(cam))
             {
-                cam.m_Lens.OrthographicSize = zoomSize;
+                Debug.Log("cam size changed to: " + zoomSize);
+                DOTween.To(() => cam.m_Lens.OrthographicSize, x => cam.m_Lens.OrthographicSize = x, zoomSize, duration);
+                //cam.m_Lens.OrthographicSize = zoomSize;
             }
             else
             {
-                cam.m_Lens.OrthographicSize = defaultZoom;
+                DOTween.To(() => cam.m_Lens.OrthographicSize, x => cam.m_Lens.OrthographicSize = x, defaultZoom, duration);
+                //cam.m_Lens.OrthographicSize = defaultZoom;
             }
         }
     }

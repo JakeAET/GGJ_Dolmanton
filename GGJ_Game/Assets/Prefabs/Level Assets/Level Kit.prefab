@@ -6167,9 +6167,12 @@ MonoBehaviour:
   lowPowerColor: {r: 0.3314607, g: 1, b: 0, a: 0}
   line: {fileID: 5167167817924440202}
   arrow: {fileID: 5167167817965244918}
-  maxDistance: 6
+  maxDistance: 18
   maxForce: 800
   distance: 0
+  camContRef: {fileID: 5167167817466423285}
+  maxCamZoomOut: 10
+  minCamZoomOut: 25
 --- !u!1 &5167167816486755314
 GameObject:
   m_ObjectHideFlags: 0
@@ -7790,7 +7793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef34acf844de468d9cf04e5b0926aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultZoom: 15
+  defaultZoom: 10
   animator: {fileID: 5167167817466423284}
   virtualCams:
   - {fileID: 5167167817429376682}

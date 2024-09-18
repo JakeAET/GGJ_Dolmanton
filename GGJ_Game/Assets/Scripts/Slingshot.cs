@@ -22,6 +22,10 @@ public class Slingshot : MonoBehaviour
 
     private bool drawingLine; // true if line is being drawn
 
+    [SerializeField] CamController camContRef;
+    [SerializeField] float maxCamZoomOut;
+    [SerializeField] float minCamZoomOut;
+
     void Awake()
     {
         // Assign line renderer component and turn off the line until it's is needed
@@ -62,6 +66,12 @@ public class Slingshot : MonoBehaviour
 
                 distance = (lineEnd() - lineStart).magnitude; // Calculate distance from line start to line end
 
+                if (distance >= 1)
+                {
+                    //Debug.Log("slingshot changed size: " + (maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance)));
+                    camContRef.zoomInZoomOut(Mathf.Round(maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance)), 0.1f);
+                }
+
                 Vector3 arrowDirection = (lineStart - lineEnd()).normalized; // Calculate direction arrow sprite should face
                 arrow.transform.position = new Vector3(lineStart.x, lineStart.y, 0f); // Lock arrow position to line start
                 float angle = Mathf.Atan2(arrowDirection.y, arrowDirection.x) * Mathf.Rad2Deg;
@@ -82,6 +92,7 @@ public class Slingshot : MonoBehaviour
             if (Input.GetMouseButtonUp(0) && drawingLine && distance >= 0.5f)
             {
                 launchBall();
+                camContRef.zoomInZoomOut(15, 2f);
 
                 // Reset values
                 lineStart = Vector2.zero;
