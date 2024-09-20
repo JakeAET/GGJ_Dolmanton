@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(turnEnded);
 
         activePlayer.switchFace(true);
-        camControllerRef.zoomInZoomOut(5, 0.1f);
+        camControllerRef.zoomInZoomOut(5, 0f);
 
         if (turnBasedActive)
         {

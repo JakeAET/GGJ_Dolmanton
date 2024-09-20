@@ -18,13 +18,18 @@ public class Slingshot : MonoBehaviour
 
     private Vector3 lineStart;
     private Vector3 mouseStart;
+    public Vector2 mouseStartDebug;
+    public Vector2 mouseEndDebug;
     public float distance; // distance from the line start point to the line end point
+    public float actualDistance;
 
     private bool drawingLine; // true if line is being drawn
 
     [SerializeField] CamController camContRef;
     [SerializeField] float maxCamZoomOut;
     [SerializeField] float minCamZoomOut;
+
+    //private Camera touchCam;
 
     void Awake()
     {
@@ -35,7 +40,7 @@ public class Slingshot : MonoBehaviour
 
     void Start()
     {
-        
+        //touchCam = GameObject.FindGameObjectWithTag("TouchCam").GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -48,7 +53,10 @@ public class Slingshot : MonoBehaviour
                 if (!drawingLine) // Only runs at the start of the line draw, then sets bool to false
                 {
                     lineStart = GameManager.instance.activePlayer.slingshotPoint.position; // Assign line start position
-                    mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Assign mouse start position
+                    //mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Assign mouse start position
+                    mouseStart = new Vector2(50 * (Input.mousePosition.x / Screen.width), 50 * (Input.mousePosition.y / Screen.height));
+                    //mouseStart = touchCam.ScreenToWorldPoint(Input.mousePosition);
+                    mouseStartDebug = mouseStart;
                     line.SetActive(true);
                     arrow.SetActive(true);
                     drawingLine = true;
@@ -69,7 +77,8 @@ public class Slingshot : MonoBehaviour
                 if (distance >= 1)
                 {
                     //Debug.Log("slingshot changed size: " + (maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance)));
-                    camContRef.zoomInZoomOut(Mathf.Round(maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance)), 0.1f);
+                    //camContRef.zoomInZoomOut(Mathf.Round(maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance)), 0.1f);w
+                    camContRef.zoomInZoomOut(maxCamZoomOut + (minCamZoomOut - maxCamZoomOut) * (distance / maxDistance), 0.1f);
                 }
 
                 Vector3 arrowDirection = (lineStart - lineEnd()).normalized; // Calculate direction arrow sprite should face
@@ -114,7 +123,10 @@ public class Slingshot : MonoBehaviour
     // Returns calculated line end postion
     Vector3 lineEnd()
     {
-        Vector2 mouseEnd = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Vector2 mouseEnd = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mouseEnd = new Vector2(50 * (Input.mousePosition.x / Screen.width), 50 * (Input.mousePosition.y / Screen.height));
+        //Vector2 mouseEnd = touchCam.ScreenToWorldPoint(Input.mousePosition);
+        mouseEndDebug = mouseEnd;
 
         // Determine x and y difference from mouse start to end points
         float xDiff = mouseEnd.x - mouseStart.x;
@@ -122,6 +134,8 @@ public class Slingshot : MonoBehaviour
 
         Vector3 newPos = new Vector3(lineStart.x + xDiff, lineStart.y + yDiff, 0);
         Vector3 offset = newPos - lineStart;
+
+        actualDistance = ((lineStart + offset) - lineStart).magnitude;
 
         // Find line end by applying the same offset from mouse points to the line points
         return lineStart + Vector3.ClampMagnitude(offset, maxDistance);
@@ -170,5 +184,13 @@ public class Slingshot : MonoBehaviour
         {
             return lowPowerColor;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        //Color color = new Color(1, 0, 0);
+        //Vector3 startDebugLine = new Vector3(mouseStartDebug.x, mouseStartDebug.y, 1);
+        //Vector3 endDebugLine = new Vector3(mouseEndDebug.x, mouseEndDebug.y, 1);
+        //Debug.DrawLine(startDebugLine, endDebugLine, color);
     }
 }

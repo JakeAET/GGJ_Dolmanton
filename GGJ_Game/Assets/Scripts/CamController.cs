@@ -55,13 +55,14 @@ public class CamController : MonoBehaviour
         {
             if (CinemachineCore.Instance.IsLive(cam))
             {
-                Debug.Log("cam size changed to: " + zoomSize);
+                //Debug.Log( cam.name + " size changed to: " + zoomSize);
                 DOTween.To(() => cam.m_Lens.OrthographicSize, x => cam.m_Lens.OrthographicSize = x, zoomSize, duration);
                 //cam.m_Lens.OrthographicSize = zoomSize;
             }
             else
             {
-                DOTween.To(() => cam.m_Lens.OrthographicSize, x => cam.m_Lens.OrthographicSize = x, defaultZoom, duration);
+                //Debug.Log(cam.name + " size changed to: " + defaultZoom);
+                //DOTween.To(() => cam.m_Lens.OrthographicSize, x => cam.m_Lens.OrthographicSize = x, defaultZoom, duration);
                 //cam.m_Lens.OrthographicSize = defaultZoom;
             }
         }

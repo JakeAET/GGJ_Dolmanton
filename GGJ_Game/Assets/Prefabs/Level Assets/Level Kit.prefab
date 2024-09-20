@@ -6167,9 +6167,12 @@ MonoBehaviour:
   lowPowerColor: {r: 0.3314607, g: 1, b: 0, a: 0}
   line: {fileID: 5167167817924440202}
   arrow: {fileID: 5167167817965244918}
-  maxDistance: 18
+  maxDistance: 12
   maxForce: 800
+  mouseStartDebug: {x: 0, y: 0}
+  mouseEndDebug: {x: 0, y: 0}
   distance: 0
+  actualDistance: 0
   camContRef: {fileID: 5167167817466423285}
   maxCamZoomOut: 10
   minCamZoomOut: 25
