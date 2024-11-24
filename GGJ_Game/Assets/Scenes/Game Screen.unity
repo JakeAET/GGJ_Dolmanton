@@ -392,6 +392,10 @@ PrefabInstance:
       propertyPath: levelChunkPrefabs.Array.data[9]
       value: 
       objectReference: {fileID: 492449695881681095, guid: 0298426441a6f40e3aae0967d63e6fab, type: 3}
+    - target: {fileID: 5565041584462421977, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_ComponentOwner
+      value: 
+      objectReference: {fileID: 5167167817034441750}
     - target: {fileID: 5568898225929431185, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
