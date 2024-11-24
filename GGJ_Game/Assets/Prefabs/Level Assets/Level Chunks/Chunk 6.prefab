@@ -20144,6 +20144,7 @@ GameObject:
   - component: {fileID: 1052121946317796279}
   - component: {fileID: 1162170059995464833}
   - component: {fileID: 6325721868724848151}
+  - component: {fileID: 5858523376976669828}
   m_Layer: 0
   m_Name: Seesaw Center
   m_TagString: Untagged
@@ -20255,6 +20256,19 @@ CircleCollider2D:
   m_Offset: {x: -0.00000023841858, y: -0.00000047683716}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &5858523376976669828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133825721503014971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &6554930342041783980
 GameObject:
   m_ObjectHideFlags: 0
@@ -20270,6 +20284,7 @@ GameObject:
   - component: {fileID: 2724264424727986716}
   - component: {fileID: 7372907196718511415}
   - component: {fileID: 7461493723246696013}
+  - component: {fileID: 607147769211881465}
   m_Layer: 0
   m_Name: Seesaw
   m_TagString: Untagged
@@ -20447,6 +20462,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 37}
   m_EdgeRadius: 0
+--- !u!114 &607147769211881465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6554930342041783980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &6565500538334076816
 GameObject:
   m_ObjectHideFlags: 0
@@ -20461,6 +20489,7 @@ GameObject:
   - component: {fileID: 4409887556621655639}
   - component: {fileID: 7688689692373224881}
   - component: {fileID: 5440709871192218636}
+  - component: {fileID: 8852288022069282933}
   m_Layer: 0
   m_Name: Ground Tiles
   m_TagString: Untagged
@@ -39443,6 +39472,19 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!114 &8852288022069282933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565500538334076816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &7670456694700699003
 GameObject:
   m_ObjectHideFlags: 0

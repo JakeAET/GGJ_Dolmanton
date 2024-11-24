@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2848522354032367713, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_ComponentOwner
+      value: 
+      objectReference: {fileID: 5167167817034441750}
     - target: {fileID: 3550906984233522988, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -292,10 +296,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5167167816695293574, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816486755321, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_CustomBlends
+      value: 
+      objectReference: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
     - target: {fileID: 5167167816895523754, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -344,6 +348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Kit
       objectReference: {fileID: 0}
+    - target: {fileID: 5167167817466423243, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_CustomBlends
+      value: 
+      objectReference: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
     - target: {fileID: 5167167817466423243, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
@@ -410,6 +418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+--- !u!4 &5167167817034441750 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5167167817703545236, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+  m_PrefabInstance: {fileID: 5167167817034441749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7597827653465720694
 PrefabInstance:
   m_ObjectHideFlags: 0

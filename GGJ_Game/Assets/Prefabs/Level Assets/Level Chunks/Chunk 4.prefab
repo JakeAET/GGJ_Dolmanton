@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 8446002186604655692}
   - component: {fileID: 3486473731176102856}
   - component: {fileID: 3267452826516528827}
+  - component: {fileID: 1971516593626657076}
   m_Layer: 0
   m_Name: Pinwheel
   m_TagString: Untagged
@@ -520,6 +521,19 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 100
     m_MaximumMotorForce: 100000
+--- !u!114 &1971516593626657076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332965500976766493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &5309570997234011825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,6 +2224,7 @@ GameObject:
   - component: {fileID: 4409887556621655639}
   - component: {fileID: 7688689692373224881}
   - component: {fileID: 5440709871192218636}
+  - component: {fileID: 4216322730928103239}
   m_Layer: 0
   m_Name: Ground Tiles
   m_TagString: Untagged
@@ -6150,6 +6165,19 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!114 &4216322730928103239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565500538334076816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &6771648856533865060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,6 +6465,7 @@ GameObject:
   - component: {fileID: 8954075299156806282}
   - component: {fileID: 7475600263982949297}
   - component: {fileID: 5692648431110281702}
+  - component: {fileID: 6258946835865167495}
   m_Layer: 0
   m_Name: Pinwheel (1)
   m_TagString: Untagged
@@ -6766,6 +6795,19 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 100
     m_MaximumMotorForce: 100000
+--- !u!114 &6258946835865167495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781360681148107057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &8657958468818879603
 GameObject:
   m_ObjectHideFlags: 0

@@ -5586,6 +5586,7 @@ GameObject:
   - component: {fileID: 8050069680004650253}
   - component: {fileID: 706718200}
   - component: {fileID: 1256093996095840830}
+  - component: {fileID: 2805218071128212262}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -5706,6 +5707,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &2805218071128212262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274705625144365977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &4661146923431657047
 GameObject:
   m_ObjectHideFlags: 0
@@ -6322,7 +6340,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 11400000, guid: c5669054b3f9044329ae243d617f67f7, type: 2}
+  m_CustomBlends: {fileID: 0}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7176,6 +7194,7 @@ GameObject:
   - component: {fileID: 5167167816874211800}
   - component: {fileID: 5167167816874211802}
   - component: {fileID: 5167167816874211803}
+  - component: {fileID: 5167167817034441756}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -7253,6 +7272,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &5167167817034441756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5167167816874211801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &5167167816895523755
 GameObject:
   m_ObjectHideFlags: 0
@@ -8169,6 +8205,7 @@ GameObject:
   - component: {fileID: 5167167817703545236}
   - component: {fileID: 5167167817703545238}
   - component: {fileID: 5167167817703545239}
+  - component: {fileID: 5167167817034441757}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -8246,6 +8283,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &5167167817034441757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5167167817703545237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &5167167817761377062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8928,10 +8982,10 @@ MonoBehaviour:
   - {fileID: 492449695881681095, guid: b8b26f6effdd0df4b9fccb42b6541089, type: 3}
   - {fileID: 492449695881681095, guid: 0ba2ab6d4162349b0b14346bff9c035a, type: 3}
   - {fileID: 492449695881681095, guid: 311c55bfcaf404f1593aa7ee12ee79ab, type: 3}
-  - {fileID: 492449695881681095, guid: c8bb37b388c104fc0a7927001c27447f, type: 3}
-  - {fileID: 492449695881681095, guid: 0298426441a6f40e3aae0967d63e6fab, type: 3}
   - {fileID: 492449695881681095, guid: e4e71d3e200cc6b46916d19cc3dd190c, type: 3}
+  - {fileID: 492449695881681095, guid: c8bb37b388c104fc0a7927001c27447f, type: 3}
   - {fileID: 492449695881681095, guid: 449fe302a9f032e44a5c9ddd6283dfb0, type: 3}
+  - {fileID: 492449695881681095, guid: 0298426441a6f40e3aae0967d63e6fab, type: 3}
 --- !u!1 &5167167818286244558
 GameObject:
   m_ObjectHideFlags: 0
@@ -9387,6 +9441,7 @@ GameObject:
   - component: {fileID: 2978991125791139514}
   - component: {fileID: 1445659915}
   - component: {fileID: 2549281328081807439}
+  - component: {fileID: 8297821832261476492}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -9507,6 +9562,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &8297821832261476492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248710585188144699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &6282035925713550326
 GameObject:
   m_ObjectHideFlags: 0

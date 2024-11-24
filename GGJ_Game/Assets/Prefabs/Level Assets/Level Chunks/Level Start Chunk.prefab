@@ -21506,6 +21506,7 @@ GameObject:
   - component: {fileID: 8263220161216499557}
   - component: {fileID: 1239429078692684381}
   - component: {fileID: 3687154155513957068}
+  - component: {fileID: 3574538298640293240}
   m_Layer: 0
   m_Name: Ground Tiles
   m_TagString: Untagged
@@ -24193,6 +24194,19 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!114 &3574538298640293240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010652926442103951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d15459ecdb947189d529775602a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 6925783497765803892, guid: 1112257d4a6474759bcd7cbef9835d88, type: 3}
 --- !u!1 &1628431471432423590
 GameObject:
   m_ObjectHideFlags: 0
@@ -24752,8 +24766,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7548945969772204725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.9211, y: -12.5, z: 0}
-  m_LocalScale: {x: 24.159153, y: 225, z: 1}
+  m_LocalPosition: {x: -81.1337, y: -12.5, z: 0}
+  m_LocalScale: {x: 150.584, y: 225, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2351467714392779807}

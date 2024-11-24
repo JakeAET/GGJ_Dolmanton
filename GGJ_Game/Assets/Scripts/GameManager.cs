@@ -348,7 +348,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Nearest player " + closestDistance + " units away. Range is " + range + " units. Return " + (closestDistance <= range));
+        //Debug.Log("Nearest player " + closestDistance + " units away. Range is " + range + " units. Return " + (closestDistance <= range));
         return closestDistance <= range;
     }
 

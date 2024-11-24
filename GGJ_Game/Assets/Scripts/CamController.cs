@@ -15,6 +15,10 @@ public class CamController : MonoBehaviour
     public CinemachineVirtualCamera[] virtualCams;
     public CinemachineVirtualCamera levelCam;
 
+    private bool cameraShaking = false;
+
+    //private GameManager gm;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,6 +35,7 @@ public class CamController : MonoBehaviour
     void Start()
     {
         animator.Play("goal");
+        //gm = FindObjectOfType<GameManager>();
     }
 
     public void switchCam(int playerIndex)
@@ -46,6 +51,39 @@ public class CamController : MonoBehaviour
             {
                 virtualCams[i].Priority = 0;
             }
+        }
+    }
+
+    public void startCameraShake(string playerName, float intensity, float time)
+    {
+        int playerIndex = 0;
+
+        //Debug.Log(playerName + " Camera Shaking");
+
+        if (!cameraShaking)
+        {
+            if (playerName == "Player 1")
+            {
+                playerIndex = 0;
+
+            }
+            else if (playerName == "Player 2")
+            {
+                playerIndex = 1;
+
+            }
+            else if (playerName == "Player 3")
+            {
+                playerIndex = 2;
+
+            }
+            else if (playerName == "Player 4")
+            {
+                playerIndex = 3;
+
+            }
+
+            StartCoroutine(cameraShake(virtualCams[playerIndex], intensity, time));
         }
     }
 
@@ -66,5 +104,31 @@ public class CamController : MonoBehaviour
                 //cam.m_Lens.OrthographicSize = defaultZoom;
             }
         }
+    }
+
+    IEnumerator cameraShake(CinemachineVirtualCamera cam, float intensity, float time)
+    {
+        if (CinemachineCore.Instance.IsLive(cam))
+        {
+            //cameraShaking = true;
+
+            Debug.Log(cam.name + " Camera Shaking for " + time + " at intensity of " + intensity);
+
+            CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
+                cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = intensity;
+
+            yield return new WaitForSeconds(time);
+
+            if(cinemachineBasicMultiChannelPerlin.m_AmplitudeGain == intensity)
+            {
+                cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0;
+                cameraShaking = false;
+
+                Debug.Log(cam.name + " has stopped shaking");
+            }
+        }
+
+        yield return null;
     }
 }
