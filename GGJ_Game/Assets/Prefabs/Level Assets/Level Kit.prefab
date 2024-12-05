@@ -6340,7 +6340,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7787,7 +7787,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
   m_ParentHash:
   - m_Hash: -710692484
     m_ParentHash: 756556552
@@ -10721,6 +10721,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5167167816895523754}
     m_Modifications:
+    - target: {fileID: 7548945969772204729, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548945969772204729, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548945969772204729, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
     - target: {fileID: 7548945970566829120, guid: e22fc3d360d89414484ac05ab1fcec6b, type: 3}
       propertyPath: m_RootOrder
       value: 1

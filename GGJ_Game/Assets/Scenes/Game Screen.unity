@@ -296,10 +296,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5167167816486755321, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: m_CustomBlends
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 47.2633
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -83.2513
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790395091372783061, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167167816672072692, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
+      propertyPath: m_ComponentOwner
       value: 
-      objectReference: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
+      objectReference: {fileID: 5167167817034441750}
     - target: {fileID: 5167167816895523754, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -349,49 +365,9 @@ PrefabInstance:
       value: Level Kit
       objectReference: {fileID: 0}
     - target: {fileID: 5167167817466423243, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: m_CustomBlends
-      value: 
-      objectReference: {fileID: 11400000, guid: a9b1618db417240ca948bdbd29ac48e0, type: 2}
-    - target: {fileID: 5167167817466423243, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: 87eceb182482ff740a0bcc77977020fa, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: b8b26f6effdd0df4b9fccb42b6541089, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: 0ba2ab6d4162349b0b14346bff9c035a, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: 311c55bfcaf404f1593aa7ee12ee79ab, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[6]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: e4e71d3e200cc6b46916d19cc3dd190c, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[7]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: c8bb37b388c104fc0a7927001c27447f, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[8]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: 449fe302a9f032e44a5c9ddd6283dfb0, type: 3}
-    - target: {fileID: 5167167818244598962, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
-      propertyPath: levelChunkPrefabs.Array.data[9]
-      value: 
-      objectReference: {fileID: 492449695881681095, guid: 0298426441a6f40e3aae0967d63e6fab, type: 3}
     - target: {fileID: 5565041584462421977, guid: 914d815c97fff45aaabf9cd8ec66a130, type: 3}
       propertyPath: m_ComponentOwner
       value: 
