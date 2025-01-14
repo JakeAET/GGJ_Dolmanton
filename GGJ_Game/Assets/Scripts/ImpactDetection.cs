@@ -75,20 +75,20 @@ public class ImpactDetection : MonoBehaviour
 
                     if(col.relativeVelocity.magnitude >= 30)
                     {
-                        camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 16f, 0.5f);
+                        //camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 16f, 0.5f);
                         GameObject newEffect = Instantiate(impactEffect, new Vector3(impactPoint.x, impactPoint.y, 0), Quaternion.Euler(new Vector3(collisionAngle, -90, -90)));
                     }
                     else if(col.relativeVelocity.magnitude >= 20)
                     {
-                        camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 8f, 0.5f);
+                        //camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 8f, 0.5f);
                     }
                     else if (col.relativeVelocity.magnitude >= 10)
                     {
-                        camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 4f, 0.5f);
+                        //camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 4f, 0.5f);
                     }
                     else
                     {
-                        camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 2f, 0.5f);
+                        //camCont.startCameraShake(col.collider.transform.parent.gameObject.name, 2f, 0.5f);
                     }
 
                     StartCoroutine(collisionMonitor(impactPoint));
