@@ -1,0 +1,2973 @@
+fileFormatVersion: 2
+guid: 2861a96629b02bd4fb7dac33d82ad5db
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TillMap_Snow_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8452716e4266a2b45bbc997fa97d6ed7
+      internalID: 1398334863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c181e7eabf253d48994b9a146864451
+      internalID: -1933001018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a8c1118b60a47498905937ab7c925d
+      internalID: -1862722672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99edf89332bf57e41b1ad5d2a474e1b8
+      internalID: 534836953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c052894d0cb176e4ba09757ffe67d211
+      internalID: -543560140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8082e2fb5dfbd40a31b516ef669cc7
+      internalID: -292771583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_6
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eaed2558395764d9a992918ebd632d
+      internalID: 791152364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba157d422033a94695a90f512b36c8a
+      internalID: 1605972550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6c3c870421cfb45bd60736baf61f73
+      internalID: -1532202199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d09bca2e28a924bab7a4d9fb364152
+      internalID: -782356340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43362deb27baf0649aed3a1d81811d6a
+      internalID: -1287195245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95f4cc1f2ac43d42b015a3401d75347
+      internalID: -529578687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d063e2bfbf3384ba8f61b41418be53
+      internalID: -112428877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08cc90b0da78ee4fa2689f4ab2ea285
+      internalID: 1680585922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac85540c8adb6fc4fa9c638ce1606452
+      internalID: 953777271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_15
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00863c8e0c510d408b1b20c473b3814
+      internalID: 1288004189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f535eeb4235856f4abebc80d88a921ef
+      internalID: -2079698205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2439449f9d2a0c3469f8d09053327c6b
+      internalID: 76524616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a70a061f187844c8f3d227ffd16e29
+      internalID: 1866012291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eafea13e9c5b6409eb5e2606449d25
+      internalID: 227440145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b477afc19609be3449d3b02397db1c92
+      internalID: 878583883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f16ac3cb7ad3814ebadcb76c2db716b
+      internalID: 650753937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a81a576008555745be6948cdbad3a6e
+      internalID: 842203642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883b8444647835341a65692abfaf63d0
+      internalID: 1401541488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81254e197e8f31b45ba00b518ecd0d88
+      internalID: -1270863674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e46cbf9e1a91f40a95f85cdfee2234
+      internalID: -686798261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_26
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8636ed4a0669143bb3be231ed56046
+      internalID: 435939630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_27
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd674c99c7759845b39e1f901740a79
+      internalID: -1667938004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_28
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a526dc33e344ef546b989aab3735290a
+      internalID: -150731023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d6ea59e8c91ae4091fbbac69a63d02
+      internalID: 1014207906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c321ee1f4c38b489897aa2392eeae8
+      internalID: 2052989198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e2d9d64de48f54dbe53478cdd4f3e4
+      internalID: -537045876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7afcc1f3198f444ebdb49441e2479f6
+      internalID: 1701761128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2512a2de1703334c8bac30930e6f2a4
+      internalID: 1603054269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41065ba6d9f58a844b3228dfcf16c418
+      internalID: -1291539903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9b1a2e9109a864ca82eb299f0a7cfc
+      internalID: 1597624437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_36
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525d03ec2c99944488a9b06d508e4136
+      internalID: -849664122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_37
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7d343fe5bdc8240a52e172107593df
+      internalID: -1843616288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472140d9d1efaca488ac6fc37a0a434a
+      internalID: -105196562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e53ac9191b44d14c9739021e5d0d017
+      internalID: -1452938827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622e5b918d9811b4d8ca3dc28b29bfa2
+      internalID: 1901403567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81beaff42e8d42b4f94e4c65feb7f1f9
+      internalID: 664561478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456a4f45baca6fb49ad432f079e6b301
+      internalID: 166701077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_43
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa75b310f5267ad44b5ea7ec5415ddb9
+      internalID: 2057378845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6629a7640d7a3b645a53214c1e9edac2
+      internalID: -1000274682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8545a0ee7879724e84ca63f4406a884
+      internalID: 939963759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_46
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4e2dc8d2e6a7d49b962810b7ae2b68
+      internalID: -225990901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b557436beb07241a63ed851b440104
+      internalID: -1712596708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_48
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70699ee41a527b24ebfa3021ed155e0e
+      internalID: 328982466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_49
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01324520c8a178442ac7a6623b635350
+      internalID: 2021382661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_50
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98a6b0d351bfb74eb7fc1d6eb4133ef
+      internalID: 2070851588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_51
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fd70fd7d086ce498e950b72b456947
+      internalID: 1098778021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5f23bcc7fce2b4e975fb0e8b54e91a
+      internalID: -368980369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf67d1e2527aa5b41b13397927e7bd86
+      internalID: -1860103962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e13d5c7bcc2a94f816dd5f1bd55555
+      internalID: -1808245113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9769f2fb40483384ea72d3469d1bbcc7
+      internalID: -1086741378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_56
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd24ca7defc60b84ba1f13b7f8b02a80
+      internalID: 2061366399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_57
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700be1f258e6d404080d9df8b5c24d59
+      internalID: -653671979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_58
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b66e02e50802442ac89be4adaaa9a2
+      internalID: -1888353863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_59
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df09c47b5456e488c04a416e21e09e
+      internalID: -1936276576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_60
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e9a02e82fd86448af97d93b2b785b8
+      internalID: 949640411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_61
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3520be4d228724b49a70ea6894b732da
+      internalID: 506408977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b97ef6a38efc94b99dc29cb3be4c24
+      internalID: 395767457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_63
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b557bafdf149649a2b5d62f4d39284
+      internalID: -559838614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_64
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ea677bba8cfb44e95d9f405c8e875b
+      internalID: -950584638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_65
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f42d7923d5cc448935467f4e515ca8
+      internalID: -1463611181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_66
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a45c720e0438e145990ce9f3f7f4879
+      internalID: 930442132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_67
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7d7d796ba14f941bce772b6501aaa9
+      internalID: 1692914315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_68
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0dbfc2d0daad241ab412532151b9fb
+      internalID: -592627579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f0ed1d6f3b8044eb9c4082760c7a77
+      internalID: 1568352121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a543bb0ffdc2f140b123e10d486b36c
+      internalID: 2065558340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96a5622fce90884eac9f837f8835530
+      internalID: -287357734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_72
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d6927ceb2d6464faf7e94b4a57f5d1
+      internalID: -553637533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_73
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92690f4f3e73bd5459456248c5ecdd79
+      internalID: -1719873613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_74
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524531dbf73d5a2499822b07256908cb
+      internalID: 254605889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_75
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942635f203ea2a24d8ce8001edaddc2d
+      internalID: -664251646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_76
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2473de73b2e291d48a3e7613a14f36ac
+      internalID: 1938317323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_77
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ed23a3b608cc14499bba373d71d6f0
+      internalID: 804792193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_78
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfd02fc4e7d75d40b5646b042e44965
+      internalID: -1299905440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_79
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e0a30f64e731a43b76cf8dfcec1b94
+      internalID: 1986418572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa7785a2d969e24fbbe671a3ebbca7c
+      internalID: 2124836021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1943e560a56394ea84bda1c7b552a9
+      internalID: 199466292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_82
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074ffe0251b662e4e9f04534a2d8fa6a
+      internalID: 1771399129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_83
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea0d82daac6c3044bb829fd7c6a369f
+      internalID: -1193529837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_84
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f8453de0e1bf4e9371eb817224687
+      internalID: -406460950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_85
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dae299f43b6b854e972546145c18058
+      internalID: -1665680618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_86
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03f2239c96225c488bf025d65bc4625
+      internalID: 324256051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_87
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560839918ab53e5499be825a884f8ba6
+      internalID: 424344308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd17073d69d10034b8fd6632065e298a
+      internalID: 1288032866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61fd1f8d1b8bb74e89682c6e94fa08b
+      internalID: 404107335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817960cc1c2e5e849a1913fac79b95b5
+      internalID: -17208480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab5d4a9912c1fa49b066e5ff563753a
+      internalID: 1268335061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1430a1fae2a8c041b1316ec187a5638
+      internalID: 1721803988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_93
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac24bdd3249ea2540b312c4dd4c6600b
+      internalID: 599085501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8201406921acc8848a89300067557079
+      internalID: 1530094276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_95
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557f6dc0f24655242b87b091cc37c3b9
+      internalID: 567052936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_96
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b5851d422391546a96e9bea6f1984c
+      internalID: -198046233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_97
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a848c7f42777241a9c2944f7ae63c7
+      internalID: 578353728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_98
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c927643c0c13443ae1341760fafd3e
+      internalID: 977849345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_99
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c459d1858e67a4b89b3ee7a301fc95
+      internalID: 1321713460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a15f34dda6955c4191a5d30c8d84eb7
+      internalID: -2137434311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_101
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52618e20f21fcc4992c24de52b8cd3b
+      internalID: 1964092887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_102
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d761347b317f51e4bbf8eb47d2d40c9f
+      internalID: 672249096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903b3462ebd88dd43967f98e1c27ae24
+      internalID: 163527405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391837f41fbecd74fa416c19dbe4d59e
+      internalID: -776247728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_105
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b3be10475bdf7468365ef958bb5c07
+      internalID: 722526146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_106
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8e2376149e1124c8b42e6b6cf85a22
+      internalID: -1867108571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_107
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7ea8b80c95c53488e891a2ca30d1db
+      internalID: -1646105868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_108
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35062e2ad386ddc4e94212a2423137e7
+      internalID: 179589320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_109
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04e8ea1545dd5b4aa9ffd48265a636a
+      internalID: 1000865723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_110
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1f5a282b5a5a24a848f8236cb762a1
+      internalID: 1404452467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_111
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49a162f1768a3f4580e7b53542de334
+      internalID: 383596057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_112
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48572e2ce774c348b865f3e4a170ea4
+      internalID: -417036110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_113
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672350f410e315b418c9c951935429a4
+      internalID: 2002437491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_114
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506a7dc936df2543bb7ba6d01acebaa
+      internalID: -527622103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_115
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037f17c0dac1ec64ab3a4803f0e0d426
+      internalID: -1495596376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_116
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6b2dd999aec4145b910748aadbb62b
+      internalID: -832916671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_117
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d57a21d20887442970187d3ff4aeeb
+      internalID: 1428368324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_118
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc91b4c686a3a4142a3b5654b252cba2
+      internalID: -1177166034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_119
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ad661ee2410064a88f3d4c4a2af9b1
+      internalID: 187729149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_120
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf7f71b334c8c440a82030ef1963a21
+      internalID: -1752919198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_121
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a6dd8109c0a5e4aa97e3f54d8eeafb
+      internalID: 1672073703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f240d35a1022304d88377b2e73d558e
+      internalID: 581291758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_123
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddb2930af9d0fe4399175cafde885dd
+      internalID: -1308614827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_124
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128c15093e9f6604aa153a9e5597dd40
+      internalID: -2027412359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_125
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3bbf4b60f85004398ac8bfbdffcb82
+      internalID: 560131825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_126
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e514a6f7a01062e41b07cf591d481843
+      internalID: 2061788760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_127
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb574c44cc31ef14482befe3dc090d3a
+      internalID: -1772838202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Snow_128
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dc93c5d206fe94584bfcf90b6f70dd
+      internalID: -163603624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TillMap_Snow_0: 1398334863
+      TillMap_Snow_1: -1933001018
+      TillMap_Snow_10: -1287195245
+      TillMap_Snow_100: -2137434311
+      TillMap_Snow_101: 1964092887
+      TillMap_Snow_102: 672249096
+      TillMap_Snow_103: 163527405
+      TillMap_Snow_104: -776247728
+      TillMap_Snow_105: 722526146
+      TillMap_Snow_106: -1867108571
+      TillMap_Snow_107: -1646105868
+      TillMap_Snow_108: 179589320
+      TillMap_Snow_109: 1000865723
+      TillMap_Snow_11: -529578687
+      TillMap_Snow_110: 1404452467
+      TillMap_Snow_111: 383596057
+      TillMap_Snow_112: -417036110
+      TillMap_Snow_113: 2002437491
+      TillMap_Snow_114: -527622103
+      TillMap_Snow_115: -1495596376
+      TillMap_Snow_116: -832916671
+      TillMap_Snow_117: 1428368324
+      TillMap_Snow_118: -1177166034
+      TillMap_Snow_119: 187729149
+      TillMap_Snow_12: -112428877
+      TillMap_Snow_120: -1752919198
+      TillMap_Snow_121: 1672073703
+      TillMap_Snow_122: 581291758
+      TillMap_Snow_123: -1308614827
+      TillMap_Snow_124: -2027412359
+      TillMap_Snow_125: 560131825
+      TillMap_Snow_126: 2061788760
+      TillMap_Snow_127: -1772838202
+      TillMap_Snow_128: -163603624
+      TillMap_Snow_13: 1680585922
+      TillMap_Snow_14: 953777271
+      TillMap_Snow_15: 1288004189
+      TillMap_Snow_16: -2079698205
+      TillMap_Snow_17: 76524616
+      TillMap_Snow_18: 1866012291
+      TillMap_Snow_19: 227440145
+      TillMap_Snow_2: -1862722672
+      TillMap_Snow_20: 878583883
+      TillMap_Snow_21: 650753937
+      TillMap_Snow_22: 842203642
+      TillMap_Snow_23: 1401541488
+      TillMap_Snow_24: -1270863674
+      TillMap_Snow_25: -686798261
+      TillMap_Snow_26: 435939630
+      TillMap_Snow_27: -1667938004
+      TillMap_Snow_28: -150731023
+      TillMap_Snow_29: 1014207906
+      TillMap_Snow_3: 534836953
+      TillMap_Snow_30: 2052989198
+      TillMap_Snow_31: -537045876
+      TillMap_Snow_32: 1701761128
+      TillMap_Snow_33: 1603054269
+      TillMap_Snow_34: -1291539903
+      TillMap_Snow_35: 1597624437
+      TillMap_Snow_36: -849664122
+      TillMap_Snow_37: -1843616288
+      TillMap_Snow_38: -105196562
+      TillMap_Snow_39: -1452938827
+      TillMap_Snow_4: -543560140
+      TillMap_Snow_40: 1901403567
+      TillMap_Snow_41: 664561478
+      TillMap_Snow_42: 166701077
+      TillMap_Snow_43: 2057378845
+      TillMap_Snow_44: -1000274682
+      TillMap_Snow_45: 939963759
+      TillMap_Snow_46: -225990901
+      TillMap_Snow_47: -1712596708
+      TillMap_Snow_48: 328982466
+      TillMap_Snow_49: 2021382661
+      TillMap_Snow_5: -292771583
+      TillMap_Snow_50: 2070851588
+      TillMap_Snow_51: 1098778021
+      TillMap_Snow_52: -368980369
+      TillMap_Snow_53: -1860103962
+      TillMap_Snow_54: -1808245113
+      TillMap_Snow_55: -1086741378
+      TillMap_Snow_56: 2061366399
+      TillMap_Snow_57: -653671979
+      TillMap_Snow_58: -1888353863
+      TillMap_Snow_59: -1936276576
+      TillMap_Snow_6: 791152364
+      TillMap_Snow_60: 949640411
+      TillMap_Snow_61: 506408977
+      TillMap_Snow_62: 395767457
+      TillMap_Snow_63: -559838614
+      TillMap_Snow_64: -950584638
+      TillMap_Snow_65: -1463611181
+      TillMap_Snow_66: 930442132
+      TillMap_Snow_67: 1692914315
+      TillMap_Snow_68: -592627579
+      TillMap_Snow_69: 1568352121
+      TillMap_Snow_7: 1605972550
+      TillMap_Snow_70: 2065558340
+      TillMap_Snow_71: -287357734
+      TillMap_Snow_72: -553637533
+      TillMap_Snow_73: -1719873613
+      TillMap_Snow_74: 254605889
+      TillMap_Snow_75: -664251646
+      TillMap_Snow_76: 1938317323
+      TillMap_Snow_77: 804792193
+      TillMap_Snow_78: -1299905440
+      TillMap_Snow_79: 1986418572
+      TillMap_Snow_8: -1532202199
+      TillMap_Snow_80: 2124836021
+      TillMap_Snow_81: 199466292
+      TillMap_Snow_82: 1771399129
+      TillMap_Snow_83: -1193529837
+      TillMap_Snow_84: -406460950
+      TillMap_Snow_85: -1665680618
+      TillMap_Snow_86: 324256051
+      TillMap_Snow_87: 424344308
+      TillMap_Snow_88: 1288032866
+      TillMap_Snow_89: 404107335
+      TillMap_Snow_9: -782356340
+      TillMap_Snow_90: -17208480
+      TillMap_Snow_91: 1268335061
+      TillMap_Snow_92: 1721803988
+      TillMap_Snow_93: 599085501
+      TillMap_Snow_94: 1530094276
+      TillMap_Snow_95: 567052936
+      TillMap_Snow_96: -198046233
+      TillMap_Snow_97: 578353728
+      TillMap_Snow_98: 977849345
+      TillMap_Snow_99: 1321713460
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

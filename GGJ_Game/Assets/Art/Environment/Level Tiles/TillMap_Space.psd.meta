@@ -1,0 +1,2973 @@
+fileFormatVersion: 2
+guid: de706a935c0ce8f4487dc58e43e2c748
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TillMap_Space_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13618b8964b14ea4191dd563b782010d
+      internalID: -1054034707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a1ce9fe813b1542a0678c1e658cc65
+      internalID: 1801360392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2bad3169219714eb8cbe99561e7f53
+      internalID: -664010101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ac0adf8a0c47649bc4ae90a5f8c697
+      internalID: -175135228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7f2573b7304a4c9b909f9fe091ad5
+      internalID: 695796773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c42c3ee803c8534295b6c4a75e9a60c
+      internalID: 186262432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_6
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d507eb10c9319b544a575a0a1e086d4d
+      internalID: 1833390816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9763aac7313f90c4fac837582f8c83eb
+      internalID: 360577071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee9ff842270023448dcad5b336a657b
+      internalID: -413993966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556cae579ac00347852f28c72d7ce94
+      internalID: 1662505505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5fe5fd9e8188641904f6ab108e519c
+      internalID: 416180766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6711e898ac0564ab74327c590272a2
+      internalID: -1275235623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b203cb3a360d499076fc931018ca8
+      internalID: -506444737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a059c8f81d397514a95889df68585b70
+      internalID: 1342777935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d948172bcecee48bcea2996d8e2a63
+      internalID: 1126913032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_15
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce50173b469f9c46a95c999e2a0ed58
+      internalID: -749901867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da52f5af9e15a54db983d42f6823dbe
+      internalID: -2122167467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee50f5ea06e044fb7ee85a1fcec491
+      internalID: -1779788813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e495abeb33f02c468d27dc03eb5ef3e
+      internalID: -1678365780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9770ea6a9a4fad48bf72dd818431943
+      internalID: -821163288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f1c9058ee30454bbb239af841718b1
+      internalID: 644678509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba5095f68788cb4c81b34be7c155194
+      internalID: -1714488425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0ae054c8aa7d34e939b9cada84bc0f
+      internalID: 374343960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091f0a8492000f348b35d9f3b24a82da
+      internalID: -1178913582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c85eb74a456b294fb49e9af1ac60669
+      internalID: -121197807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb766d67efb1e68488d61c37ec52a61b
+      internalID: -1275888898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_26
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f985f9a07de7b3041a091e171d009b36
+      internalID: 633429888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_27
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae13b49d0426af846bd7ac7ff7f20abf
+      internalID: 2019035491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_28
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba2fabef262524458387928eabf2c8e
+      internalID: -323482931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fa08faf9a550940aac0bb00d62a324
+      internalID: 460329051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e67076ebd09e524da92e7421b200479
+      internalID: 1265067246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c08719319f8ae041bd1b893276678de
+      internalID: 1907014431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2c960261e07e0419c48e8915fd84a4
+      internalID: -114968048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e85a3260da9572499a8e845841a3737
+      internalID: 372803760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fd0f4e6c666e143a65298d484fd69e
+      internalID: 991778360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e14fad75a6990418a2623845470bc5
+      internalID: 2044135995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_36
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7940298b01eed3468df73137a080ed3
+      internalID: -2066593891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_37
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dbd9e021025aa4d9d12fa2fdc9192e
+      internalID: 1407896517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d941e6a6664d41b00310d02d6e22f
+      internalID: -326629839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81132d07362a92944abc74608711f9aa
+      internalID: 494026375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2666914904dd546943d1346fc45918
+      internalID: 1386975216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65599f35a79073146a6bd98e6797d801
+      internalID: 788891068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81af821353a2304499c27721e737011d
+      internalID: 542158478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_43
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4aaacc843a809458db6fe9010abd82
+      internalID: -556934993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45163fcaf350f8499466f758ce7276e
+      internalID: 1093351108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082117b55dc96294a9d7b573a33ce60a
+      internalID: -205025931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_46
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71a051dcd44a63438e76d728718eb4c
+      internalID: -991795515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6c90320383332499f1ab204c57d478
+      internalID: 235734982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_48
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8482175268a01a847b38d39518f4dab9
+      internalID: -83989396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_49
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82222fd6da5f2fc47bc7820f5e798803
+      internalID: -1731240261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_50
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568920eca66c529418747d012c13c3a3
+      internalID: 1971670580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_51
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e033cd0e421d14b803caecb115d2ac
+      internalID: -483714286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284c2b517f1dbb647a3833b8437df2fd
+      internalID: 1224715490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9001fc0294b882f47aae9a366ada2dd8
+      internalID: 1385733129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a37bbd69ece694bbdcb52c8c650ea3
+      internalID: 484971725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20af4ffb415224c4fa6ba213d9000c77
+      internalID: -857121448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_56
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424349771e0cdb44e9a656240f216361
+      internalID: 894844051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_57
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446edb0738b11904c8f3b3ca253cbe3e
+      internalID: -2034276855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_58
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7f1ab439df3d4caaa92acdd74e6e6
+      internalID: 758394169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_59
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d2f0fab8084de4a9a74cd7afcf8556
+      internalID: 1443931318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_60
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daf54194ff156649921c8d2c9eb9932
+      internalID: 2077092957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_61
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69831dc2b167bfa4da5f5970b6b72af0
+      internalID: -9377385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db9885eece3d1f43b655cdb888b8e1a
+      internalID: 919353505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_63
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da089bd642a57d46bc50d794db7b00a
+      internalID: 945539675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_64
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6460993e3b202084798adcac3b708c16
+      internalID: 421174277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_65
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d9c0b89fe2dea469b08d684236adfd
+      internalID: -1428546918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_66
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086ce4a5d3bf3cf479a4020de9124ba1
+      internalID: -1212737624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_67
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f652923dd1e394484a467baf5a6bd4
+      internalID: -455950529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_68
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cfe8ce24d838349823ffc37e3d5978
+      internalID: 159694329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0546536b19cf7c49850695d6f9cc40a
+      internalID: -520144292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0bc8f05ba7b9149a01a79e9ecff64e
+      internalID: 1034974151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be26a753a401f5479b3084b6c78bcdc
+      internalID: 1626064927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_72
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efddad0b8004232409a7e5bbf4448644
+      internalID: 1213778049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_73
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d5e8b4d0592034097ee39603ad41e1
+      internalID: -82941882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_74
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7580ea308285b44ba45f03c9198ac11
+      internalID: 76594392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_75
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92741bc859c94614bb5d1f3565e77bb0
+      internalID: 1033420457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_76
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7d5f9105955a34f8115ada5fbf2a93
+      internalID: 223068094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_77
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae44a251234e4048a11348d282ff1e2
+      internalID: 1264199067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_78
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f06782568c92c4ab1a38e791a9d229
+      internalID: -645487755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_79
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001425e64568c5245895949ea7c1f7ed
+      internalID: -1581248713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15ab2db2e8184841a2a84389d3bef14
+      internalID: 862079167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf2d92f6463d344786a1addea927f9d
+      internalID: 1963617488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_82
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e41f1ac5d73945468be4177a138b8e4
+      internalID: 1322954972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_83
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d430557643bf8c54ba1c42c41f55b31c
+      internalID: -1179859045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_84
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bff46cc741401346af3e422f5eccf9f
+      internalID: 1628185942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_85
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81478cbd1f87d7948be3994814254f7d
+      internalID: -40729496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_86
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75bd388fe5c0ec4fbf69b94808536a7
+      internalID: -1671687061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_87
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de83b8d625b4c24eb49bbf332af56a5
+      internalID: 2001981645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b540289458fb564eacbbf532203e172
+      internalID: 1800672912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9891536e120ce514d873e1007a09331d
+      internalID: -1022118126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d47ebddf54a0d24687535d7954da261
+      internalID: -1750990115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e71f76d49a575e49b41317dc2d7e69d
+      internalID: -299852395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da969eb6b17334444bf737a1e749c165
+      internalID: 1041316728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_93
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6606c643bb10469b70e5e06f61ae4
+      internalID: -621599370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c55d8877184906439c055381f00d442
+      internalID: -1339606097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_95
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8141c8fa06c8b4097976dbdd7f0894
+      internalID: -758578316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_96
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5315635aac5e5848bfc8c83fe3f7cb5
+      internalID: 110639505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_97
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55afd286eb512324997dc1061b6f2c8f
+      internalID: 932481475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_98
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802b3a9cffe06fe4aa8b53aa65e362a3
+      internalID: 1747428443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_99
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704afe6e8a04a6646b592d68912b3094
+      internalID: -716564492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3790eae59ca48a429a6c80284fd1500
+      internalID: -359567612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_101
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f77d3ed72faa7a4bab93092f7d98fc5
+      internalID: 1853230761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_102
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d9807e64323204880726d534abc322
+      internalID: -1992971441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8484231f0d66344a4aebcd85f21770
+      internalID: -62100610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2488ab68d1e4a504098e916fa9b3c84b
+      internalID: 98475541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_105
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accabd594afadab42b6e9a91e8565cb9
+      internalID: -867459358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_106
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f853bb1ff6c254db329cf1246b9a6e
+      internalID: -1798494946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_107
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcabd7187c6744549bb4821bd753ecce
+      internalID: -36243234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_108
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17da42120c80c94092b3db658d26750
+      internalID: -1278643707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_109
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9f4499c01e4504188662f5bc21186d
+      internalID: -1996217887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_110
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1471c5997ab0e4080d09da2811638a
+      internalID: 2135157049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_111
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ed7556f81d57f46a6af520c92aeb19
+      internalID: 360527823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_112
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ef7f16be8e8444bb0d3804eb7a412
+      internalID: 1201389772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_113
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8ad51ef63de44ab230abec7d033e1
+      internalID: 1471264991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_114
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfad73c70213034ba8b74002c68c41a
+      internalID: -971442471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_115
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cba0ae316580084c939832b5c2d3de0
+      internalID: -223203518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_116
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77d868e553b47c4abcddab8968c1498
+      internalID: -893968367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_117
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661a1e3e61fbf294cab829bf7bc6fa64
+      internalID: -820781997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_118
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632c948174a2e184f95905cfb7723fe8
+      internalID: -1788055799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_119
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1012265116811f64784d15c4bd45c738
+      internalID: 1801479524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_120
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4297df73f1c12324a8fcd1d9e9ff6202
+      internalID: 53830559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_121
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd99cd410051cb45a213173d003fec3
+      internalID: -1363016898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fd1a994b702b542b468ecaea061b6b
+      internalID: -770371875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_123
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7a16eadfb4b9f47a87cbc586aa2478
+      internalID: -1407008315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_124
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0231b2783ac96c448b1b3b2a8b919bdc
+      internalID: -1725240149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_125
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca8f764d86d079409a6a5e5d92c60bd
+      internalID: 2085344513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_126
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3075aeb4f775f4ebdeeede9e412c8c
+      internalID: 925883919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_127
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9787958382afb74196e296581cd8385
+      internalID: 1731503967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Space_128
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a59cab528a42f4897377d3d3e32b89
+      internalID: 484936730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TillMap_Space_0: -1054034707
+      TillMap_Space_1: 1801360392
+      TillMap_Space_10: 416180766
+      TillMap_Space_100: -359567612
+      TillMap_Space_101: 1853230761
+      TillMap_Space_102: -1992971441
+      TillMap_Space_103: -62100610
+      TillMap_Space_104: 98475541
+      TillMap_Space_105: -867459358
+      TillMap_Space_106: -1798494946
+      TillMap_Space_107: -36243234
+      TillMap_Space_108: -1278643707
+      TillMap_Space_109: -1996217887
+      TillMap_Space_11: -1275235623
+      TillMap_Space_110: 2135157049
+      TillMap_Space_111: 360527823
+      TillMap_Space_112: 1201389772
+      TillMap_Space_113: 1471264991
+      TillMap_Space_114: -971442471
+      TillMap_Space_115: -223203518
+      TillMap_Space_116: -893968367
+      TillMap_Space_117: -820781997
+      TillMap_Space_118: -1788055799
+      TillMap_Space_119: 1801479524
+      TillMap_Space_12: -506444737
+      TillMap_Space_120: 53830559
+      TillMap_Space_121: -1363016898
+      TillMap_Space_122: -770371875
+      TillMap_Space_123: -1407008315
+      TillMap_Space_124: -1725240149
+      TillMap_Space_125: 2085344513
+      TillMap_Space_126: 925883919
+      TillMap_Space_127: 1731503967
+      TillMap_Space_128: 484936730
+      TillMap_Space_13: 1342777935
+      TillMap_Space_14: 1126913032
+      TillMap_Space_15: -749901867
+      TillMap_Space_16: -2122167467
+      TillMap_Space_17: -1779788813
+      TillMap_Space_18: -1678365780
+      TillMap_Space_19: -821163288
+      TillMap_Space_2: -664010101
+      TillMap_Space_20: 644678509
+      TillMap_Space_21: -1714488425
+      TillMap_Space_22: 374343960
+      TillMap_Space_23: -1178913582
+      TillMap_Space_24: -121197807
+      TillMap_Space_25: -1275888898
+      TillMap_Space_26: 633429888
+      TillMap_Space_27: 2019035491
+      TillMap_Space_28: -323482931
+      TillMap_Space_29: 460329051
+      TillMap_Space_3: -175135228
+      TillMap_Space_30: 1265067246
+      TillMap_Space_31: 1907014431
+      TillMap_Space_32: -114968048
+      TillMap_Space_33: 372803760
+      TillMap_Space_34: 991778360
+      TillMap_Space_35: 2044135995
+      TillMap_Space_36: -2066593891
+      TillMap_Space_37: 1407896517
+      TillMap_Space_38: -326629839
+      TillMap_Space_39: 494026375
+      TillMap_Space_4: 695796773
+      TillMap_Space_40: 1386975216
+      TillMap_Space_41: 788891068
+      TillMap_Space_42: 542158478
+      TillMap_Space_43: -556934993
+      TillMap_Space_44: 1093351108
+      TillMap_Space_45: -205025931
+      TillMap_Space_46: -991795515
+      TillMap_Space_47: 235734982
+      TillMap_Space_48: -83989396
+      TillMap_Space_49: -1731240261
+      TillMap_Space_5: 186262432
+      TillMap_Space_50: 1971670580
+      TillMap_Space_51: -483714286
+      TillMap_Space_52: 1224715490
+      TillMap_Space_53: 1385733129
+      TillMap_Space_54: 484971725
+      TillMap_Space_55: -857121448
+      TillMap_Space_56: 894844051
+      TillMap_Space_57: -2034276855
+      TillMap_Space_58: 758394169
+      TillMap_Space_59: 1443931318
+      TillMap_Space_6: 1833390816
+      TillMap_Space_60: 2077092957
+      TillMap_Space_61: -9377385
+      TillMap_Space_62: 919353505
+      TillMap_Space_63: 945539675
+      TillMap_Space_64: 421174277
+      TillMap_Space_65: -1428546918
+      TillMap_Space_66: -1212737624
+      TillMap_Space_67: -455950529
+      TillMap_Space_68: 159694329
+      TillMap_Space_69: -520144292
+      TillMap_Space_7: 360577071
+      TillMap_Space_70: 1034974151
+      TillMap_Space_71: 1626064927
+      TillMap_Space_72: 1213778049
+      TillMap_Space_73: -82941882
+      TillMap_Space_74: 76594392
+      TillMap_Space_75: 1033420457
+      TillMap_Space_76: 223068094
+      TillMap_Space_77: 1264199067
+      TillMap_Space_78: -645487755
+      TillMap_Space_79: -1581248713
+      TillMap_Space_8: -413993966
+      TillMap_Space_80: 862079167
+      TillMap_Space_81: 1963617488
+      TillMap_Space_82: 1322954972
+      TillMap_Space_83: -1179859045
+      TillMap_Space_84: 1628185942
+      TillMap_Space_85: -40729496
+      TillMap_Space_86: -1671687061
+      TillMap_Space_87: 2001981645
+      TillMap_Space_88: 1800672912
+      TillMap_Space_89: -1022118126
+      TillMap_Space_9: 1662505505
+      TillMap_Space_90: -1750990115
+      TillMap_Space_91: -299852395
+      TillMap_Space_92: 1041316728
+      TillMap_Space_93: -621599370
+      TillMap_Space_94: -1339606097
+      TillMap_Space_95: -758578316
+      TillMap_Space_96: 110639505
+      TillMap_Space_97: 932481475
+      TillMap_Space_98: 1747428443
+      TillMap_Space_99: -716564492
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

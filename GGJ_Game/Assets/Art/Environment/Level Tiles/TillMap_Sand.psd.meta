@@ -1,0 +1,2973 @@
+fileFormatVersion: 2
+guid: 99bb54fdb4984fa4780716b7daaaaf45
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TillMap_Sand_0
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc2516691e27df49932852ad9019b3a
+      internalID: 620905012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e52bed95d3907545a993860c49cd0e4
+      internalID: 714517037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dbb9881f99bfc4b8740212ea10b631
+      internalID: -602229362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced838804fe6aec4f904fb46b2679147
+      internalID: -879368928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ded6db0014022b4ba249c8c32fbc16b
+      internalID: -2139864410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f8fa37110a4e140aa243b1284ab563
+      internalID: -275621475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_6
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31854d5a4779ac24eb0e6fed0f921216
+      internalID: -1843124939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8146fe9eb4718cb4abef5cf1587c654d
+      internalID: -780981748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f563f17e0e00f143bc7d8ec359b1822
+      internalID: 823662573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44d6c26111989149ba320860f5876f1
+      internalID: 773616070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe9bcb6fe3d87046a7731849cedce15
+      internalID: 1590863032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd98a02e321944429520a93f9a14e16
+      internalID: -453366598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2845606ea148e1349abb1a83d41784ca
+      internalID: -1725706536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2433c2cb5340ff8438da97d91b225e82
+      internalID: 669640337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae3c1bd3b27384fbca7d48e5497e36
+      internalID: 358886078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_15
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088a8245d5e887946aa3e9bcecda02fc
+      internalID: -713113123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_16
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d138e32f5fa88f4faa72f6dc67ace57
+      internalID: -1445870475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1066b6dd6a58dd24a85a35ca88548aa3
+      internalID: 1097941993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9e0f9b77561804899f84d4e243a756
+      internalID: 1093910813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476e4be06964dc54ead49b14129af823
+      internalID: -1064738763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf12ae5881522d54f8f3477d15925397
+      internalID: 1260313397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f6424b08326314490b8e7d16e9bb84
+      internalID: 746193956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72d18bf249a6ad4b9ecdf433c8df866
+      internalID: 1191286538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014a74e1af40fe14da077fe750a30888
+      internalID: 499857606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dcc6ee9996c6d439c511fe25edd695
+      internalID: 613680728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_25
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f101bd646f0653408844cd5e1f5a4ef
+      internalID: -1238259275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_26
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1898c86802b44f848845c1e8a1db3cae
+      internalID: 385594071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_27
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1125c99ea9e01fe4aa1a6ba218fda3cb
+      internalID: 1399122300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_28
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbe73e635afba945ba19b5c0e794dd4
+      internalID: -1416459628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b364249300ba4e841a1270851dd3c8a8
+      internalID: -438562821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2f643a529375446946d86fa0c48d3b
+      internalID: -51279573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd141944d2840a4b8471926ef66ddb2
+      internalID: -815199259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3412bd0d8364ee843a58e6f216626e00
+      internalID: -1718657583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88bcee6db6fd364483ce841356c62b5
+      internalID: -2143439643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a01e2e93c94bd64d967c7182b05b2d9
+      internalID: 1404530889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_35
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c660c77518ea54342b6fa52ac020e223
+      internalID: -543356061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_36
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32be41bba4e1045884f650512fbaf0
+      internalID: 209321266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_37
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decec46123b20e044af53b3869005912
+      internalID: -1768574071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3480ec2307ed7e47ba5ff3fe140e1a2
+      internalID: 289135039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c297b4123dd6a47b8a2a6aad2a6d7f
+      internalID: -1866209523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431f29af7d34ad64ab68f0b7fe0642f4
+      internalID: 846767462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64f98061735e0646a41762355fb4db2
+      internalID: -207531915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b24002011365d4eaa335653554b108
+      internalID: -1164276504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_43
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c79a8c7235f234d995c2035b2ab0ac
+      internalID: 1792963325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b05e9925c9d6f49b74f957404dde77
+      internalID: -1699835210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_45
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ee0a40383b16489b9b076bbcbca56
+      internalID: -370614486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_46
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67f2799e58507c47a9b67f079190daf
+      internalID: 397221486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b139e735a76c64882d377bf3d33e99
+      internalID: 678642678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_48
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c83eb6a9fa8afd47995e69892b4ba5c
+      internalID: -1830162033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_49
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f65323fb73d634a85904d7ed086429
+      internalID: 581549706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_50
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a99845b4e37074097ca465c3bda233
+      internalID: 925301665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_51
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cbaa959f2289941aefb36010616c1f
+      internalID: -1137278498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f40d1d3b98d8ca48b6ab968ca53d717
+      internalID: 1118680362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92831acb0e941d64697f4a7fd94d6d08
+      internalID: 1193498278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ce4ef106ca4aa4489613dd0bf28d1c
+      internalID: -1137356599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dba1c7784d73984fba0cdf6ce351a50
+      internalID: 745498228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_56
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050737f64dac15640a8c81e8d6b87597
+      internalID: 852072489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_57
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15eaf246a20bf2947b3007d9963d227c
+      internalID: -893632987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_58
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1958d8ebd73504c8ff4ead68dfb795
+      internalID: -1761577616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_59
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75ed2cd7ff5709419bf3bdb671ef657
+      internalID: 1366259878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_60
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6653488af809447a1f44e481812a3a
+      internalID: 531605720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_61
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8cdb431c3f77b4d980bdea66e646b6
+      internalID: -179824212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3091a51bd81214c9ddd85c061aa433
+      internalID: 64430649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_63
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f90f2128727034e8da82f6c827790a
+      internalID: 172502408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_64
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020790d2239215a4ea6e7cd4d3ea4ef0
+      internalID: -792689207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_65
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a7f19edd3b03c47b11a93f470679ba
+      internalID: -1695600435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_66
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b55e68784049684b97dca735124c0f4
+      internalID: -1447183314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_67
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4214ea5a75c0ac488c3f7fd79896534
+      internalID: 1252224228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_68
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d53e9f05f200e4db595e8e76e22bea
+      internalID: 556357831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a4c4b86e8d8241b6e643090cbff4b
+      internalID: -835911966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42957320a87c34c418772532e8f41c07
+      internalID: -360634731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6b058f66226564eac7a351b9805340
+      internalID: -336979701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_72
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cd366e79b1acc4c8adfea1ad073fb6
+      internalID: -699979855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_73
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b761c377bab06514ea31f647e3cace14
+      internalID: 631038108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_74
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6caf31f5b64c34d83c01171f27f88b
+      internalID: -589579862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_75
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6957e18b531c9d7488f708bd58904be1
+      internalID: 1348772222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_76
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b8a157784cd8c418ee725b3f2c8079
+      internalID: -1059700991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_77
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37749e51226173f4fb398001db088ac5
+      internalID: 1116560075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_78
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1adcc235edd97d4fbc8a9b520871c38
+      internalID: -1028184870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_79
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb9e93d1c2f50e4ea8f133e1d760858
+      internalID: -165632562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9796e06c83c0684c9d76b258465162a
+      internalID: -2094954431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc66e995cfd0d774da5cd14445791c63
+      internalID: 591466258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_82
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a4d10d6d2661741b3d441bea639819
+      internalID: 201018996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_83
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5f10cd250759e4a8787329bfabdc55
+      internalID: -534926334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_84
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b5c7e31e05a9849bf035b152f03240
+      internalID: -467174553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_85
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928b12c61185b9d4282745d5d35b10fc
+      internalID: -1197024893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_86
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f60d5ff33ed3c47bd3de815b316b11
+      internalID: 1671083680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_87
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44a4b48cdd45764b8a99a381e1e87c9
+      internalID: 1021740973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_88
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f349fe2e89aa62041b31ffae8336a712
+      internalID: 148205502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ddc653a0ddb1d45ab3d6b081ef509b
+      internalID: -1900500555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_90
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2606d6bc2187fa743b240c1626b7506a
+      internalID: -138609187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c01c73045fc5d540b0a39a1ce31fc98
+      internalID: -1418718020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18eb409a03a1d0b4aabd9218ed2be114
+      internalID: -848156983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_93
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de66fb090adfec64d8c3813821ad8000
+      internalID: 1140045354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6d389e6e7bc594cb7dbb2f5f5b2cf1
+      internalID: 1759382150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_95
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a848f77d3470e964b85af5148bc53227
+      internalID: -708204490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_96
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7456f158802c3d243aad5d706a21f115
+      internalID: 154756706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_97
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7572f73250ba0c247a336f732d9dd7d8
+      internalID: 1615358895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_98
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b7a41b0f8600641a96a51668fdab05
+      internalID: -1238374420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_99
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1763
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e79cca00de40e40b3b9ad58121c4e6
+      internalID: 1248532097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e4143adf0b7a649ae3db4212cbc9ef
+      internalID: 1425596712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_101
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed219cf6ada71244cab4fbbbbc98a959
+      internalID: -1069779829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_102
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81be42abf5f1d0149b5753fb9e96bb4a
+      internalID: 1909083123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa757711a69723842bcff5a04e7aade7
+      internalID: -133237706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455e5ae44f2adf2478a3a5371e394589
+      internalID: 709369962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_105
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4fa96bb18efa74597217d6e59a371f
+      internalID: 1318787241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_106
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e3de05ddc48674485f959599f0e5f5
+      internalID: 438570661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_107
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2464c967b4386134d9a259113fff3b5e
+      internalID: 216929075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_108
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3928b731a4a7f3848bb4a96eed618e69
+      internalID: -403874189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_109
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f3d0f8e81daaa4c9fab9f343384932
+      internalID: -466842091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_110
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944487edbe41d4f4eb62b47e34489d60
+      internalID: 1641092059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_111
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1563
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f748ade6e9e81940b387048721bf79c
+      internalID: 1509178692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_112
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57d9299f0cfefa4699a2faa68e30880
+      internalID: -1559756095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_113
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2227c2cd9722aee4ea818c498ac29d88
+      internalID: 1933229341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_114
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0eeac4145a60640ad8d5e8b3a05108
+      internalID: -960803909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_115
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be271a38450208d4c850ba49eadad902
+      internalID: 2132437369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_116
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a810b603ceb6824aa7038565cf244c2
+      internalID: -1442353214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_117
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285bdc3681de25347ae7bd39002e4da8
+      internalID: 14123673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_118
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abe9bf5d22dcab47a7e25d66757f357
+      internalID: 1102154730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_119
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41189c415058184d9cf39dd96eed82d
+      internalID: -1553469662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_120
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62aaec3890251fa4386d744eafd43ac2
+      internalID: -1715826014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_121
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1363
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf434309b088642429e8cff2a7ecb595
+      internalID: 930128783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8a3f361c22c014190039b5edc767e9
+      internalID: -457295522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_123
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16df9e0a6ebbcc4893598cd40547470
+      internalID: 586633361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_124
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c3b3c736e0c4647865c066cf511376
+      internalID: 1629639460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_125
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a985ae27cf96a4c4f9cee9af8c5def73
+      internalID: 995078269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_126
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1163
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee512d53348cbbe4ea82e9f1a9237133
+      internalID: -267026583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_127
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8644f02abb640924e9dbf3040cfababd
+      internalID: 220034293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TillMap_Sand_128
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 963
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550e1f3d29cc07c45ba67fcecb97ef12
+      internalID: -2002884970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TillMap_Sand_0: 620905012
+      TillMap_Sand_1: 714517037
+      TillMap_Sand_10: 1590863032
+      TillMap_Sand_100: 1425596712
+      TillMap_Sand_101: -1069779829
+      TillMap_Sand_102: 1909083123
+      TillMap_Sand_103: -133237706
+      TillMap_Sand_104: 709369962
+      TillMap_Sand_105: 1318787241
+      TillMap_Sand_106: 438570661
+      TillMap_Sand_107: 216929075
+      TillMap_Sand_108: -403874189
+      TillMap_Sand_109: -466842091
+      TillMap_Sand_11: -453366598
+      TillMap_Sand_110: 1641092059
+      TillMap_Sand_111: 1509178692
+      TillMap_Sand_112: -1559756095
+      TillMap_Sand_113: 1933229341
+      TillMap_Sand_114: -960803909
+      TillMap_Sand_115: 2132437369
+      TillMap_Sand_116: -1442353214
+      TillMap_Sand_117: 14123673
+      TillMap_Sand_118: 1102154730
+      TillMap_Sand_119: -1553469662
+      TillMap_Sand_12: -1725706536
+      TillMap_Sand_120: -1715826014
+      TillMap_Sand_121: 930128783
+      TillMap_Sand_122: -457295522
+      TillMap_Sand_123: 586633361
+      TillMap_Sand_124: 1629639460
+      TillMap_Sand_125: 995078269
+      TillMap_Sand_126: -267026583
+      TillMap_Sand_127: 220034293
+      TillMap_Sand_128: -2002884970
+      TillMap_Sand_13: 669640337
+      TillMap_Sand_14: 358886078
+      TillMap_Sand_15: -713113123
+      TillMap_Sand_16: -1445870475
+      TillMap_Sand_17: 1097941993
+      TillMap_Sand_18: 1093910813
+      TillMap_Sand_19: -1064738763
+      TillMap_Sand_2: -602229362
+      TillMap_Sand_20: 1260313397
+      TillMap_Sand_21: 746193956
+      TillMap_Sand_22: 1191286538
+      TillMap_Sand_23: 499857606
+      TillMap_Sand_24: 613680728
+      TillMap_Sand_25: -1238259275
+      TillMap_Sand_26: 385594071
+      TillMap_Sand_27: 1399122300
+      TillMap_Sand_28: -1416459628
+      TillMap_Sand_29: -438562821
+      TillMap_Sand_3: -879368928
+      TillMap_Sand_30: -51279573
+      TillMap_Sand_31: -815199259
+      TillMap_Sand_32: -1718657583
+      TillMap_Sand_33: -2143439643
+      TillMap_Sand_34: 1404530889
+      TillMap_Sand_35: -543356061
+      TillMap_Sand_36: 209321266
+      TillMap_Sand_37: -1768574071
+      TillMap_Sand_38: 289135039
+      TillMap_Sand_39: -1866209523
+      TillMap_Sand_4: -2139864410
+      TillMap_Sand_40: 846767462
+      TillMap_Sand_41: -207531915
+      TillMap_Sand_42: -1164276504
+      TillMap_Sand_43: 1792963325
+      TillMap_Sand_44: -1699835210
+      TillMap_Sand_45: -370614486
+      TillMap_Sand_46: 397221486
+      TillMap_Sand_47: 678642678
+      TillMap_Sand_48: -1830162033
+      TillMap_Sand_49: 581549706
+      TillMap_Sand_5: -275621475
+      TillMap_Sand_50: 925301665
+      TillMap_Sand_51: -1137278498
+      TillMap_Sand_52: 1118680362
+      TillMap_Sand_53: 1193498278
+      TillMap_Sand_54: -1137356599
+      TillMap_Sand_55: 745498228
+      TillMap_Sand_56: 852072489
+      TillMap_Sand_57: -893632987
+      TillMap_Sand_58: -1761577616
+      TillMap_Sand_59: 1366259878
+      TillMap_Sand_6: -1843124939
+      TillMap_Sand_60: 531605720
+      TillMap_Sand_61: -179824212
+      TillMap_Sand_62: 64430649
+      TillMap_Sand_63: 172502408
+      TillMap_Sand_64: -792689207
+      TillMap_Sand_65: -1695600435
+      TillMap_Sand_66: -1447183314
+      TillMap_Sand_67: 1252224228
+      TillMap_Sand_68: 556357831
+      TillMap_Sand_69: -835911966
+      TillMap_Sand_7: -780981748
+      TillMap_Sand_70: -360634731
+      TillMap_Sand_71: -336979701
+      TillMap_Sand_72: -699979855
+      TillMap_Sand_73: 631038108
+      TillMap_Sand_74: -589579862
+      TillMap_Sand_75: 1348772222
+      TillMap_Sand_76: -1059700991
+      TillMap_Sand_77: 1116560075
+      TillMap_Sand_78: -1028184870
+      TillMap_Sand_79: -165632562
+      TillMap_Sand_8: 823662573
+      TillMap_Sand_80: -2094954431
+      TillMap_Sand_81: 591466258
+      TillMap_Sand_82: 201018996
+      TillMap_Sand_83: -534926334
+      TillMap_Sand_84: -467174553
+      TillMap_Sand_85: -1197024893
+      TillMap_Sand_86: 1671083680
+      TillMap_Sand_87: 1021740973
+      TillMap_Sand_88: 148205502
+      TillMap_Sand_89: -1900500555
+      TillMap_Sand_9: 773616070
+      TillMap_Sand_90: -138609187
+      TillMap_Sand_91: -1418718020
+      TillMap_Sand_92: -848156983
+      TillMap_Sand_93: 1140045354
+      TillMap_Sand_94: 1759382150
+      TillMap_Sand_95: -708204490
+      TillMap_Sand_96: 154756706
+      TillMap_Sand_97: 1615358895
+      TillMap_Sand_98: -1238374420
+      TillMap_Sand_99: 1248532097
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
